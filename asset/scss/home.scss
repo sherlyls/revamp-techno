@@ -1,0 +1,13 @@
+// Headline
+
+#wrapper-container {
+    display: flex;
+    justify-content: center;
+    width: 1160px;
+    margin: 0 auto;
+
+    .left-section {
+        width: calc(100% - 316px);
+    padding-right: 22px;
+    }
+}
