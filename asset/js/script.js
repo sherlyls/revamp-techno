@@ -6,10 +6,10 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
 
-    if ($(this).scrollTop() > 50){  
-        $('#content').addClass("content_fixed");
+    if ($(this).scrollTop() > 10){  
+        $('header').addClass("sticky");
     }
     else{
-        $('#content').removeClass("content_fixed");
+        $('header').removeClass("sticky");
     }
 });
