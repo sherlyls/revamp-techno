@@ -1,6 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: PlusJakartaSans-Bold;
     src: url(../font/PlusJakartaSans-Bold.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: PlusJakartaSans-Regular;
+    src: url(../font/PlusJakartaSans-Regular.woff2) format("woff2");
     font-weight: 400;
     font-style: normal
 }
