@@ -1,205 +1,236 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    height: 74px;
-    position: relative;
-    background-color: white;
-    margin-bottom: 25px;
-    width: 100%;
-    background: #FFF;
-    box-shadow: 0px 4px 8px 0px rgba(200, 200, 200, 0.25);
-    
-    &.sticky {
-        position: fixed;
-        top: 0;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  height: 74px;
+  position: relative;
+  background-color: white;
+  margin-bottom: 25px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(200, 200, 200, 0.25);
 
-    .logo-techno {
-        background-image: url(../img/sprite.png);
-        width: 154px;
-        height: 29px;
-        display: block;
-        background-position: 0px -451px;
-        background-repeat: no-repeat;
-    }
+  &.sticky {
+    position: fixed;
+    top: 0;
+  }
 
-    .menu {
-        padding: 0 77.5px;
-        
-        a {
-            margin-right: 32px;
-        }
-    }
+  .logo-techno {
+    background-image: url(../img/sprite.png);
+    width: 154px;
+    height: 29px;
+    display: block;
+    background-position: 0px -451px;
+    background-repeat: no-repeat;
+  }
 
-    .other {
-        display: flex;
-        .login {
-            display: flex;
-            align-items: center;
-            padding-right: 16px;
-            .img-login {
-                background-image: url(../img/sprite.png);
-                width: 24px;
-                height: 24px;
-                display: block;
-                background-position: -2px -3px;
-                background-repeat: no-repeat;
-                margin-right: 8px;
-            }
-        }
-
-        .search {
-            background-image: url(../img/sprite.png);
-            width: 24px;
-            height: 24px;
-            display: block;
-            background-position: -43px -3px;
-            background-repeat: no-repeat;
-            margin-right: 16px;
-        }
-
-        .burger-menu {
-            position: relative;
-
-            .icon-burger {
-                background-image: url(../img/sprite.png);
-                width: 24px;
-                height: 24px;
-                display: block;
-                background-position: -85px -3px;
-                background-repeat: no-repeat;
-            }
-
-            .content-burger {
-                display: none;
-                position: absolute;
-                width: 373px;
-                top: 25px;
-                right: -168px;
-                background-color: white;
-                padding-left: 23px;
-                border-radius: 10px;
-                border: 1px solid #EAEAEA;
-                box-shadow: 0px 10px 30px 0px rgba(130, 130, 130, 0.25);
-                padding-top: 24px;
-
-                .title-content {
-                    font-family: PlusJakartaSans-Bold;
-                    font-size: 16px;
-                    color: #212122;
-                    padding-top: 24px;
-                    padding-bottom: 19px;
-                }
-
-                .content-group {
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    .list-group {
-                        display: flex;
-                        align-items: center;
-                        width: 48%;
-                        padding-bottom: 16px;
-
-                        .icon {
-                            width: 28px;
-                            height: 28px;
-                            background-image: url(../img/sprite.png);
-                            background-repeat: no-repeat;
-                            margin-right: 16px;
-
-                            &.okezonetv {
-                                background-position: -1px -95px;  
-                            }
-                            &.tren {
-                                background-position: -98px -94px  
-                            }
-                            &.okezoneradio {
-                                background-position: -51px -94px;  
-                            }
-                            &.viral {
-                                background-position: -146px -94px; 
-                            }
-                            &.beranda {
-                                background-position: -1px -134px; 
-                            }
-                            &.news {
-                                background-position: -242px -94px; 
-                            }
-                            &.finance {
-                                background-position: -48px -134px; 
-                            }
-                            &.lifestyle {
-                                background-position: -291px -94px; 
-                            }
-                            &.celebrity {
-                                background-position: -96px -137px; 
-                            }
-                            &.bola {
-                                background-position: -339px -94px; 
-                            }
-                            &.sport {
-                                background-position: -145px -136px; 
-                            }
-                            &.travel {
-                                background-position: -387px -94px; 
-                            }
-                            &.muslim {
-                                background-position: -194px -141px; 
-                            }
-                            &.edukasi {
-                                background-position: -432px -94px; 
-                            }
-                            &.haji {
-                                background-position: -242px -137px; 
-                            }
-                            &.health {
-                                background-position: -484px -94px; 
-                            }
-                            &.techno {
-                                background-position: -290px -137px; 
-                            }
-                            &.otomatif {
-                                background-position: -532px -94px; 
-                            }
-                            &.highend {
-                                background-position: -338px -137px; 
-                            }
-                            &.infografis {
-                                background-position: -578px -94px; 
-                            }
-                            &.foto {
-                                background-position: -386px -137px; 
-                            }
-                            &.video {
-                                background-position: -626px -94px; 
-                            }
-                            &.indeks {
-                                background-position: -432px -137px; 
-                            }
-                        }
-
-                        .text {
-                            font-family: PlusJakartaSans-Regular;
-                            font-size: 16px;
-                            color: #212121;
-                        }
-                    }
-                }
-            }
-        }
-    }
+  .menu {
+    padding: 0 77.5px;
 
     a {
-        color: #5B5B5B;
-        font-family: PlusJakartaSans-Bold;
-        font-size: 14px;
-        
-        &:visited, &:link {
-            text-decoration: none;
-            color: #5B5B5B;
-        }
+      margin-right: 32px;
     }
+  }
+
+  .other {
+    display: flex;
+    .login {
+      display: flex;
+      align-items: center;
+      padding-right: 16px;
+      .img-login {
+        background-image: url(../img/sprite.png);
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-position: -2px -3px;
+        background-repeat: no-repeat;
+        margin-right: 8px;
+      }
+    }
+
+    .search {
+      margin-right: 16px;
+      position: relative;
+
+      .icon {
+        background-image: url(../img/sprite.png);
+        width: 24px;
+        height: 24px;
+        background-position: -43px -3px;
+        background-repeat: no-repeat;
+      }
+
+      .box-search {
+        transform: rotate3d(0, 1, 0, 90deg);
+        transform-origin: left center;
+        transition: 0.5s;
+        form {
+          input {
+            position: absolute;
+            width: 929px;
+            height: 40px;
+            border-right-style: none;
+            border-top-style: none;
+            border-left-style: none;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid white;
+            color: white;
+            right: 0;
+            top: 0;
+          }
+
+          .icon {
+            position: absolute;
+            right: 8px;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    .burger-menu {
+      position: relative;
+
+      .icon-burger {
+        background-image: url(../img/sprite.png);
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-position: -85px -3px;
+        background-repeat: no-repeat;
+      }
+
+      .content-burger {
+        display: none;
+        position: absolute;
+        width: 373px;
+        top: 25px;
+        right: -168px;
+        background-color: white;
+        padding-left: 23px;
+        border-radius: 10px;
+        border: 1px solid #eaeaea;
+        box-shadow: 0px 10px 30px 0px rgba(130, 130, 130, 0.25);
+        padding-top: 24px;
+
+        .title-content {
+          font-family: PlusJakartaSans-Bold;
+          font-size: 16px;
+          color: #212122;
+          padding-top: 24px;
+          padding-bottom: 19px;
+        }
+
+        .content-group {
+          display: flex;
+          flex-wrap: wrap;
+
+          .list-group {
+            display: flex;
+            align-items: center;
+            width: 48%;
+            padding-bottom: 16px;
+
+            .icon {
+              width: 28px;
+              height: 28px;
+              background-image: url(../img/sprite.png);
+              background-repeat: no-repeat;
+              margin-right: 16px;
+
+              &.okezonetv {
+                background-position: -1px -95px;
+              }
+              &.tren {
+                background-position: -98px -94px;
+              }
+              &.okezoneradio {
+                background-position: -51px -94px;
+              }
+              &.viral {
+                background-position: -146px -94px;
+              }
+              &.beranda {
+                background-position: -1px -134px;
+              }
+              &.news {
+                background-position: -242px -94px;
+              }
+              &.finance {
+                background-position: -48px -134px;
+              }
+              &.lifestyle {
+                background-position: -291px -94px;
+              }
+              &.celebrity {
+                background-position: -96px -137px;
+              }
+              &.bola {
+                background-position: -339px -94px;
+              }
+              &.sport {
+                background-position: -145px -136px;
+              }
+              &.travel {
+                background-position: -387px -94px;
+              }
+              &.muslim {
+                background-position: -194px -141px;
+              }
+              &.edukasi {
+                background-position: -432px -94px;
+              }
+              &.haji {
+                background-position: -242px -137px;
+              }
+              &.health {
+                background-position: -484px -94px;
+              }
+              &.techno {
+                background-position: -290px -137px;
+              }
+              &.otomatif {
+                background-position: -532px -94px;
+              }
+              &.highend {
+                background-position: -338px -137px;
+              }
+              &.infografis {
+                background-position: -578px -94px;
+              }
+              &.foto {
+                background-position: -386px -137px;
+              }
+              &.video {
+                background-position: -626px -94px;
+              }
+              &.indeks {
+                background-position: -432px -137px;
+              }
+            }
+
+            .text {
+              font-family: PlusJakartaSans-Regular;
+              font-size: 16px;
+              color: #212121;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  a {
+    color: #5b5b5b;
+    font-family: PlusJakartaSans-Bold;
+    font-size: 14px;
+
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: #5b5b5b;
+    }
+  }
 }

@@ -4,6 +4,12 @@ $(document).ready(function() {
     });
   });
 
+  $(document).ready(function() {
+    $('.search .icon').on("click",function(){
+      $(".box-search form input").css("display","block")
+    });
+  });
+
   $(window).scroll(function() {
 
     if ($(this).scrollTop() > 10){  
