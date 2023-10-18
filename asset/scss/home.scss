@@ -130,10 +130,13 @@
         .title-brt-terkini {
           font-family: PlusJakartaSans-Bold; 
           margin: 20px 0;
+          font-size: 20px;
+          line-height: 32px;
         }
         .group-brt-terkini {
           display: flex;
           clear: both;
+          margin-bottom: 20px;
 
           &.glance {
             display: block !important;
@@ -149,8 +152,9 @@
           }
 
           .img-section {
-            width: 301px;
+            width: 39%;
             height: 201px;
+            margin-right: 20px;
 
             img {
               width: 100%;
@@ -162,12 +166,23 @@
 
           .desc-section {
             font-family: PlusJakartaSans-Bold;
+            width: 61%;
             
             .title-text {
+              color: #949393;
+              text-transform: uppercase;
             }
 
             .desc-text {
-              
+              margin: 20px 0;
+              font-size: 20px;
+              line-height: 32px;
+            }
+
+            .time-text {
+              color: #949393;
+              font-size: 16px;
+              line-height: 25.6px;
             }
           }
         }
@@ -176,6 +191,9 @@
           background-color: #1c1a27;
 
           .head-okztv {
+            .logo-okztv {
+              
+            }
           }
 
           .content-okztv {
