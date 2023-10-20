@@ -1,4 +1,4 @@
-.ads1, .ads2, .ads3 {
+.ads1, .ads2, .ads3, .ads4, .ads5 {
     background-color: pink;
 }
 
@@ -10,7 +10,7 @@
         text-align: center;
         color: #AAAAAA;
         font-size: 14px;
-        line-height: 22.4px;
+        line-height: 100px;
         font-family: Roboto-Regular;
     }
     .content-ads {
@@ -49,5 +49,39 @@
 
     .content-ads {
         height: 90px;
+    }
+}
+
+.ads4 {
+    width: 300px;
+    margin: 0 auto;
+
+    .title-ads {
+        text-align: center;
+        color: #AAAAAA;
+        font-size: 14px;
+        line-height: 22.4px;
+        font-family: Roboto-Regular;
+    }
+
+    .content-ads {
+        height: 250px;
+    }
+}
+
+.ads5 {
+    width: 300px;
+    margin: 20px auto 0;
+
+    .title-ads {
+        text-align: center;
+        color: #AAAAAA;
+        font-size: 14px;
+        line-height: 22.4px;
+        font-family: Roboto-Regular;
+    }
+
+    .content-ads {
+        height: 600px;
     }
 }

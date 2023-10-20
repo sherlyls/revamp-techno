@@ -1,0 +1,120 @@
+footer {
+  margin-top: 54px;
+  .footer {
+    clear: both;
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 57px 0 28px;
+    .box-flex-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 8px;
+      .box-footer {
+        margin: 0 44px 24px;
+        .title-header {
+          font-family: PlusJakartaSans-Bold;
+          font-size: 14px;
+          color: #000;
+          margin-bottom: 16px;
+          line-height: 22.4px;
+        }
+        .box-list {
+          display: flex;
+          .list-footer {
+            margin-right: 24px;
+            .text-footer,
+            .text-footer:visited,
+            .text-footer:link {
+              font-family: PlusJakartaSans-Regular;
+              font-size: 16px;
+              color: #212121;
+              line-height: 1.6;
+              margin-bottom: 8px;
+              display: block;
+              text-decoration: none;
+            }
+          }
+        }
+        &.logo-sosmed-footer {
+          .logo-okezone-footer {
+            background-image: url(../img/sprite.png);
+            width: 210px;
+            height: 50px;
+            background-size: 655px;
+            background-position: -347px -498px;
+            background-repeat: no-repeat;
+            margin: 0 auto 32px;
+            display: block;
+          }
+          .download-app {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+            .play-store {
+              width: 105px;
+              height: 40px;
+              background-image: url(../img/sprite.png);
+              background-size: 655px;
+              background-repeat: no-repeat;
+              background-position: -299px -449px;
+              margin-right: 12px;
+            }
+            .app-store {
+              width: 105px;
+              height: 40px;
+              background-image: url(../img/sprite.png);
+              background-size: 655px;
+              background-repeat: no-repeat;
+              background-position: -415px -449px;
+            }
+          }
+          .portal-sosmed-footer {
+            .logo-mncportal {
+              background-image: url(../img/sprite.png);
+              width: 116px;
+              height: 41px;
+              background-size: 655px;
+              background-position: -3px -497px;
+              background-repeat: no-repeat;
+              margin: 0 auto 28px;
+            }
+            .sosmed-footer {
+                .box-flex {
+                    display: flex;
+                    justify-content: center;
+                    .icon-sosmed {
+                        background-image: url(../img/sprite.png);
+                        width: 33px;
+                        height: 33px;
+                        background-size: 655px;
+                        background-repeat: no-repeat;
+                        margin: 0 auto 28px;
+                        display: inline-block;
+                        &.instagram {
+                            background-position: -132px -504px;
+                        }
+                        &.facebook {
+                            background-position: -177px -504px;
+                        }
+                        &.twitter {
+                            background-position: -220px -504px;
+                        }
+                        &.youtube {
+                            background-position: -265px -504px;
+                        }
+                        &.tiktok {
+                            background-position: -308px -504px;
+                        }
+                    }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
