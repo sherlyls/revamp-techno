@@ -1,23 +1,88 @@
 .wrapper-container {
-    .article {
-        .title-article {
-            font-family: PlusJakartaSans-Bold;
-            color: #212121;
-            font-size: 32px;
-            line-height: 51.2px;
-            margin-bottom: 12px;
+  .article {
+    .title-article {
+      font-family: PlusJakartaSans-Bold;
+      color: #212121;
+      font-size: 32px;
+      line-height: 51.2px;
+      margin-bottom: 12px;
+    }
+    .journalist {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      .icon-account {
+        border-radius: 100%;
+        margin-right: 6.67px;
+        width: 26.67px;
+        height: 26.67px;
+        img {
+          width: 26.67px;
+          height: 26.67px;
         }
-        .journalist {
+      }
+      .name-account {
+        font-family: PlusJakartaSans-Bold;
+        font-size: 16px;
+        line-height: 22.4px;
+        color: #212121;
+      }
+      span {
+        font-family: PlusJakartaSans-Regular;
+      }
+    }
+    .img-article {
+      width: 100%;
+      margin-bottom: 16px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .desc-foto {
+        margin-top: 8px;
+        font-family: PlusJakartaSans-Regular;
+        font-size: 14px;
+        line-height: 19.6px;
+        color: #aeaeae;
+        text-align: center;
+      }
+    }
+    .fitur {
+      display: flex;
+      .size-font {
+        display: flex;
+        gap: 22px;
+        font-family: PlusJakartaSans-Regular;
+        color: #212121;
+        align-items: baseline;
+        .font {
+            cursor: pointer;
+          &.sm {
+            font-size: 14px;
+            line-height: 22.4px;
+          }
+          &.md {
+            font-size: 16px;
+            line-height: 25.6px;
+          }
+          &.bg {
+            font-size: 20px;
+            line-height: 32px;
+          }
+        }
+      }
+      .share {
+        display: flex;
+        .group-medsos {
             display: flex;
-            align-items: center;
-            .icon-account {
-                border-radius: 100%;
-                margin-right: 6.67px;
-                img {
-                    width: 26.67px;
-                    height: 26.67px;
-                }
+            .text {
+                font-family: PlusJakartaSans-Regular;
+                font-size: 16px;
+                line-height: 25.6px;
             }
         }
+      }
     }
+  }
 }
