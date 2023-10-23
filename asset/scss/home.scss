@@ -322,37 +322,6 @@
   width: 300px;
 }
 
-#widget-pilihan {
-  .title {
-    margin: 20px 0 16px;
-    font-family: PlusJakartaSans-Bold;
-    font-size: 20px;
-    line-height: 28px;
-    color: #000000;
-  }
-  .group-pilihan {
-    display: flex;
-    margin-bottom: 20px;
-    .img-pilihan {
-      width: 31.6%;
-      margin-right: 11.84px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    .text-pilihan, .text-pilihan:visited, .text-pilihan:link {
-      width: 69.3%;
-      font-family: PlusJakartaSans-Bold;
-      font-size: 14px;
-      line-height: 22.4px;
-      color: #212121;
-      text-decoration: none;
-    }
-  }
-}
-
 #red-sign,
 #red-sign:visited,
 #red-sign:link {

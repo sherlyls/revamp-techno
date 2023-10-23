@@ -1,87 +1,85 @@
-.ads1, .ads2, .ads3, .ads4, .ads5 {
-    background-color: pink;
+.ads1,
+.ads2,
+.ads3,
+.ads4,
+.ads5,
+.ads-footer,
+.ads-left,
+.ads-right {
+  background-color: pink;
+  .title-ads {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 22.4px;
+    font-family: Roboto-Regular;
+  }
 }
-
 .ads1 {
-    width: 728px;
-    margin: 0px auto 0;
-
-    .title-ads {
-        text-align: center;
-        color: #AAAAAA;
-        font-size: 14px;
-        line-height: 100px;
-        font-family: Roboto-Regular;
-    }
-    .content-ads {
-        height: 90px;
-    }
+  width: 728px;
+  margin: 0px auto 0;
+  .content-ads {
+    height: 90px;
+  }
 }
-
 .ads2 {
-    width: 970px;
-    margin: 30px auto 0;
-
-    .title-ads {
-        text-align: center;
-        color: #AAAAAA;
-        font-size: 14px;
-        line-height: 22.4px;
-        font-family: Roboto-Regular;
-    }
-
-    .content-ads {
-        height: 244px;
-    }
+  width: 970px;
+  margin: 30px auto 0;
+  .content-ads {
+    height: 244px;
+  }
 }
-
 .ads3 {
-    width: 728px;
-    margin: 0 auto;
-
-    .title-ads {
-        text-align: center;
-        color: #AAAAAA;
-        font-size: 14px;
-        line-height: 22.4px;
-        font-family: Roboto-Regular;
-    }
-
-    .content-ads {
-        height: 90px;
-    }
+  width: 728px;
+  margin: 0 auto;
+  .content-ads {
+    height: 90px;
+  }
 }
-
 .ads4 {
-    width: 300px;
-    margin: 0 auto;
-
-    .title-ads {
-        text-align: center;
-        color: #AAAAAA;
-        font-size: 14px;
-        line-height: 22.4px;
-        font-family: Roboto-Regular;
-    }
-
-    .content-ads {
-        height: 250px;
-    }
+  width: 300px;
+  margin: 0 auto;
+  .content-ads {
+    height: 250px;
+  }
+}
+.ads5 {
+  width: 300px;
+  margin: 20px auto 0;
+  .content-ads {
+    height: 600px;
+  }
+}
+.ads-footer {
+  width: 1040px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  .content-ads {
+    height: 50px;
+  }
 }
 
-.ads5 {
-    width: 300px;
-    margin: 20px auto 0;
-
-    .title-ads {
-        text-align: center;
-        color: #AAAAAA;
-        font-size: 14px;
-        line-height: 22.4px;
-        font-family: Roboto-Regular;
-    }
-
-    .content-ads {
-        height: 600px;
-    }
+.ads-left {
+  width: 119px;
+  position: absolute;
+  left: 0;
+  top: 190px;
+  .content-ads {
+    height: 598px;
+    
+  }
+}
+.ads-right {
+  width: 119px;
+  position: absolute;
+  right: 0;
+  top: 190px;
+  .content-ads {
+    height: 598px;
+  }
 }
