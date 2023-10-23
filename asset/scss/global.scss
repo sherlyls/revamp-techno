@@ -54,35 +54,35 @@ input:focus {
     &:nth-child(2) {
       .box-img {
         &::after {
-          background-position: -15px -677px;
+          background-position: -4px -882px;
         }
       }
     }
     &:nth-child(3) {
       .box-img {
         &::after {
-          background-position: -15px -677px;
+          background-position: -43px -885px
         }
       }
     }
     &:nth-child(4) {
       .box-img {
         &::after {
-          background-position: -15px -677px;
+          background-position: -89px -886px;
         }
       }
     }
     &:nth-child(5) {
       .box-img {
         &::after {
-          background-position: -15px -677px;
+          background-position: -4px -882px;
         }
       }
     }
     &:nth-child(6) {
       .box-img {
         &::after {
-          background-position: -15px -677px;
+          background-position: -4px -882px;
         }
       }
     }
@@ -91,13 +91,13 @@ input:focus {
       height: 64px;
       &::after {
         background-image: url(../img/sprite.png);
-        background-size: auto;
+        background-size: 655px;
         content: "";
-        width: 29px;
-        height: 71px;
+        width: 40px;
+        height: 59px;
         position: absolute;
-        left: 4px;
-        bottom: 4px;
+        left: 0px;
+        bottom: 0px;
       }
       img {
         width: 100%;
