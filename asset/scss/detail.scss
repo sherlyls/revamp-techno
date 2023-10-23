@@ -206,6 +206,18 @@
       }
     }
   }
+  .telusuri {
+    .icon1 {
+      background-image: url(../img/sprite.png);
+      width: 24px;
+      height: 24px;
+      background-position: -120px -3px;
+      background-repeat: no-repeat;
+      margin-left: 16px;
+      background-size: 655px;
+      background-color: white;
+    }
+  }
   #paging {
     border-radius: 5px;
     background-color: #f4f4f4;

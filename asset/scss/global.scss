@@ -38,6 +38,7 @@ input:focus {
 }
 
 #widget-populer {
+  margin-top: 20px;
   .title {
     margin-bottom: 16px;
     font-size: 16px;
@@ -54,35 +55,35 @@ input:focus {
     &:nth-child(2) {
       .box-img {
         &::after {
-          background-position: -4px -882px;
+          background-position: -4px -874px;
         }
       }
     }
     &:nth-child(3) {
       .box-img {
         &::after {
-          background-position: -43px -885px
+          background-position: -43px -873px
         }
       }
     }
     &:nth-child(4) {
       .box-img {
         &::after {
-          background-position: -89px -886px;
+          background-position: -89px -875px;
         }
       }
     }
     &:nth-child(5) {
       .box-img {
         &::after {
-          background-position: -4px -882px;
+          background-position: -140px -875px;
         }
       }
     }
     &:nth-child(6) {
       .box-img {
         &::after {
-          background-position: -4px -882px;
+          background-position: -192px -874px;
         }
       }
     }
@@ -93,8 +94,8 @@ input:focus {
         background-image: url(../img/sprite.png);
         background-size: 655px;
         content: "";
-        width: 40px;
-        height: 59px;
+        width: 35px;
+        height: 71px;
         position: absolute;
         left: 0px;
         bottom: 0px;
@@ -111,13 +112,19 @@ input:focus {
       a {
         display: block;
       }
-      .title {
+      .title, .title:visited, .title:link {
         font-size: 14px;
-        font-style: normal;
-        font-family: "PlusJakartaSans700";
-        line-height: 160%;
+        font-family: PlusJakartaSans-Bold;
+        line-height: 22.4px;
         letter-spacing: .2px;
         margin-bottom: 4px;
+        text-decoration: none;
+        color: #212121;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
       }
     }
   }
