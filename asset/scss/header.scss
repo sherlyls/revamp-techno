@@ -21,17 +21,23 @@ header {
     width: 154px;
     height: 29px;
     display: block;
-    background-position: 0px -451px;
+    background-position: 0px -458px;
     background-repeat: no-repeat;
     background-size: 655px;
   }
 
   .menu {
     padding: 0 77.5px;
-
     a {
       margin-right: 32px;
+      &.active {
+        background-color: #5B5B5B;
+        color: #fff;
+        padding: 8px 24px;
+        border-radius: 32px;
+      }
     }
+    color: #fff;
   }
 
   .other {

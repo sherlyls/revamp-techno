@@ -25,6 +25,40 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+@font-face {
+    font-family: "Roboto400";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.eot");
+    src: local("Roboto"), local("Roboto-Regular"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.woff2") format("woff2"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.woff") format("woff"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.ttf") format("truetype"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.svg#Roboto") format("svg");
+}
+
+@font-face {
+    font-family: "Roboto500";
+    font-style: normal;
+    font-weight: 500;
+    src: url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-500.eot");
+    src: local("Roboto Medium"), local("Roboto-Medium"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-500.eot?#iefix") format("embedded-opentype"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-500.woff2") format("woff2"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-500.woff") format("woff"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-500.ttf") format("truetype"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-500.svg#Roboto") format("svg");
+}
+
+@font-face {
+    font-family: "Roboto700";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.eot");
+    src: local("Roboto Bold"), local("Roboto-Bold"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.eot?#iefix") format("embedded-opentype"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.woff2") format("woff2"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.woff") format("woff"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.ttf") format("truetype"), url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.svg#Roboto") format("svg");
+}
+
+@font-face {
+    font-family: "robotomedium";
+    src: url("https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff2") format("woff2"), url("https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+
 input:focus {
   outline: none;
 }
@@ -39,6 +73,7 @@ input:focus {
 
 #widget-populer {
   margin-top: 20px;
+  position: relative;
   .title {
     margin-bottom: 16px;
     font-size: 16px;

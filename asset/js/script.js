@@ -10,7 +10,6 @@ $(document).ready(function () {
   });
 });
 
-
 $(window).scroll(function () {
 
   if ($(this).scrollTop() > 10) {
@@ -20,3 +19,5 @@ $(window).scroll(function () {
     $('header').removeClass("sticky");
   }
 });
+
+function toggle_visibility(e) { var l = document.getElementById(e); "none" == l.style.display ? l.style.display = "block" : l.style.display = "none" } document.querySelector(".rec-x").onclick = function () { document.querySelector("#show-hover").style.display = "none" };

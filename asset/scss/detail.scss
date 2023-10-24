@@ -206,17 +206,63 @@
       }
     }
   }
-  .telusuri {
+  .telusuri, .telusuri:visited, .telusuri:link {
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0;
+    text-decoration: none;
+    background-color: #EAF1FF;
+    align-items: center;
+    border-radius: 10px;
+    padding: 12px;
     .icon1 {
+      background-image: url(../img/sprite.png);
+      width: 42px;
+      height: 42px;
+      background-position: -11px -268px;
+      background-repeat: no-repeat;
+      background-size: 655px;
+    }
+    .text {
+      font-family: PlusJakartaSans-Bold;
+      font-size: 20px;
+      line-height: 25.2px;
+      color: #1D4595;
+    }
+    .icon2 {
+      background-image: url(../img/sprite.png);
+      width: 20px;
+      height: 20px;
+      background-position: -282px -6px;
+      background-repeat: no-repeat;
+      background-size: 655px;
+    }
+  }
+  .follow-okz {
+    margin: 0 auto;
+    background-color: #F4F4F4;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    width: 303px;
+    .text {
+      font-family: PlusJakartaSans-Regular;
+      font-size: 16px;
+      line-height: 25.6px;
+      margin-right: 10px;
+    }
+    .icon {
       background-image: url(../img/sprite.png);
       width: 24px;
       height: 24px;
-      background-position: -120px -3px;
+      background-position: -79px -413px;
       background-repeat: no-repeat;
-      margin-left: 16px;
       background-size: 655px;
-      background-color: white;
     }
+
   }
   #paging {
     border-radius: 5px;
@@ -301,4 +347,155 @@
     }
   }
 }
+
+.container-recommendation {
+  background-image: url("https://cdnapps.okezone.com/underwood/revamp/2023/remake/mobile/img/bg-for-you.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: max-content;
+  padding-bottom: 20px;
+}
+
+.container-recommendation .content-recommendation a {
+  text-decoration: none;
+}
+
+.container-recommendation .group-text {
+  display: flex;
+  padding: 16px 0;
+  gap: 10px;
+  position: relative;
+}
+
+.container-recommendation .point-white {
+  background-color: white;
+  border-radius: 100%;
+  font-size: 14px;
+  line-height: 16.94px;
+  font-family: 'Inter', sans-serif;
+  ;
+  font-weight: 700;
+  padding: 2px 8px;
+  margin-bottom: auto;
+  margin-top: 4px;
+}
+
+.container-recommendation .text-for {
+  font-family: "Roboto700";
+  color: white;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+
+.container-recommendation .group-rec-ai {
+  display: flex;
+  gap: 12px;
+  height: 96px;
+  background-color: white;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  padding-left: 4px;
+}
+
+.container-recommendation .group-rec-ai .img-rec-ai {
+  width: 88px;
+  height: 88px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container-recommendation .group-rec-ai img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-recommendation .text-rec-ai {
+  width: 70%;
+  margin-top: 5px;
+  font-family: "Roboto700";
+  padding-right: 12px;
+  font-size: 16px;
+}
+
+.container-recommendation .text-rec-ai,
+.container-recommendation .text-rec-ai:visited,
+.container-recommendation .text-rec-ai:link {
+  color: #000;
+  line-height: 20.8px;
+}
+
+.container-recommendation .text-rec-ai {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 85px;
+}
+
+
+.container-recommendation .rec-more {
+  width: 100%;
+  background-color: #003640;
+  color: white;
+  padding: 8px 0;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Roboto500";
+  font-size: 16px;
+  line-height: 18.75px;
+  display: block;
+}
+
+.container-recommendation .rec-more:visited,
+.container-recommendation .rec-more:link {
+  color: white;
+}
+
+.container-recommendation #show-hover {
+  background-color: white;
+  width: 210px;
+  font-family: "Roboto400";
+  font-size: 14px;
+  line-height: 18.2px;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 124px;
+}
+
+#show-hover .text-hover {
+  font-family: "robotomedium";
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+#show-hover .group-hover {
+  position: relative;
+  display: flex;
+  padding-top: 8px;
+  padding-left: 12px;
+  justify-content: space-between;
+  padding-right: 12px;
+}
+
+#show-hover img {
+  position: absolute;
+  top: 10px;
+  left: -9px;
+}
+
+#show-hover .rec-x {
+  background-image: url("https://cdn.okezone.com/underwood/revamp/2023/remake/mobile/img/x.png");
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 3px;
+}
+
 

@@ -3,6 +3,8 @@
 .ads3,
 .ads4,
 .ads5,
+.ads6,
+.ads7,
 .ads-footer,
 .ads-left,
 .ads-right {
@@ -50,6 +52,20 @@
     height: 600px;
   }
 }
+.ads6 {
+  width: 300px;
+  margin: 20px auto 0;
+  .content-ads {
+    height: 250px;
+  }
+}
+.ads7 {
+  width: 480px;
+  margin: 16px auto;
+  .content-ads {
+    height: 270px;
+  }
+}
 .ads-footer {
   width: 1040px;
   margin: 0 auto;
@@ -63,7 +79,6 @@
     height: 50px;
   }
 }
-
 .ads-left {
   width: 119px;
   position: absolute;
