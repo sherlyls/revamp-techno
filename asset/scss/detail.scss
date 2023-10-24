@@ -103,6 +103,9 @@
       align-items: baseline;
       .font {
         cursor: pointer;
+        &.active {
+          font-family: PlusJakartaSans-Bold;
+        }
         &.sm {
           font-size: 14px;
           line-height: 22.4px;

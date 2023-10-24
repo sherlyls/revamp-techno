@@ -14,6 +14,7 @@ header {
   &.sticky {
     position: fixed;
     top: 0;
+    z-index: 99;
   }
 
   .logo-techno {
@@ -31,7 +32,7 @@ header {
     a {
       margin-right: 32px;
       &.active {
-        background-color: #5B5B5B;
+        background-color: #5b5b5b;
         color: #fff;
         padding: 8px 24px;
         border-radius: 32px;
@@ -85,7 +86,6 @@ header {
           transform: rotate3d(0, 0, 1, 0deg);
         }
         form {
-
           input {
             width: 943px;
             height: 40px;
@@ -126,124 +126,137 @@ header {
         background-repeat: no-repeat;
         background-size: 655px;
       }
-
-      .content-burger {
-        display: none;
-        position: absolute;
-        width: 373px;
-        top: 72px;
-        right: 13px;
-        background-color: white;
-        padding-left: 23px;
-        border-radius: 10px;
-        border: 1px solid #eaeaea;
-        box-shadow: 0px 10px 30px 0px rgba(130, 130, 130, 0.25);
-        padding-top: 24px;
-
-        .title-content {
-          font-family: PlusJakartaSans-Bold;
-          font-size: 16px;
-          color: #212122;
-          padding-top: 24px;
-          padding-bottom: 19px;
+      .bg-burger {
+        transform: rotate3d(0, 1, 0, 90deg);
+        transform-origin: left center;
+        transition: 0.5s;
+        background: rgba(33, 33, 33, 0.30);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        &.open {
+          transform: rotate3d(0, 0, 1, 0deg);
         }
+        .content-burger {
+          position: absolute;
+          width: 373px;
+          top: 72px;
+          right: 13px;
+          background-color: white;
+          padding-left: 23px;
+          border-radius: 10px;
+          border: 1px solid #eaeaea;
+          box-shadow: 0px 10px 30px 0px rgba(130, 130, 130, 0.25);
+          padding-top: 24px;
+          z-index: 9;
+          .title-content {
+            font-family: PlusJakartaSans-Bold;
+            font-size: 16px;
+            color: #212122;
+            padding-top: 24px;
+            padding-bottom: 19px;
+          }
 
-        .content-group {
-          display: flex;
-          flex-wrap: wrap;
-
-          .list-group {
+          .content-group {
             display: flex;
-            align-items: center;
-            width: 48%;
-            padding-bottom: 16px;
+            flex-wrap: wrap;
 
-            .icon {
-              width: 28px;
-              height: 28px;
-              background-image: url(../img/sprite.png);
-              background-repeat: no-repeat;
-              margin-right: 16px;
-              background-size: 655px;
+            .list-group {
+              display: flex;
+              align-items: center;
+              width: 48%;
+              padding-bottom: 16px;
 
-              &.okezonetv {
-                background-position: -1px -137px;
-              }
-              &.tren {
-                background-position: -98px -137px;
-              }
-              &.okezoneradio {
-                background-position: -51px -137px;
-              }
-              &.viral {
-                background-position: -146px -137px;
-              }
-              &.beranda {
-                background-position: -1px -45px;
-              }
-              &.news {
-                background-position: -242px -136px;
-              }
-              &.finance {
-                background-position: -48px -45px;
-              }
-              &.lifestyle {
-                background-position: -291px -136px;
-              }
-              &.celebrity {
-                background-position: -96px -45px;
-              }
-              &.bola {
-                background-position: -339px -136px;
-              }
-              &.sport {
-                background-position: -145px -45px;
-              }
-              &.travel {
-                background-position: -387px -136px;
-              }
-              &.muslim {
-                background-position: -194px -45px;
-              }
-              &.edukasi {
-                background-position: -432px -136px;
-              }
-              &.haji {
-                background-position: -242px -45px;
-              }
-              &.health {
-                background-position: -484px -136px;
-              }
-              &.techno {
-                background-position: -290px -45px;
-              }
-              &.otomatif {
-                background-position: -532px -136px;
-              }
-              &.highend {
-                background-position: -338px -45px;
-              }
-              &.infografis {
-                background-position: -578px -136px;
-              }
-              &.foto {
-                background-position: -386px -45px;
-              }
-              &.video {
-                background-position: -626px -136px;
-              }
-              &.indeks {
-                background-position: -432px -45px;
-              }
-            }
+              .icon {
+                width: 28px;
+                height: 28px;
+                background-image: url(../img/sprite.png);
+                background-repeat: no-repeat;
+                margin-right: 16px;
+                background-size: 655px;
 
-            .text {
-              font-family: PlusJakartaSans-Regular;
-              font-size: 16px;
-              color: #212121;
+                &.okezonetv {
+                  background-position: -1px -137px;
+                }
+                &.tren {
+                  background-position: -98px -137px;
+                }
+                &.okezoneradio {
+                  background-position: -51px -137px;
+                }
+                &.viral {
+                  background-position: -146px -137px;
+                }
+                &.beranda {
+                  background-position: -1px -45px;
+                }
+                &.news {
+                  background-position: -242px -136px;
+                }
+                &.finance {
+                  background-position: -48px -45px;
+                }
+                &.lifestyle {
+                  background-position: -291px -136px;
+                }
+                &.celebrity {
+                  background-position: -96px -45px;
+                }
+                &.bola {
+                  background-position: -339px -136px;
+                }
+                &.sport {
+                  background-position: -145px -45px;
+                }
+                &.travel {
+                  background-position: -387px -136px;
+                }
+                &.muslim {
+                  background-position: -194px -45px;
+                }
+                &.edukasi {
+                  background-position: -432px -136px;
+                }
+                &.haji {
+                  background-position: -242px -45px;
+                }
+                &.health {
+                  background-position: -484px -136px;
+                }
+                &.techno {
+                  background-position: -290px -45px;
+                }
+                &.otomatif {
+                  background-position: -532px -136px;
+                }
+                &.highend {
+                  background-position: -338px -45px;
+                }
+                &.infografis {
+                  background-position: -578px -136px;
+                }
+                &.foto {
+                  background-position: -386px -45px;
+                }
+                &.video {
+                  background-position: -626px -136px;
+                }
+                &.indeks {
+                  background-position: -432px -45px;
+                }
+              }
+
+              .text {
+                font-family: PlusJakartaSans-Regular;
+                font-size: 16px;
+                color: #212121;
+              }
             }
           }
         }
+        
       }
     }
   }
