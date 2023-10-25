@@ -8,6 +8,7 @@
 .ads-footer,
 .ads-left,
 .ads-right {
+  // background-color: #f8f8f8;
   background-color: pink;
   .title-ads {
     text-align: center;
@@ -25,14 +26,12 @@
   }
 }
 .ads2 {
-  width: 970px;
   margin: 30px auto 0;
   .content-ads {
     height: 244px;
   }
 }
 .ads3 {
-  width: 728px;
   margin: 0 auto;
   .content-ads {
     height: 90px;
@@ -86,7 +85,6 @@
   top: 190px;
   .content-ads {
     height: 598px;
-    
   }
 }
 .ads-right {
