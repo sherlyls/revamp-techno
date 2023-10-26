@@ -16,12 +16,13 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-
   if ($(this).scrollTop() > 10) {
     $('header').addClass("sticky");
+    $('.content-burger').addClass("height");
   }
   else {
     $('header').removeClass("sticky");
+    $('.content-burger').removeClass("height");
   }
 });
 

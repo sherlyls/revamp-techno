@@ -240,10 +240,7 @@ input:focus {
   .ads2 {
     width: 589px;
   }
- 
 }
-
-
 
 @media only screen and (min-width: 768px) {
   header {
@@ -252,7 +249,7 @@ input:focus {
       a {
         margin-right: 4px;
       }
-    }    
+    }
   }
   .wrapper-container {
     .left-section {
@@ -288,125 +285,148 @@ input:focus {
       }
     }
   }
-  .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text {
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .desc-text {
     font-size: 16px;
     line-height: 18px;
   }
-}
-
-@media only screen and (min-width: 820px) {
-  header {
-    .menu {
-      padding: 0 24px;
-      a {
-        margin-right: 11px;
-      }
-    }    
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .img-section {
+    height: 161px;
   }
-  footer {
-    .footer {
-      .box-flex-footer {
-        .box-footer {
-          margin: 0 5px 24px;
+
+  @media only screen and (min-width: 820px) {
+    header {
+      .menu {
+        padding: 0 24px;
+        a {
+          margin-right: 11px;
         }
       }
     }
-  }
-}
-
-@media only screen and (min-width: 999px) {
-  header {
-    .menu {
-      padding: 0 40px;
-    }
-  }
-  .other {
-    .search {
-      form {
-        input {
-          width: 613px;
-        }
-      }
-    }
-  }
-  .wrapper-container {
-    .left-section {
-      .headline {
-        .big-section {
-          display: flex;
-          .desc-section {
-            width: 50%;
+    footer {
+      .footer {
+        .box-flex-footer {
+          .box-footer {
+            margin: 0 5px 24px;
           }
         }
-        .small-section {
-          .group-section {
-            .img-section {
-              height: 178px;
-            }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 999px) {
+    header {
+      .menu {
+        padding: 0 40px;
+      }
+    }
+    .other {
+      .search {
+        form {
+          input {
+            width: 613px;
+          }
+        }
+      }
+    }
+    .wrapper-container {
+      .left-section {
+        .headline {
+          .big-section {
+            display: flex;
             .desc-section {
-              .desc-text {
-                font-size: 16px;
-                line-height: 25.6px;
+              width: 50%;
+            }
+          }
+          .small-section {
+            .group-section {
+              .img-section {
+                height: 178px;
+              }
+              .desc-section {
+                .desc-text {
+                  font-size: 16px;
+                  line-height: 25.6px;
+                }
               }
             }
           }
         }
       }
     }
-  }
-  .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  footer {
-    .footer {
-      .box-flex-footer {
-        .box-footer {
-          margin: 0 44px 24px;
+    .wrapper-container
+      .left-section
+      .brt-terkini
+      .group-brt-terkini
+      .desc-section
+      .desc-text {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    footer {
+      .footer {
+        .box-flex-footer {
+          .box-footer {
+            margin: 0 44px 24px;
+          }
         }
       }
     }
-  }
+    .wrapper-container 
+      .left-section
+      .brt-terkini
+      .group-brt-terkini
+      .img-section {
+      height: 201px;
+    }
 
-}
-
-@media only screen and (min-width: 1280px) {
-  .wrapper-container {
-    width: 1015px;
-  }
-  .ads2 {
-    width: 970px;
-  }
-  .ads3 {
-    width: 590px;
-  }
-}
-
-@media only screen and (min-width: 1350px) {
-  .wrapper-container {
-    width: 1095px;
-  }
-  .ads3 {
-    width: 728px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .wrapper-container {
-    width: 1160px;
-  }
-  .other {
-    .search {
-      form {
-        input {
-          width: 613px;
-        }
+    @media only screen and (min-width: 1280px) {
+      .wrapper-container {
+        width: 1015px;
+      }
+      .ads2 {
+        width: 970px;
+      }
+      .ads3 {
+        width: 590px;
       }
     }
-  }
-  .menu {
-    a {
-      margin-right: 32px;
+
+    @media only screen and (min-width: 1350px) {
+      .wrapper-container {
+        width: 1095px;
+      }
+      .ads3 {
+        width: 728px;
+      }
+    }
+
+    @media only screen and (min-width: 1440px) {
+      .wrapper-container {
+        width: 1160px;
+      }
+      .other {
+        .search {
+          form {
+            input {
+              width: 613px;
+            }
+          }
+        }
+      }
+      .menu {
+        a {
+          margin-right: 32px;
+        }
+      }
     }
   }
 }
