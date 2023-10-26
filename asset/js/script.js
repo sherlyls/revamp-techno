@@ -13,6 +13,16 @@ $(document).ready(function () {
   $('.box-search .close').on('click', function () {
     $('.box-search').removeClass('open');
   });
+  $(".font-1").click(function () {
+    $(".wrapper-container .article p").css("fontSize", "14px",);
+  }),
+    $(".font-2").click(function () {
+      $(".wrapper-container .article p").css("fontSize", "16px");
+    }),
+    $(".font-3").click(function () {
+      $(".wrapper-container .article p").css("fontSize", "20px");
+      $(".wrapper-container .article p").css("lineHeight", "30px");
+    })
 });
 
 $(window).scroll(function () {
@@ -28,12 +38,10 @@ $(window).scroll(function () {
 
 function toggle_visibility(e) { var l = document.getElementById(e); "none" == l.style.display ? l.style.display = "block" : l.style.display = "none" } document.querySelector(".rec-x").onclick = function () { document.querySelector("#show-hover").style.display = "none" };
 
-if ($("#size-font").length) {
-  for (var e, t = document.getElementById("size-font").getElementsByClassName("font"), i = 0; i < t.length; i++)
-      t[i].addEventListener("click", function () {
-          var e = document.getElementsByClassName("active");
-          (e[0].className = e[0].className.replace("active", "")), (this.className += " active");
-      }),
-          (document.getElementById("size-font").style.display = "flex");
-  document.getElementById("size-font").style.display = "flex";
+if ($("#pick-font").length) {
+  for (var e, t = document.getElementById("pick-font").getElementsByClassName("a-sticky"), i = 0; i < t.length; i++) t[i].addEventListener("click", function () {
+    var e = document.getElementsByClassName("active-sticky-detail");
+    e[0].className = e[0].className.replace(" active-sticky-detail", ""), this.className += " active-sticky-detail"
+  }), document.getElementById("pick-font").style.display = "flex";
+  document.getElementById("pick-font").style.display = "flex"
 }

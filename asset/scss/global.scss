@@ -301,6 +301,102 @@ input:focus {
     .img-section {
     height: 161px;
   }
+  .okztv {
+    background-color: #1c1a27;
+    padding: 25.8px 12px 20px;
+    margin-bottom: 20px;
+    .head-okztv {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      .logo-okztv {
+        background-image: url(../img/sprite.png);
+        width: 121px;
+        height: 32px;
+        background-position: -168px -451px;
+        background-repeat: no-repeat;
+        background-size: 655px;
+      }
+      .text-okztv,
+      .text-okztv:visited,
+      .text-okztv:link {
+        font-family: PlusJakartaSans-Bold;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1c1a27;
+        background-color: #fff;
+        text-decoration: none;
+        padding: 8px 27px;
+        border-radius: 8px;
+      }
+    }
+    .content-okztv {
+      .big-content {
+        margin-bottom: 20px;
+        display: block;
+        .group-content {
+          width: 100%;
+          .img-content {
+            width: 100%;
+            height: 128px;
+            display: block;
+            cursor: pointer;
+            margin-bottom: 16px;
+            margin-right: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .title-content,
+          .title-content:visited,
+          .title-content:link {
+            color: white;
+            font-family: PlusJakartaSans-Bold;
+            font-size: 16px;
+            line-height: 25.6px;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .small-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -20px;
+        .group-content {
+          padding-bottom: 20.19px;
+          width: 50%;
+          .img-content {
+            height: 85.813px;
+            padding-right: 20px;
+            cursor: pointer;
+            display: block;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .title-content,
+          .title-content:visited,
+          .title-content:link {
+            font-family: PlusJakartaSans-Bold;
+            font-size: 14px;
+            line-height: 160%;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
 
   @media only screen and (min-width: 820px) {
     header {
@@ -386,6 +482,104 @@ input:focus {
       .group-brt-terkini
       .img-section {
       height: 201px;
+    }
+    .okztv {
+      background-color: #1c1a27;
+      padding: 25.8px 12px 20px;
+      margin-bottom: 20px;
+      .head-okztv {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .logo-okztv {
+          background-image: url(../img/sprite.png);
+          width: 121px;
+          height: 32px;
+          background-position: -168px -451px;
+          background-repeat: no-repeat;
+          background-size: 655px;
+        }
+        .text-okztv,
+        .text-okztv:visited,
+        .text-okztv:link {
+          font-family: PlusJakartaSans-Bold;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1c1a27;
+          background-color: #fff;
+          text-decoration: none;
+          padding: 8px 27px;
+          border-radius: 8px;
+        }
+      }
+      .content-okztv {
+        display: flex;
+        .big-content {
+          padding-right: 20px;
+          width: 56.2%;
+          margin-bottom: 0;
+          .group-content {
+            .img-content {
+              width: 100%;
+              height: 265px;
+              display: block;
+              cursor: pointer;
+              margin-bottom: 16px;
+              margin-right: 0;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .title-content,
+            .title-content:visited,
+            .title-content:link {
+              color: white;
+              font-family: PlusJakartaSans-Bold;
+              font-size: 16px;
+              line-height: 25.6px;
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .small-content {
+          width: 43.8%;
+          display: block;
+          margin-right: 0;
+          .group-content {
+            display: flex;
+            padding-bottom: 20.19px;
+            width: 100%;
+            .img-content {
+              width: 36.2%;
+              height: 85px;
+              padding-right: 20px;
+              cursor: pointer;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .title-content,
+            .title-content:visited,
+            .title-content:link {
+              font-family: PlusJakartaSans-Bold;
+              font-size: 14px;
+              line-height: 160%;
+              color: white;
+              width: 63.8%;
+              cursor: pointer;
+              text-decoration: none;
+              padding-right: 0;
+            }
+          }
+        }
+      }
     }
 
     @media only screen and (min-width: 1280px) {
