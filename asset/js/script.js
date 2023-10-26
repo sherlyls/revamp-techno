@@ -36,7 +36,9 @@ $(window).scroll(function () {
   }
 });
 
-function toggle_visibility(e) { var l = document.getElementById(e); "none" == l.style.display ? l.style.display = "block" : l.style.display = "none" } document.querySelector(".rec-x").onclick = function () { document.querySelector("#show-hover").style.display = "none" };
+window.onload = function(){ 
+  // your code 
+};
 
 if ($("#pick-font").length) {
   for (var e, t = document.getElementById("pick-font").getElementsByClassName("a-sticky"), i = 0; i < t.length; i++) t[i].addEventListener("click", function () {

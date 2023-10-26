@@ -5,10 +5,10 @@
 }
 
 @font-face {
-  font-family: PlusJakartaSans-Bold;
-  src: url(../font/PlusJakartaSans-Bold.woff2) format("woff2");
-  font-weight: 400;
+  font-family: "PlusJakartaSansBold";
   font-style: normal;
+  font-weight: 700;
+  src: local("PlusJakartaSans Bold"), local("PlusJakartaSans-Bold"), url("../font/PlusJakartaSans-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -98,7 +98,7 @@ input:focus {
     margin-bottom: 16px;
     font-size: 16px;
     font-style: normal;
-    font-family: PlusJakartaSans-Bold;
+    font-family: "PlusJakartaSansBold";
     line-height: 140%;
   }
   .list-news {
@@ -171,7 +171,7 @@ input:focus {
       .title:visited,
       .title:link {
         font-size: 14px;
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         line-height: 22.4px;
         letter-spacing: 0.2px;
         margin-bottom: 4px;
@@ -190,7 +190,7 @@ input:focus {
 #widget-pilihan {
   .title {
     margin: 20px 0 16px;
-    font-family: PlusJakartaSans-Bold;
+    font-family: "PlusJakartaSansBold";
     font-size: 20px;
     line-height: 28px;
     color: #000000;
@@ -211,7 +211,7 @@ input:focus {
     .text-pilihan:visited,
     .text-pilihan:link {
       width: 69.3%;
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
       font-size: 14px;
       line-height: 22.4px;
       color: #212121;
@@ -308,7 +308,7 @@ input:focus {
       .text-okztv,
       .text-okztv:visited,
       .text-okztv:link {
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         font-size: 14px;
         line-height: 21px;
         color: #1c1a27;
@@ -341,7 +341,7 @@ input:focus {
           .title-content:visited,
           .title-content:link {
             color: white;
-            font-family: PlusJakartaSans-Bold;
+            font-family: "PlusJakartaSansBold";
             font-size: 16px;
             line-height: 25.6px;
             text-decoration: none;
@@ -372,7 +372,7 @@ input:focus {
           .title-content,
           .title-content:visited,
           .title-content:link {
-            font-family: PlusJakartaSans-Bold;
+            font-family: "PlusJakartaSansBold";
             font-size: 14px;
             line-height: 160%;
             color: white;
@@ -490,7 +490,7 @@ input:focus {
         .text-okztv,
         .text-okztv:visited,
         .text-okztv:link {
-          font-family: PlusJakartaSans-Bold;
+          font-family: "PlusJakartaSansBold";
           font-size: 14px;
           line-height: 21px;
           color: #1c1a27;
@@ -524,7 +524,7 @@ input:focus {
             .title-content:visited,
             .title-content:link {
               color: white;
-              font-family: PlusJakartaSans-Bold;
+              font-family: "PlusJakartaSansBold";
               font-size: 16px;
               line-height: 25.6px;
               text-decoration: none;
@@ -556,7 +556,7 @@ input:focus {
             .title-content,
             .title-content:visited,
             .title-content:link {
-              font-family: PlusJakartaSans-Bold;
+              font-family: "PlusJakartaSansBold";
               font-size: 14px;
               line-height: 160%;
               color: white;

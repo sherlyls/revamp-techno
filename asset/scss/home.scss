@@ -8,7 +8,7 @@
 
     .headline {
       .title-container {
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         font-size: 20px;
         line-height: 32px;
         color: #212121;
@@ -30,7 +30,7 @@
         }
 
         .desc-section {
-          font-family: PlusJakartaSans-Bold;
+          font-family: "PlusJakartaSansBold";
           a {
             text-decoration: none;
             display: block;
@@ -79,7 +79,7 @@
             }
           }
           .desc-section {
-            font-family: PlusJakartaSans-Bold;
+            font-family: "PlusJakartaSansBold";
 
             a {
               display: block;
@@ -99,7 +99,7 @@
               font-size: 14px;
               line-height: 22.4px;
               margin-top: 12px;
-              font-family: PlusJakartaSans-Bold;
+              font-family: "PlusJakartaSansBold";
             }
 
             .desc-text {
@@ -123,7 +123,7 @@
 
     .brt-terkini {
       .title-brt-terkini {
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         margin: 20px 0;
         font-size: 20px;
         line-height: 32px;
@@ -160,7 +160,7 @@
         }
 
         .desc-section {
-          font-family: PlusJakartaSans-Bold;
+          font-family: "PlusJakartaSansBold";
           width: 61%;
           a {
             display: block;
@@ -194,7 +194,7 @@
   .more-news,
   .more-news:visited,
   .more-news:link {
-    font-family: PlusJakartaSans-Bold;
+    font-family: "PlusJakartaSansBold";
     font-size: 20px;
     line-height: 32px;
     color: #fff;
@@ -213,9 +213,9 @@
   width: 300px;
 }
 
-#red-sign,
-#red-sign:visited,
-#red-sign:link {
+.red-sign,
+.red-sign:visited,
+.red-sign:link {
   font-size: 14px;
   line-height: 22.4px;
   color: #ec2424;

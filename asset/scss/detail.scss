@@ -1,7 +1,7 @@
 .wrapper-container {
   .article {
     .title-article {
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
       color: #212121;
       font-size: 32px;
       line-height: 51.2px;
@@ -22,7 +22,7 @@
         }
       }
       .name-account {
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         font-size: 16px;
         line-height: 22.4px;
         color: #212121;
@@ -56,7 +56,7 @@
   #baca-juga,
   .brt-terkait {
     .text {
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
       font-size: 16px;
       line-height: 25.6px;
       &.baca {
@@ -105,7 +105,7 @@
       .a-sticky {
         cursor: pointer;
         &.active-sticky-detail {
-          font-family: PlusJakartaSans-Bold;
+          font-family: "PlusJakartaSansBold";
         }
         &.font-1 {
           font-size: 14px;
@@ -125,7 +125,7 @@
       display: flex;
       align-items: center;
       .group-comment {
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         display: flex;
         align-items: center;
         margin-right: 20px;
@@ -150,7 +150,7 @@
           font-size: 16px;
           line-height: 25.6px;
           margin-right: 12px;
-          font-family: PlusJakartaSans-Bold;
+          font-family: "PlusJakartaSansBold";
         }
         .img {
           background-image: url(../img/sprite.png);
@@ -181,7 +181,7 @@
   }
   .brt-terkait {
     .title {
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
       font-size: 20px;
       line-height: 32px;
       color: #1d4595;
@@ -228,7 +228,7 @@
       background-size: 655px;
     }
     .text {
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
       font-size: 20px;
       line-height: 25.2px;
       color: #1D4595;
@@ -277,7 +277,7 @@
     .title {
       font-size: 16px;
       line-height: 20.16px;
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
     }
     .box-nomor {
       display: flex;
@@ -293,7 +293,7 @@
         text-align: center;
         font-size: 16px;
         line-height: 20.16px;
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         margin-right: 2px;
         color: #000;
         text-decoration: none;
@@ -312,7 +312,7 @@
       padding: 8px 0px;
       color: #fff;
       font-size: 16px;
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
       line-height: 22.4px;
       text-decoration: none;
       width: 136px;
@@ -325,7 +325,7 @@
       font-size: 16px;
       line-height: 29px;
       margin: 16px 0;
-      font-family: PlusJakartaSans-Bold;
+      font-family: "PlusJakartaSansBold";
     }
     .box-tag {
       display: flex;
@@ -335,7 +335,7 @@
         display: block;
         color: #1d4595;
         text-align: center;
-        font-family: PlusJakartaSans-Bold;
+        font-family: "PlusJakartaSansBold";
         font-size: 14px;
         line-height: normal;
         padding: 12px 16px;
@@ -420,7 +420,7 @@
 .container-recommendation .text-rec-ai {
   width: 70%;
   margin-top: 5px;
-  font-family: PlusJakartaSans-Bold;
+  font-family: "PlusJakartaSansBold";
   padding-right: 12px;
   font-size: 14px;
 }
