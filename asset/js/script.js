@@ -36,10 +36,6 @@ $(window).scroll(function () {
   }
 });
 
-window.onload = function(){ 
-  // your code 
-};
-
 if ($("#pick-font").length) {
   for (var e, t = document.getElementById("pick-font").getElementsByClassName("a-sticky"), i = 0; i < t.length; i++) t[i].addEventListener("click", function () {
     var e = document.getElementsByClassName("active-sticky-detail");

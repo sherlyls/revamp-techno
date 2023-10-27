@@ -81,9 +81,8 @@ header {
         &.open {
           transform: rotate3d(0, 0, 1, 0deg);
         }
-        form {
+        div {
           input {
-        
             height: 40px;
             border-right-style: none;
             border-top-style: none;
@@ -272,10 +271,4 @@ header {
     }
   }
 }
-
-label[for="search"]
-{
-    display:none;
-}
-
 
