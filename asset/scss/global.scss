@@ -8,7 +8,8 @@
   font-family: "PlusJakartaSansBold";
   font-style: normal;
   font-weight: 700;
-  src: local("PlusJakartaSans Bold"), local("PlusJakartaSans-Bold"), url("../font/PlusJakartaSans-Bold.woff2") format("woff2");
+  src: local("PlusJakartaSans Bold"), local("PlusJakartaSans-Bold"),
+    url("../font/PlusJakartaSans-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -46,7 +47,7 @@
       format("truetype"),
     url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.svg#Roboto")
       format("svg");
-    font-display: swap;
+  font-display: swap;
 }
 
 @font-face {
@@ -65,7 +66,7 @@
       format("truetype"),
     url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.svg#Roboto")
       format("svg");
-    font-display: swap;
+  font-display: swap;
 }
 
 @font-face {
@@ -410,13 +411,16 @@ input:focus {
     header {
       .menu {
         padding: 0 40px;
+        a {
+          margin-right: 32px;
+        }
       }
     }
     .other {
       .search {
         div {
           input {
-            width: 613px;
+            width: 722px;
           }
         }
       }
@@ -464,7 +468,7 @@ input:focus {
         }
       }
     }
-    .wrapper-container 
+    .wrapper-container
       .left-section
       .brt-terkini
       .group-brt-terkini
@@ -504,7 +508,7 @@ input:focus {
         display: flex;
         .big-content {
           padding-right: 20px;
-          width: 56.2%;
+          width: 47%;
           margin-bottom: 0;
           .group-content {
             .img-content {
@@ -534,7 +538,7 @@ input:focus {
         }
 
         .small-content {
-          width: 43.8%;
+          width: 53%;
           display: block;
           margin-right: 0;
           .group-content {
@@ -542,8 +546,8 @@ input:focus {
             padding-bottom: 20.19px;
             width: 100%;
             .img-content {
-              width: 36.2%;
-              height: 85px;
+              width: 33%;
+              height: 65.61px;
               padding-right: 20px;
               cursor: pointer;
               img {
@@ -560,7 +564,7 @@ input:focus {
               font-size: 14px;
               line-height: 160%;
               color: white;
-              width: 63.8%;
+              width: 67%;
               cursor: pointer;
               text-decoration: none;
               padding-right: 0;
@@ -570,6 +574,8 @@ input:focus {
       }
     }
 
+    @media only screen and (min-width: 1040px) {
+    }
     @media only screen and (min-width: 1280px) {
       .wrapper-container {
         width: 1015px;
@@ -579,6 +585,11 @@ input:focus {
       }
       .ads3 {
         width: 590px;
+      }
+      header {
+        .menu {
+          padding: 0 95px;
+        }
       }
     }
 
@@ -594,20 +605,6 @@ input:focus {
     @media only screen and (min-width: 1440px) {
       .wrapper-container {
         width: 1160px;
-      }
-      .other {
-        .search {
-          div {
-            input {
-              width: 613px;
-            }
-          }
-        }
-      }
-      .menu {
-        a {
-          margin-right: 32px;
-        }
       }
     }
   }

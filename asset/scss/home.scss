@@ -18,8 +18,6 @@
       .big-section {
         margin-bottom: 30px;
         .img-section {
-          width: 50%;
-          height: 273px;
           padding-right: 20px;
           img {
             width: 100%;
@@ -40,6 +38,9 @@
               text-decoration: none;
               display: block;
             }
+            &:hover {
+              color: #457AE5
+            }
           }
 
           .title-text {
@@ -54,6 +55,9 @@
             color: #212121;
             font-size: 24px;
             line-height: 38.4px;
+            &:hover {
+              color: #457AE5
+            }
           }
 
           .time-text {
@@ -80,19 +84,15 @@
           }
           .desc-section {
             font-family: "PlusJakartaSansBold";
-
             a {
               display: block;
-
               &:visited {
                 text-decoration: none;
               }
-
               &:link {
                 text-decoration: none;
               }
             }
-
             .title-text {
               text-transform: uppercase;
               color: #949393;
@@ -105,9 +105,11 @@
             .desc-text {
               color: #212121;
               margin: 12px 0;
-
               &:visited {
                 color: #212121;
+              }
+              &:hover {
+                color: #457AE5;
               }
             }
 
@@ -140,11 +142,10 @@
           .img-section {
             float: right;
             width: 49%;
-            margin-right: -20px;
           }
           .desc-section {
             float: left;
-            width: 51%;
+            width: 46%;
           }
         }
 
@@ -175,6 +176,9 @@
           .desc-text,
           .desc-text:visited,
           .desc-text:link {
+            &:hover {
+              color: #457AE5;
+            }
             margin: 20px 0;
             text-decoration: none;
             color: #212121;

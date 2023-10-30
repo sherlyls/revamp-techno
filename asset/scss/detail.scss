@@ -1,4 +1,39 @@
 .wrapper-container {
+  .breadcrumb {
+    font-family: PlusJakartaSans-Regular;
+    margin: 20.5px 0;
+    a, a:visited, a:link {
+      text-decoration: none;
+      color: #5B5B5B;
+      margin-right: 40px;
+      text-transform: capitalize;
+      position: relative;
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+      &:last-child {
+        font-family: "PlusJakartaSansBold";
+        &::before {
+          background-position: -38px -413px
+        }
+      }
+      &::before {
+        background-image: url(../img/sprite.png);
+        background-size: 655px;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-position: -158px -2px;
+        top: -2px;
+        left: -34px;
+      }
+    }
+  }
   .article {
     .title-article {
       font-family: "PlusJakartaSansBold";
@@ -21,11 +56,12 @@
           height: 26.67px;
         }
       }
-      .name-account {
+      .name-account, .name-account:visited, .name-account:link {
         font-family: "PlusJakartaSansBold";
         font-size: 16px;
         line-height: 22.4px;
         color: #212121;
+        text-decoration: none;
       }
       span {
         font-family: PlusJakartaSans-Regular;
@@ -252,6 +288,7 @@
     display: flex;
     align-items: center;
     width: 303px;
+    cursor: pointer;
     .text {
       font-family: PlusJakartaSans-Regular;
       font-size: 16px;

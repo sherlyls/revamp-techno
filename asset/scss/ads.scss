@@ -74,8 +74,22 @@
   text-align: center;
   left: 50%;
   transform: translate(-50%, 0);
+  
   .content-ads {
     height: 50px;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    margin-right: 16px;
+    background-size: 655px;
+    background-position: 0px -410px;
+    right: -16px;
+    top: 0;
   }
 }
 .ads-left {

@@ -16,13 +16,16 @@ $(document).ready(function () {
   $(".font-1").click(function () {
     $(".wrapper-container .article p").css("fontSize", "14px",);
   }),
-    $(".font-2").click(function () {
+  $(".font-2").click(function () {
       $(".wrapper-container .article p").css("fontSize", "16px");
     }),
-    $(".font-3").click(function () {
+  $(".font-3").click(function () {
       $(".wrapper-container .article p").css("fontSize", "20px");
       $(".wrapper-container .article p").css("lineHeight", "30px");
-    })
+  }),
+  $('.ads-footer .close').on('click', function () {
+    $('.ads-footer').css("display", "none");
+  });
 });
 
 $(window).scroll(function () {
