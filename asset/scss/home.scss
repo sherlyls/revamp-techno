@@ -39,7 +39,7 @@
               display: block;
             }
             &:hover {
-              color: #457AE5
+              color: #457ae5;
             }
           }
 
@@ -56,7 +56,7 @@
             font-size: 24px;
             line-height: 38.4px;
             &:hover {
-              color: #457AE5
+              color: #457ae5;
             }
           }
 
@@ -109,7 +109,7 @@
                 color: #212121;
               }
               &:hover {
-                color: #457AE5;
+                color: #457ae5;
               }
             }
 
@@ -131,17 +131,23 @@
         line-height: 32px;
       }
       .group-brt-terkini {
-        display: flex;
         clear: both;
         margin-bottom: 20px;
+        // display: none;
+        .subgroup {
+          display: flex;
+        }
         &.glance {
-          display: block !important;
           clear: both;
           margin-bottom: 20px;
           overflow: hidden;
+          .subgroup {
+            display: block !important;
+          }
           .img-section {
             float: right;
             width: 49%;
+            height: 272px;
           }
           .desc-section {
             float: left;
@@ -177,7 +183,7 @@
           .desc-text:visited,
           .desc-text:link {
             &:hover {
-              color: #457AE5;
+              color: #457ae5;
             }
             margin: 20px 0;
             text-decoration: none;
@@ -204,12 +210,13 @@
     color: #fff;
     background-color: #1d4595;
     text-decoration: none;
-    padding: 16px 64px;
+    padding: 16px;
     border-radius: 8px;
     margin: 0 auto;
     width: 264px;
     display: block;
     margin-top: 12px;
+    text-align: center;
   }
 }
 
@@ -225,4 +232,15 @@
   color: #ec2424;
   margin-top: 12px;
   text-decoration: none;
+}
+#index .title,
+#index .title a,
+#index .title .kanal.news {
+  font-family: "PlusJakartaSansBold" !important;
+}
+
+.jscroll-loading img {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto;
 }

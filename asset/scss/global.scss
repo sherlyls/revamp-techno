@@ -103,11 +103,14 @@ input:focus {
     line-height: 140%;
   }
   .list-news {
-    position: relative;
     border-radius: 8px;
     display: flex;
     background: #fff;
     align-items: start;
+    padding-bottom: 16px;
+    .box-img {
+      position: relative;
+    }
     &:nth-child(2) {
       .box-img {
         &::after {
@@ -151,7 +154,7 @@ input:focus {
         background-size: 655px;
         content: "";
         width: 35px;
-        height: 71px;
+        height: 69px;
         position: absolute;
         left: 0px;
         bottom: 0px;
@@ -412,7 +415,7 @@ input:focus {
       .menu {
         padding: 0 40px;
         a {
-          margin-right: 32px;
+          padding: 8px 13px;
         }
       }
     }
@@ -420,7 +423,7 @@ input:focus {
       .search {
         div {
           input {
-            width: 722px;
+            width: 707px;
           }
         }
       }
@@ -508,9 +511,9 @@ input:focus {
         display: flex;
         .big-content {
           padding-right: 20px;
-          width: 47%;
           margin-bottom: 0;
           .group-content {
+            width: 373px;
             .img-content {
               width: 100%;
               height: 265px;
@@ -538,7 +541,7 @@ input:focus {
         }
 
         .small-content {
-          width: 53%;
+          width: calc(100% - 373px - 20px);
           display: block;
           margin-right: 0;
           .group-content {
@@ -546,8 +549,8 @@ input:focus {
             padding-bottom: 20.19px;
             width: 100%;
             .img-content {
-              width: 33%;
-              height: 65.61px;
+              width: 117px;
+              height: 65.81px;
               padding-right: 20px;
               cursor: pointer;
               img {
@@ -564,7 +567,7 @@ input:focus {
               font-size: 14px;
               line-height: 160%;
               color: white;
-              width: 67%;
+              width: calc(100% - 117px - 20px);
               cursor: pointer;
               text-decoration: none;
               padding-right: 0;
@@ -588,7 +591,7 @@ input:focus {
       }
       header {
         .menu {
-          padding: 0 95px;
+          padding: 0 45px;
         }
       }
     }

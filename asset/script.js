@@ -43,7 +43,7 @@ $(document).ready(function () {
 $(window).scroll(function () {
   if ($(this).scrollTop() > 10) {
     $('header').addClass("sticky");
-    $('.content-burger').addClass("height");
+    $('.content-burger').addClass("height"); 
     $('.bg-burger').addClass("top");
   }
   else {
