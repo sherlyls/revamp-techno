@@ -224,7 +224,7 @@ input:focus {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 999px) {
+@media only screen and (min-width: 600px) and (max-width: 999px) {
   .ads-right,
   .ads-left {
     display: none;
@@ -234,7 +234,7 @@ input:focus {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   header {
     .menu {
       padding: 0 24px;
@@ -291,7 +291,11 @@ input:focus {
     .brt-terkini
     .group-brt-terkini
     .img-section {
-    height: 161px;
+    height: 150px;
+    width: 200px;
+  }
+  .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section {
+    width: calc(100% - 200px - 20px);
   }
   .okztv {
     background-color: #1c1a27;
@@ -453,15 +457,27 @@ input:focus {
         }
       }
     }
-    .wrapper-container
-      .left-section
-      .brt-terkini
-      .group-brt-terkini
-      .desc-section
-      .desc-text {
-      font-size: 20px;
-      line-height: 32px;
+    .wrapper-container {
+      .left-section {
+        .brt-terkini {
+          .group-brt-terkini {
+            .img-section {
+              height: 201px;
+              width: 301px;
+              
+            }
+            .desc-section {
+              width: calc(100% - 301px - 20px);
+              .desc-text {
+                font-size: 20px;
+                line-height: 32px;
+            }
+          }
+          }
+        }
+      }
     }
+
     footer {
       .footer {
         .box-flex-footer {
@@ -577,8 +593,6 @@ input:focus {
       }
     }
 
-    @media only screen and (min-width: 1040px) {
-    }
     @media only screen and (min-width: 1280px) {
       .wrapper-container {
         width: 1015px;

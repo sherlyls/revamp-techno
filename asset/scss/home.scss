@@ -133,7 +133,6 @@
       .group-brt-terkini {
         clear: both;
         margin-bottom: 20px;
-        // display: none;
         .subgroup {
           display: flex;
         }
@@ -146,17 +145,15 @@
           }
           .img-section {
             float: right;
-            width: 49%;
+            width: 409px;
             height: 272px;
           }
           .desc-section {
             float: left;
-            width: 46%;
+            width: calc(100% - 409px - 20px);
           }
         }
-
         .img-section {
-          width: 39%;
           margin-right: 20px;
           img {
             width: 100%;
@@ -165,10 +162,8 @@
             border-radius: 8px;
           }
         }
-
         .desc-section {
           font-family: "PlusJakartaSansBold";
-          width: 61%;
           a {
             display: block;
           }

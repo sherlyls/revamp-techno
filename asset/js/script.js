@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $('.icon-burger').on('click', function () {
+    $(this).toggleClass('active');
     $('.bg-burger').toggleClass('open');
     $('.content-burger').toggleClass('open');
   });
@@ -11,6 +12,7 @@ $(document).ready(function () {
   });
   $('.other .search .icon').on('click', function () {
     $('.box-search').toggleClass('open');
+    $('.icon-burger').toggleClass('display');
   });
   $('.box-search .close').on('click', function () {
     $('.box-search').removeClass('open');
@@ -29,26 +31,15 @@ $(document).ready(function () {
       $('.ads-footer').css("display", "none");
     });
 
-  // load more
-  // $(".group-brt-terkini").slice(0, 19).show();
-  // $("#loadMore").on("click", function (e) {
-  //   e.preventDefault();
-  //   $(".group-brt-terkini:hidden").slice(0, 7).slideDown();
-  //   if ($(".group-brt-terkini:hidden").length == 0) {
-  //     $("#loadMore").text("Index Berita").addClass("noContent");
-  //   }
-  // });
 });
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 10) {
     $('header').addClass("sticky");
-    $('.content-burger').addClass("height");
     $('.bg-burger').addClass("top");
   }
   else {
     $('header').removeClass("sticky");
-    $('.content-burger').removeClass("height");
     $('.bg-burger').removeClass("top");
   }
 });

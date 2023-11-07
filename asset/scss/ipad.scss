@@ -1,0 +1,164 @@
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .ads-left,
+  .ads-right {
+    display: none;
+  }
+  header {
+    padding-top: 0;
+  }
+  .wrapper-container {
+    padding: 0 16px;
+  }
+  .wrapper-container
+    .left-section
+    .headline
+    .small-section
+    .group-section
+    .img-section {
+    height: calc(17vw - 32px);
+  }
+  .wrapper-container .left-section .headline .big-section .img-section img {
+    height: calc(25vw - 23px);
+  }
+  .wrapper-container .left-section .headline .big-section .desc-section {
+    width: calc(100% - 350px - 20px);
+  }
+  .wrapper-container .left-section .headline .big-section .img-section {
+    width: 370px;
+    display: block;
+  }
+  header .menu a.active {
+    padding: 6px 12px;
+  }
+  .wrapper-container
+    .left-section
+    .headline
+    .big-section
+    .desc-section
+    .desc-text {
+    font-size: 18px;
+    line-height: 160%;
+  }
+  .wrapper-container
+    .left-section
+    .headline
+    .big-section
+    .desc-section
+    .title-text {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .wrapper-container
+    .left-section
+    .headline
+    .big-section
+    .desc-section
+    .time-text {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .wrapper-container
+    .left-section
+    .headline
+    .small-section
+    .group-section
+    .desc-section
+    .title-text {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .wrapper-container
+    .left-section
+    .headline
+    .small-section
+    .group-section
+    .desc-section
+    .desc-text {
+    font-size: 14px;
+    line-height: 160%;
+  }
+  .wrapper-container
+    .left-section
+    .headline
+    .small-section
+    .group-section
+    .desc-section
+    .time-text {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .time-text,
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .time-text:visited,
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .time-text:link {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .title-text {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .red-sign,
+  .red-sign:visited,
+  .red-sign:link {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .desc-text,
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .desc-text:visited,
+  .wrapper-container
+    .left-section
+    .brt-terkini
+    .group-brt-terkini
+    .desc-section
+    .desc-text:link {
+    font-size: 18px;
+    line-height: 160%;
+    margin: 12px 0;
+  }
+  .wrapper-container .left-section .brt-terkini .group-brt-terkini .subgroup {
+    align-self: start;
+  }
+  @media (max-width: 998px) {
+    header .menu a {
+      margin-right: 8px;
+      font-size: 12px;
+    }
+    .wrapper-container .left-section .headline .big-section .img-section {
+      width: 100%;
+      padding-right: 0;
+    }
+    .wrapper-container .left-section .headline .big-section .desc-section {
+      width: 100%;
+    }
+  }
+}

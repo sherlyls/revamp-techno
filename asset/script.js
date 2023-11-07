@@ -24,20 +24,12 @@ $(document).ready(function () {
     $(".font-3").click(function () {
       $(".wrapper-container .article p").css("fontSize", "20px");
       $(".wrapper-container .article p").css("lineHeight", "30px");
-    }),
+    })
     $('.ads-footer .close').on('click', function () {
       $('.ads-footer').css("display", "none");
     });
 
-  // load more
-  // $(".group-brt-terkini").slice(0, 19).show();
-  // $("#loadMore").on("click", function (e) {
-  //   e.preventDefault();
-  //   $(".group-brt-terkini:hidden").slice(0, 7).slideDown();
-  //   if ($(".group-brt-terkini:hidden").length == 0) {
-  //     $("#loadMore").text("Index Berita").addClass("noContent");
-  //   }
-  // });
+
 });
 
 $(window).scroll(function () {
