@@ -30,17 +30,25 @@ $(document).ready(function () {
     $('.ads-footer .close').on('click', function () {
       $('.ads-footer').css("display", "none");
     });
-
+  if ($(window).width() > 1280) {
+    if ($(".img-ava")[0]) {
+      $("header .menu").css("padding", "120px");
+    }
+  }
 });
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 10) {
     $('header').addClass("sticky");
     $('.bg-burger').addClass("top");
+    $('.ads-left').addClass("top"); 
+    $('.ads-right').addClass("top");
   }
   else {
     $('header').removeClass("sticky");
     $('.bg-burger').removeClass("top");
+    $('.ads-left').removeClass("top");
+    $('.ads-right').removeClass("top");
   }
 });
 
@@ -59,3 +67,4 @@ $('.brt-terkini').jscroll({
   loadingHtml: '<div class="loader"><img alt="" src="https://cdn.okezone.com/news/news_2015a/img/ajax-loader.gif" /></div>',
   nextSelector: 'a#loadMore:last',
 });
+

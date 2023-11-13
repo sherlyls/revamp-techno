@@ -74,7 +74,7 @@
   text-align: center;
   left: 50%;
   transform: translate(-50%, 0);
-  
+
   .content-ads {
     height: 50px;
     position: relative;
@@ -95,18 +95,24 @@
 }
 .ads-left {
   width: 119px;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 190px;
+  &.top {
+    top: 75px;
+  }
   .content-ads {
     height: 598px;
   }
 }
 .ads-right {
   width: 119px;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 190px;
+  &.top {
+    top: 75px;
+  }
   .content-ads {
     height: 598px;
   }

@@ -25,9 +25,10 @@ header {
     background-size: 655px;
   }
   .menu {
+    display: flex;
+    align-items: center;
     a {
       line-height: 17.64px;
-      font-size: 14px;
       text-transform: uppercase;
 
       &:hover {
@@ -45,6 +46,25 @@ header {
 
   .other {
     display: flex;
+    #sso {
+      display: flex;
+      #login-sso {
+        margin-left: 0px !important;
+        #image_user-login {
+          padding-left: 0 !important;
+          line-height: 0 !important;
+          .img-ava {
+            margin-left: -32px;
+          }
+          .text-login {
+            color: #5b5b5b;
+            font-family: "PlusJakartaSansBold";
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    
     .login {
       display: flex;
       align-items: center;
@@ -99,7 +119,7 @@ header {
         }
         div {
           input {
-            height: 40px;
+            height: 41px;
             border-right-style: none;
             border-top-style: none;
             border-left-style: none;
@@ -205,7 +225,6 @@ header {
         transition: 0.5s;
         width: 373px;
         top: 39px;
-        right: -165px;
         background-color: white;
         padding-left: 23px;
         border-radius: 10px;
@@ -336,3 +355,28 @@ header {
     }
   }
 }
+
+#info-alert-sso {
+  z-index: 9;
+  .msg-show {
+    height: 40px !important;
+    &::before {
+      margin-right: 15px;
+    }
+    &::after {
+      display: none !important;
+    }
+    .msg-exit {
+      cursor: pointer;
+      right: 7px !important;
+    }
+    .msg-text {
+      padding: 0 !important;
+      margin-top: 0 !important;
+      &::before {
+        background: none !important;
+      }
+    }
+  }
+}
+

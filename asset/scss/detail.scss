@@ -2,9 +2,11 @@
   .breadcrumb {
     font-family: PlusJakartaSans-Regular;
     margin: 20.5px 0;
-    a, a:visited, a:link {
+    a,
+    a:visited,
+    a:link {
       text-decoration: none;
-      color: #5B5B5B;
+      color: #5b5b5b;
       margin-right: 40px;
       text-transform: capitalize;
       position: relative;
@@ -16,7 +18,7 @@
       &:last-child {
         font-family: "PlusJakartaSansBold";
         &::before {
-          background-position: -38px -413px
+          background-position: -38px -413px;
         }
       }
       &::before {
@@ -56,7 +58,9 @@
           height: 26.67px;
         }
       }
-      .name-account, .name-account:visited, .name-account:link {
+      .name-account,
+      .name-account:visited,
+      .name-account:link {
         font-family: "PlusJakartaSansBold";
         font-size: 16px;
         line-height: 22.4px;
@@ -182,36 +186,78 @@
       .group-medsos {
         display: flex;
         align-items: center;
+        position: relative;
         .text {
           font-size: 16px;
           line-height: 25.6px;
           margin-right: 12px;
           font-family: "PlusJakartaSansBold";
         }
-        .img {
-          background-image: url(../img/sprite.png);
-          width: 33px;
-          height: 33px;
-          background-repeat: no-repeat;
-          background-size: 655px;
-          margin-right: 8px;
-          &.facebook {
-            background-position: -42px -89px;
-          }
-          &.twitter {
-            background-position: -82px -89px;
-          }
-          &.whatsapp {
-            background-position: -122px -89px;
-          }
-          &.email {
-            background-position: -162px -89px;
-          }
-          &.link {
-            background-position: -202px -89px;
-            margin-right: -8px;
+        .sosmed {
+          .topshare, .bottomshare {
+            .upsosm {
+              display: flex;
+              .button-share {
+                background-image: url(../img/sprite.png);
+                width: 33px;
+                height: 33px;
+                background-repeat: no-repeat;
+                background-size: 655px;
+                margin-right: 8px;
+                cursor: pointer;
+                a, .copylink-share{
+                  text-indent: -99999px;
+                  display: block;
+                }
+                a {
+                  height: 36px;
+                }
+                .hidden {
+                  display: none;
+                }
+                &.facebook-share {
+                  background-position: -42px -89px;
+                }
+                &.twitter-share {
+                  background-position: -82px -89px;
+                }
+                &.whatsapp-share {
+                  background-position: -122px -89px;
+                }
+                &.email-share {
+                  background-position: -162px -89px;
+                }
+                &.copylink-share {
+                  background-position: -202px -89px;
+                  margin-right: -8px;
+                  position: relative;
+                  .fbm-copied-message-satu, .fbm-copied-message-dua {
+                    font-family: PlusJakartaSans-Regular;
+                    color: #212121;
+                    font-size: 10px;
+                    position: absolute;
+                    top: 0;
+                    left: 40px;
+                    &.show {
+                      display: block;
+                    }
+                  }
+                }
+
+              }
+            }
+  
+            .notif {
+              font-family: PlusJakartaSans-Regular;
+              color: #212121;
+              font-size: 10px;
+              position: absolute;
+              top: 0;
+              left: 260px;
+            }
           }
         }
+    
       }
     }
   }
@@ -246,12 +292,14 @@
       }
     }
   }
-  .telusuri, .telusuri:visited, .telusuri:link {
+  .telusuri,
+  .telusuri:visited,
+  .telusuri:link {
     display: flex;
     justify-content: space-between;
     margin: 28px 0;
     text-decoration: none;
-    background-color: #EAF1FF;
+    background-color: #eaf1ff;
     align-items: center;
     border-radius: 10px;
     padding: 12px;
@@ -267,7 +315,7 @@
       font-family: "PlusJakartaSansBold";
       font-size: 20px;
       line-height: 25.2px;
-      color: #1D4595;
+      color: #1d4595;
     }
     .icon2 {
       background-image: url(../img/sprite.png);
@@ -280,7 +328,7 @@
   }
   .follow-okz {
     margin: 0 auto;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     border-radius: 8px;
     padding: 12px;
     margin-bottom: 16px;
@@ -303,7 +351,6 @@
       background-repeat: no-repeat;
       background-size: 655px;
     }
-
   }
   #paging {
     border-radius: 5px;
@@ -368,7 +415,9 @@
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
-      .text, .text:visited, .text:link   {
+      .text,
+      .text:visited,
+      .text:link {
         display: block;
         color: #1d4595;
         text-align: center;
@@ -378,7 +427,7 @@
         padding: 12px 16px;
         border-radius: 16px;
         border: 1px solid #1d4595;
-        transition: all .3s;
+        transition: all 0.3s;
         text-decoration: none;
         &.active {
           background-color: #1d4595;
@@ -416,7 +465,7 @@
   border-radius: 100%;
   font-size: 14px;
   line-height: 16.94px;
-  font-family: 'Inter', sans-serif;;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   padding: 2px 8px;
   margin-bottom: auto;
@@ -462,53 +511,6 @@
   font-size: 14px;
 }
 
-.container-recommendation .text-rec-ai,
-.container-recommendation .text-rec-ai:visited,
-.container-recommendation .text-rec-ai:link {
-  color: #000;
-  line-height: 19.6px;
-}
-
-.container-recommendation .text-rec-ai {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 63px;
-}
-
-
-.container-recommendation .rec-more {
-  width: 100%;
-  background-color: #1B387B;
-  color: white;
-  padding: 8px 0;
-  text-align: center;
-  border-radius: 10px;
-  font-family: "Roboto500";
-  font-size: 16px;
-  line-height: 18.75px;
-  display: block;
-}
-
-.container-recommendation .rec-more:visited,
-.container-recommendation .rec-more:link {
-  color: white;
-}
-
-.container-recommendation #show-hover {
-  background-color: white;
-  width: 210px;
-  font-family: "Roboto400";
-  font-size: 14px;
-  line-height: 18.2px;
-  display: flex;
-  position: absolute;
-  top: 20px;
-  left: 124px;
-}
-
 #show-hover .text-hover {
   font-family: "robotomedium";
   font-size: 14px;
@@ -530,17 +532,33 @@
   left: -9px;
 }
 
+.vicon {
+  margin-bottom: 16px;
+}
+
 #bacajuga {
+  margin-bottom: 16px;
   .text-baca-juga {
-      color: #1d4595;
-      margin-bottom: 16px;
-      font-family: "PlusJakartaSansBold";
-      font-size: 16px;
-      line-height: 25.6px;
-      text-transform: lowercase!important;
-      display: inline-block!important;
-      &::first-letter {
-        text-transform: uppercase;
+    color: #1d4595;
+    margin-bottom: 16px;
+    font-family: "PlusJakartaSansBold";
+    font-size: 16px;
+    line-height: 25.6px;
+    text-transform: lowercase !important;
+    display: inline-block !important;
+    margin-left: 12px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      border-left: 4px solid #1d4595;
+      width: 100%;
+      left: -15px;
+      top: 0;
+      height: 100%;
+    }
+    &::first-letter {
+      text-transform: uppercase;
     }
   }
   .description-baca-juga {
@@ -553,15 +571,15 @@
       border-radius: 10px;
       margin-right: 16px;
     }
-    .a-baca-juga, .a-baca-juga:visited, .a-baca-juga:link {
+    .a-baca-juga,
+    .a-baca-juga:visited,
+    .a-baca-juga:link {
       color: #212121;
       text-decoration: none;
       width: calc(100% - 70px);
       font-family: "PlusJakartaSansBold";
       font-size: 16px;
-      line-height: 25.6px;  
+      line-height: 25.6px;
     }
   }
 }
-
-

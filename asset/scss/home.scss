@@ -105,6 +105,11 @@
             .desc-text {
               color: #212121;
               margin: 12px 0;
+              text-transform: lowercase !important;
+              display: inline-block !important;
+              &::first-letter {
+                text-transform: uppercase;
+              }
               &:visited {
                 color: #212121;
               }
@@ -140,17 +145,33 @@
           clear: both;
           margin-bottom: 20px;
           overflow: hidden;
+          position: relative;
+          padding: 20px 0;
+          &::before {
+            position: absolute;
+            content: "";
+            border-top: 1px solid #CECECE;
+            width: 100%;
+            left: -20px;
+            top: 0;
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            border-top: 1px solid #CECECE;
+            width: 100%;
+            left: -20px;
+            bottom: 0;
+          }
           .subgroup {
             display: block !important;
+            position: relative;
           }
           .img-section {
             float: right;
-            width: 409px;
-            height: 272px;
           }
           .desc-section {
             float: left;
-            width: calc(100% - 409px - 20px);
           }
         }
         .img-section {

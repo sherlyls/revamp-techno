@@ -108,6 +108,7 @@ input:focus {
     background: #fff;
     align-items: start;
     padding-bottom: 16px;
+    margin-bottom: 0 !important;
     .box-img {
       position: relative;
     }
@@ -201,7 +202,7 @@ input:focus {
   }
   .group-pilihan {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     .img-pilihan {
       width: 31.6%;
       margin-right: 11.84px;
@@ -239,7 +240,16 @@ input:focus {
     .menu {
       padding: 0 24px;
       a {
-        margin-right: 4px;
+        margin-right: 1px;
+        font-size: 11px;
+        padding: 8px 11px;
+      }
+    }
+    .other {
+      .burger-menu {
+        .content-burger {
+          right: 3px;
+        }
       }
     }
   }
@@ -277,25 +287,45 @@ input:focus {
       }
     }
   }
-  .wrapper-container
-    .left-section
-    .brt-terkini
-    .group-brt-terkini
-    .desc-section
-    .desc-text {
-    font-size: 16px;
-    line-height: 18px;
-  }
-  .wrapper-container
-    .left-section
-    .brt-terkini
-    .group-brt-terkini
-    .img-section {
-    height: 150px;
-    width: 200px;
-  }
-  .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section {
-    width: calc(100% - 200px - 20px);
+  .wrapper-container {
+    .left-section {
+      .brt-terkini {
+        .group-brt-terkini {
+          .img-section {
+            height: 150px;
+            width: 200px;
+          }
+          .desc-section {
+            .title-text {
+              display: flex;
+              align-items: center;
+              .icon {
+                width: 28px;
+                height: 28px;
+                background-image: url(../img/sprite.png);
+                background-repeat: no-repeat;
+                margin-right: 6px;
+                background-size: 655px;
+                &.gambar {
+                  background-position: -261px -223px;
+                }
+                &.video {
+                  background-position: -303px -223px;
+                }
+                &.index {
+                  background-position: -348px -223px;
+                }
+              }
+            }
+            width: calc(100% - 200px - 20px);
+            .desc-text {
+              font-size: 16px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }    
   }
   .okztv {
     background-color: #1c1a27;
@@ -388,6 +418,46 @@ input:focus {
             text-decoration: none;
             display: block;
             padding-right: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            height: 65.81px;
+          }
+        }
+      }
+      // for you
+      .container-recommendation {
+        display: block;
+        iframe {
+          display: block;
+          html {
+            body {
+              #foryou {
+                display: block;
+                .box-title {
+                  .icon {
+                    display: none;
+                  }
+                }
+                .box-content {
+                  display: block !important;
+                  .box-image {
+                    width: 100%;
+                    display: flex !important;
+                    img {
+                      border-radius: 0;
+                      width: 64px;
+                      height: 64px;
+                    }
+                    .description {
+                      margin-top: 0;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -420,6 +490,7 @@ input:focus {
         padding: 0 40px;
         a {
           padding: 8px 13px;
+          font-size: 14px;
         }
       }
     }
@@ -455,6 +526,34 @@ input:focus {
             }
           }
         }
+        .brt-terkini {
+          .group-brt-terkini {
+            &.glance {
+              .img-section {
+                width: 385px;
+                height: 250px;
+              }
+              .desc-section {
+                width: calc(100% - 385px - 20px);
+              }
+            }
+          }
+          .okztv {
+            .content-okztv {
+              .big-content {
+                .group-content {
+                  width: 373px;
+                  .img-content {
+                    height: 265px;
+                  }
+                }
+              }
+              .small-content {
+                width: calc(100% - 373px - 20px);
+              }
+            }
+          }
+        }
       }
     }
     .wrapper-container {
@@ -464,15 +563,14 @@ input:focus {
             .img-section {
               height: 201px;
               width: 301px;
-              
             }
             .desc-section {
               width: calc(100% - 301px - 20px);
               .desc-text {
                 font-size: 20px;
                 line-height: 32px;
+              }
             }
-          }
           }
         }
       }
@@ -529,10 +627,10 @@ input:focus {
           padding-right: 20px;
           margin-bottom: 0;
           .group-content {
-            width: 373px;
+            width: 308px;
             .img-content {
               width: 100%;
-              height: 265px;
+              height: 238px;
               display: block;
               cursor: pointer;
               margin-bottom: 16px;
@@ -557,7 +655,7 @@ input:focus {
         }
 
         .small-content {
-          width: calc(100% - 373px - 20px);
+          width: calc(100% - 308px - 20px);
           display: block;
           margin-right: 0;
           .group-content {
@@ -583,10 +681,57 @@ input:focus {
               font-size: 14px;
               line-height: 160%;
               color: white;
-              width: calc(100% - 117px - 20px);
+              width: calc(100% - 117px);
               cursor: pointer;
               text-decoration: none;
               padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      header {
+        .other {
+          .burger-menu {
+            .content-burger {
+              right: -19px;
+            }
+          }
+        }
+      }
+      .wrapper-container {
+        .left-section {
+          .brt-terkini {
+            .group-brt-terkini {
+              &.glance {
+                .img-section {
+                  width: 409px;
+                  height: 272px;
+                }
+                .desc-section {
+                  width: calc(100% - 409px - 40px);
+                  position: absolute;
+                  top: 30%;
+                  transform: translatey(-30%);
+                }
+              }
+            }
+            .okztv {
+              .content-okztv {
+                .big-content {
+                  .group-content {
+                    width: 373px;
+                    .img-content {
+                      height: 265px;
+                    }
+                  }
+                }
+                .small-content {
+                  width: calc(100% - 373px - 20px);
+                }
+              }
             }
           }
         }
@@ -605,7 +750,21 @@ input:focus {
       }
       header {
         .menu {
-          padding: 0 45px;
+          padding: 0 77.5px;
+        }
+        .other {
+          .burger-menu {
+            .content-burger {
+              right: -105px;
+            }
+          }
+          .search {
+            .box-search {
+              input {
+                width: 742px;
+              }
+            }
+          }
         }
       }
     }
@@ -617,11 +776,44 @@ input:focus {
       .ads3 {
         width: 728px;
       }
+      header {
+        .other {
+          .burger-menu {
+            .content-burger {
+              right: -143px;
+            }
+          }
+        }
+      }
     }
 
     @media only screen and (min-width: 1440px) {
       .wrapper-container {
         width: 1160px;
+      }
+      header {
+        .other {
+          .burger-menu {
+            .content-burger {
+              right: -165px;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1460px) {
+      .wrapper-container {
+        width: 1481px;
+      }
+      header {
+        .other {
+          .burger-menu {
+            .content-burger {
+              right: -165px;
+            }
+          }
+        }
       }
     }
   }
