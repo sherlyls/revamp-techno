@@ -231,7 +231,7 @@
     margin: 0 auto;
     width: 264px;
     display: block;
-    margin-top: 12px;
+    margin-top: 32px;
     text-align: center;
   }
 }
@@ -259,4 +259,9 @@
   width: 30px;
   height: 30px;
   margin: 20px auto;
+  text-align: center;
+}
+
+.jscroll-loading {
+  text-align: center;
 }

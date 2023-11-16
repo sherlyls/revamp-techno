@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "PlusJakartaSansBold";
   font-style: normal;
@@ -226,12 +230,30 @@ input:focus {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 999px) {
+  .ads2 {
+    width: 589px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
   .ads-right,
   .ads-left {
     display: none;
   }
-  .ads2 {
-    width: 589px;
+  header .other .burger-menu .content-burger.height {
+    height: auto;
+  }
+  footer .footer {
+    padding: 57px 0 38px 0;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  header .other .burger-menu .content-burger.height {
+    height: calc(100vh - 77px);
+  }
+  footer .footer {
+    padding: 57px 0 0;
   }
 }
 
@@ -325,7 +347,7 @@ input:focus {
           }
         }
       }
-    }    
+    }
   }
   .okztv {
     background-color: #1c1a27;
@@ -498,7 +520,7 @@ input:focus {
       .search {
         div {
           input {
-            width: 707px;
+            width: 683px;
           }
         }
       }
@@ -702,6 +724,7 @@ input:focus {
         }
       }
       .wrapper-container {
+        width: 1015px;
         .left-section {
           .brt-terkini {
             .group-brt-terkini {
@@ -759,9 +782,9 @@ input:focus {
             }
           }
           .search {
-            .box-search {
+            #box-search-desktop {
               input {
-                width: 742px;
+                width: 731px;
               }
             }
           }
@@ -804,7 +827,7 @@ input:focus {
 
     @media only screen and (min-width: 1460px) {
       .wrapper-container {
-        width: 1481px;
+        width: 1040px;
       }
       header {
         .other {
@@ -816,5 +839,14 @@ input:focus {
         }
       }
     }
+    @media only screen and (min-width: 1800px) {
+      .wrapper-container {
+        width: 1481px;
+      }
+    }
   }
+}
+
+#index .sortby .forms select {
+  color: black;
 }
