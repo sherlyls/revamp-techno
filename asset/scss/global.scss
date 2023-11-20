@@ -179,6 +179,9 @@ input:focus {
       .title,
       .title:visited,
       .title:link {
+        &:hover {
+          color: #457ae5;
+        }
         font-size: 14px;
         font-family: "PlusJakartaSansBold";
         line-height: 22.4px;
@@ -225,6 +228,9 @@ input:focus {
       line-height: 22.4px;
       color: #212121;
       text-decoration: none;
+      &:hover {
+        color: #457ae5
+      }
     }
   }
 }
@@ -849,4 +855,12 @@ input:focus {
 
 #index .sortby .forms select {
   color: black;
+}
+
+.mgbox .mgheader {
+  margin-bottom: 74px;
+}
+
+ .mctitle a:hover {
+  text-decoration: none;
 }
