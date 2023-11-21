@@ -123,18 +123,18 @@ iframe {
   margin: 16px 0;
 }
 
-a:-webkit-any-link {
-  color: -webkit-link;
-  cursor: pointer;
-  text-decoration: underline;
-}
+// a:-webkit-any-link {
+//   color: -webkit-link;
+//   cursor: pointer;
+//   text-decoration: underline;
+// }
 
-::-webkit-scrollbar {
-  display: none;
-  width: 0;
-  height: 0;
-  background: transparent;
-}
+// ::-webkit-scrollbar {
+//   display: none;
+//   width: 0;
+//   height: 0;
+//   background: transparent;
+// }
 
 img {
   overflow-clip-margin: content-box;

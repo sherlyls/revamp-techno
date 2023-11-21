@@ -366,16 +366,20 @@
     border-radius: 8px;
     padding: 12px;
     margin-bottom: 16px;
-    width: 300px;
+    width: 305px;
     display: flex;
     align-items: center;
-    width: 303px;
     cursor: pointer;
     .text {
-      font-family: PlusJakartaSans-Regular;
-      font-size: 16px;
-      line-height: 25.6px;
-      margin-right: 10px;
+      a, a:visited, a:link {
+        font-family: PlusJakartaSans-Regular;
+        font-size: 16px;
+        line-height: 25.6px;
+        margin-right: 10px;
+        text-decoration: none;
+
+      }
+
     }
     .icon {
       background-image: url(../img/sprite.png);
