@@ -252,6 +252,10 @@ input:focus {
   footer .footer {
     padding: 57px 0 38px 0;
   }
+  .ads2 {
+    width: 633px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (min-width: 1199px) {
@@ -513,6 +517,10 @@ input:focus {
   }
 
   @media only screen and (min-width: 999px) {
+    .ads2 {
+      width: 768px;
+      overflow: hidden;
+    }
     header {
       .menu {
         padding: 0 40px;

@@ -9,7 +9,7 @@
 .ads-left,
 .ads-right {
   background-color: #f8f8f8;
-  // background-color: pink;
+  overflow: hidden;
   .title-ads {
     text-align: center;
     color: #aaaaaa;
@@ -28,7 +28,9 @@
 .ads2 {
   margin: 30px auto 0;
   .content-ads {
-    height: 244px;
+ 
+    display: flex;
+    justify-content: center;
   }
 }
 .ads3 {
@@ -763,5 +765,17 @@ img {
 @media (min-height: 400px) {
   .banner[data-v-62f20fc5] {
     display: none !important;
+  }
+}
+
+.container-ads-topslider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content-ads {
+  iframe {
+    margin: unset;
   }
 }
