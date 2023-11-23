@@ -239,6 +239,21 @@ input:focus {
   .ads2 {
     width: 589px;
   }
+  .article {
+    .vicon > iframe {
+      height: 246px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 999px) and (max-width: 1025px) {
+  .article {
+    .vicon > iframe {
+      height: 378px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
@@ -872,3 +887,5 @@ input:focus {
  .mctitle a:hover {
   text-decoration: none;
 }
+
+

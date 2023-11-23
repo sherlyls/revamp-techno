@@ -3,6 +3,12 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.bg-burger').toggleClass('open');
     $('.content-burger').toggleClass('open');
+    $('.box-login').removeClass('visible');
+  });
+  $('#sso').on('click', function () {
+    $('.bg-burger').removeClass('open');
+    $('.content-burger').removeClass('open');
+    $('.icon-burger').removeClass('active');
   });
 
   $('.bg-burger').on('click', function () {
