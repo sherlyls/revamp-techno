@@ -239,6 +239,9 @@ input:focus {
   .ads2 {
     width: 589px;
   }
+  .w-ads2 {
+    width: 589px;
+  }
   .article {
     .vicon > iframe {
       height: 246px;
@@ -270,6 +273,9 @@ input:focus {
   .ads2 {
     width: 633px;
     overflow: hidden;
+  }
+  .w-ads2 {
+    width: 633px;
   }
 }
 
@@ -536,6 +542,9 @@ input:focus {
       width: 768px;
       overflow: hidden;
     }
+    .w-ads2 {
+      width: 768px;
+    }
     header {
       .menu {
         padding: 0 40px;
@@ -797,7 +806,13 @@ input:focus {
       .ads2 {
         width: 970px;
       }
+      .w-ads2 {
+        width: 970px;
+      }
       .ads3 {
+        width: 590px;
+      }
+      .w-ads3 {
         width: 590px;
       }
       header {
@@ -827,6 +842,9 @@ input:focus {
       }
       .ads3 {
         width: 728px;
+      }
+      .w-ads3 {
+        width: 970px;
       }
       header {
         .other {

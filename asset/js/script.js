@@ -61,6 +61,16 @@ $(window).scroll(function () {
   }
 });
 
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 150) {
+    $('header').addClass("sticky");
+  }
+  else {
+    $('header').removeClass("sticky");
+  }
+});
+
+
 if ($("#pick-font").length) {
   for (var e, t = document.getElementById("pick-font").getElementsByClassName("a-sticky"), i = 0; i < t.length; i++) t[i].addEventListener("click", function () {
     var e = document.getElementsByClassName("active-sticky-detail");

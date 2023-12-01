@@ -25,6 +25,9 @@
     height: 90px;
   }
 }
+.w-ads1 {
+  width: 728px;
+}
 .ads2 {
   margin: 30px auto 0;
   .content-ads {
@@ -33,6 +36,8 @@
     justify-content: center;
   }
 }
+
+
 .ads3 {
   margin: 0 auto;
   .content-ads {
@@ -46,12 +51,18 @@
     height: 250px;
   }
 }
+.w-ads4 {
+  width: 300px;
+}
 .ads5 {
   width: 300px;
   margin: 20px auto 0;
   .content-ads {
     height: 600px;
   }
+}
+.w-ads5 {
+  width: 300px;
 }
 .ads6 {
   width: 300px;
@@ -60,12 +71,18 @@
     height: 250px;
   }
 }
+.w-ads6 {
+  width: 300px;
+}
 .ads7 {
   width: 480px;
   margin: 16px auto;
   .content-ads {
     height: 270px;
   }
+}
+.w-ads7 {
+  width: 300px;
 }
 .ads-footer {
   width: 1040px;
@@ -99,7 +116,7 @@
   width: 119px;
   position: fixed;
   left: 0;
-  top: 190px;
+  top: 341px;
   &.top {
     top: 75px;
   }
@@ -111,7 +128,7 @@
   width: 119px;
   position: fixed;
   right: 0;
-  top: 190px;
+  top: 341px;
   &.top {
     top: 75px;
   }
@@ -777,5 +794,73 @@ img {
 .content-ads {
   iframe {
     margin: unset;
+  }
+}
+
+//ads modern
+
+.ad-box {
+  background-color: #eeeeee;
+  margin: 0 auto 30px;
+  padding: 16px 0;
+  width: 480px;
+}
+.ad-container {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.ad-me {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 74px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  background-color: black;
+}
+.ad-label {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700
+}
+.mtmin8 {
+  margin-top: -8px
+}
+.mbmin8 {
+  margin-bottom: -8px
+}
+.mt8 {
+  margin-top: 8px
+}
+.mb8 {
+  margin-bottom: 8px
+}
+.w300 {
+  width: 300px
+}
+.w480 {
+  width: 480px;
+}
+.mh480 {
+  min-height: 480px;
+  background-color: black;
+}
+.w-ads1 {
+  width: 728px;
+
+}
+
+.mh400 {
+  min-height: 400px
+}
+
+.ad-box.second {
+  width: 300px;
+  margin-top: 30px;
+  .mh400 {
+    min-height: 530px;
   }
 }
