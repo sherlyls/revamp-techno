@@ -1,0 +1,1497 @@
+@font-face {
+    font-family: "PlusJakartaSans300";
+    font-style: normal;
+    font-weight: 300;
+    src: local("PlusJakartaSans Light"), local("PlusJakartaSans-Light"), url("../font/PlusJakartaSans-Light.ttf") format("truetype");
+    font-display: swap
+}
+
+@font-face {
+    font-family: "PlusJakartaSans400";
+    font-style: normal;
+    font-weight: 400;
+    src: local("PlusJakartaSans"), local("PlusJakartaSans-Regular"), url("../font/PlusJakartaSans-Regular.ttf") format("truetype");
+    font-display: swap
+}
+
+@font-face {
+    font-family: "PlusJakartaSans500";
+    font-style: normal;
+    font-weight: 500;
+    src: local("PlusJakartaSans Medium"), local("PlusJakartaSans-Medium"), url("../font/PlusJakartaSans-Medium.ttf") format("truetype");
+    font-display: swap
+}
+
+@font-face {
+    font-family: "PlusJakartaSans700";
+    font-style: normal;
+    font-weight: 700;
+    src: local("PlusJakartaSans Bold"), local("PlusJakartaSans-Bold"), url("../font/PlusJakartaSans-Bold.ttf") format("truetype");
+    font-display: swap
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .2);
+    letter-spacing: .004em
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.kanal {
+    color: #0a5692
+}
+
+.kanal.news.kanal,
+.kanal .international.kanal,
+.kanal .kampus.kanal {
+    color: #dc2e36
+}
+
+.kanal.lifestyle.kanal,
+.kanal .travel.kanal,
+.kanal .food.kanal,
+.kanal .health.kanal {
+    color: #f1be43
+}
+
+.kanal.celebrity {
+    color: #ef669e
+}
+
+.kanal.bola {
+    color: #32a44d
+}
+
+.kanal.sports {
+    color: #f27121
+}
+
+.kanal.techno {
+    color: #808184
+}
+
+.kanal.autos {
+    color: #7f3f97
+}
+
+.kanal.haji {
+    color: #af965a
+}
+
+.kanal.muslim {
+    color: #36a552
+}
+
+a {
+    text-decoration: none;
+    color: #212121
+}
+
+b {
+    font-family: "PlusJakartaSans700"
+}
+
+body {
+    font-family: "PlusJakartaSans400";
+    margin: 0;
+    padding: 0
+}
+
+html.hidden,
+body.hidden {
+    overflow: hidden
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    object-position: center
+}
+
+#menubar_ .listbar .listbar-wrapper .icon,
+#menuheaders .searchbtn,
+#menuheaders .navbtn,
+#sso .sso-login #login-sso #image_user-login .img-ava,
+#sso .sso-login #login-sso.open-submenu .icon-sso,
+#menubar_ .header-sidebar .close_menubar,
+#mainMenu .icon-okezone,
+#box-search #search-top,
+#box-search .search-close,
+.list-news .box-text .kanal .icon-foto,
+.list-news .box-text .kanal .icon-video,
+.list-news .box-text .kanal .icon-infografis,
+.this-footer .company-box .company-download a,
+.this-footer .company-box .company-partner .part.mncportal .logo,
+.this-footer .company-box .company-partner .socialmedia>div,
+.to-top .faa-angle-up,
+#terpopuler .list-news .box-img::after,
+.ads-mega-box .close i,
+.ads-bottom-fixed .btn-cls i,
+#sso #clicksso,
+#widget-tv .header,
+.this-footer .company-box .company-logo {
+    background-image: url(../img/sprites.png);
+    background-size: 655px;
+    background-repeat: no-repeat
+}
+
+.ads {
+    background: #f8f8f8;
+    margin: 20px auto;
+    text-align: center;
+    min-width: 320px;
+    width: 51%;
+    clear: both
+}
+
+.ads .title {
+    color: #aaa;
+    font-size: 14px
+}
+
+.flying_carpet_div {
+    margin: 0 auto;
+    clear: both
+}
+
+.ads-mega-box {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(91, 91, 91, .5)
+}
+
+.ads-mega-box .ads-mega {
+    width: 320px;
+    margin: 0 auto
+}
+
+.ads-mega-box .close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: inline-block
+}
+
+.ads-mega-box .close i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-position: 0 -462px
+}
+
+.ads-bottom-menu .box-ads {
+    height: 100px
+}
+
+.ads-square .box-ads {
+    min-height: 250px
+}
+
+.ads-bottom-fixed {
+    background: none repeat scroll 0 0 #fff;
+    bottom: 0;
+    margin: 0 auto;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    height: 50px
+}
+
+.ads-bottom-fixed .btn-cls {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px
+}
+
+.ads-bottom-fixed .btn-cls i {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: -1px -463px
+}
+
+.title-ads-mega {
+    font-family: "PlusJakartaSans700";
+    font-size: 12px;
+    text-align: center;
+    background-color: #1d4595;
+    color: #fff;
+    padding: 4px 0;
+    border-top: 1px solid #fff
+}
+
+.ad-box {
+    background-color: #eee;
+    padding: 16px 0
+}
+
+.ad-box .ad-label {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 700
+}
+
+.ad-box .mtmin8 {
+    margin-top: -8px
+}
+
+.ad-box .mb8 {
+    margin-bottom: 8px
+}
+
+.ad-box .mh200 {
+    min-height: 200px
+}
+
+.ad-box .w320 {
+    width: 320px
+}
+
+.ad-box .mh480 {
+    min-height: 480px
+}
+
+.ad-box .ad-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative
+}
+
+.ad-box .ad-me {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 54px;
+    left: 0;
+    transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s
+}
+
+header {
+    box-shadow: 0px 4px 4px 0px rgba(201, 201, 201, .25);
+    background-color: #fff;
+    z-index: 999
+}
+
+.overflow-active {
+    transform: translate(0, 60px);
+    overflow-x: visible
+}
+
+#menuheaders {
+    z-index: 999999999;
+    background: #fff none repeat scroll 0 0;
+    overflow-x: clip;
+    padding: 15px 16px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+@media screen and (min-width: 768px) {
+    #menuheaders {
+        padding: 15px 32px
+    }
+}
+
+#menuheaders .left {
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: center
+}
+
+#menuheaders .left .logo {
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 127px;
+    height: 20px
+}
+
+#menuheaders .right {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: start
+}
+
+#menuheaders .right .searchbtn {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    background-position: -42px -3px
+}
+
+#menuheaders .right .navbtn {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    background-position: -81px -3px
+}
+
+#menuheaders.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    animation: menuFixed .3s
+}
+
+#mainMenu {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+    background: #fff;
+    z-index: 99;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0 16px 8px;
+    padding: 8px 0
+}
+
+@media screen and (min-width: 768px) {
+    #mainMenu {
+        margin: 0 32px 8px
+    }
+}
+
+#mainMenu::-webkit-scrollbar {
+    display: none
+}
+
+#mainMenu .link-kanal {
+    position: relative;
+    font-family: "PlusJakartaSans700";
+    color: #5b5b5b;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8px 16px
+}
+
+#mainMenu .link-kanal.active {
+    background-color: #1b387b;
+    color: #fff;
+    border-radius: 32px
+}
+
+#mainMenu .link-kanal.notify:after {
+    content: ".";
+    font-family: "Roboto500";
+    color: #d64a35;
+    position: absolute;
+    font-size: 30px;
+    bottom: 10px;
+    right: 6px
+}
+
+#mainMenu .link-kanal img {
+    width: 24px;
+    object-fit: contain;
+    object-position: center;
+    -o-object-fit: contain;
+    -o-object-position: center
+}
+
+#mainMenu .icon-okezone {
+    margin-right: 12px;
+    min-width: 20px;
+    min-height: 20px;
+    width: 20px;
+    height: 20px;
+    background-position: -315.5px -6px
+}
+
+#menubar_ {
+    padding-left: 0;
+    white-space: nowrap;
+    position: relative
+}
+
+#menubar_.navbarmenu {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999999999;
+    position: fixed;
+    overflow-y: scroll;
+    display: block;
+    left: -100%
+}
+
+#menubar_ .menubar-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 16px
+}
+
+#menubar_ .header-sidebar {
+    background-color: #1b387b;
+    position: relative;
+    white-space: nowrap;
+    padding: 17.5px 16px
+}
+
+#menubar_ .header-sidebar .title {
+    font-size: 16px;
+    color: #fff;
+    font-family: "PlusJakartaSans700";
+    line-height: normal;
+    margin-bottom: 0
+}
+
+#menubar_ .header-sidebar .close_menubar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 13px;
+    display: block;
+    z-index: 9;
+    width: 24px;
+    height: 24px;
+    background-position: -350.5px -4px;
+    margin: auto
+}
+
+#menubar_ .listbar {
+    line-height: 40px;
+    margin: 22px 0;
+    font-family: "PlusJakartaSans400";
+    font-size: 16px
+}
+
+#menubar_ .listbar a {
+    width: 100%;
+    text-decoration: none;
+    color: #212121;
+    display: flex;
+    align-items: center
+}
+
+#menubar_ .listbar a:active {
+    text-decoration: none
+}
+
+#menubar_ .listbar a:focus {
+    text-decoration: none
+}
+
+#menubar_ .listbar .category {
+    font-family: "PlusJakartaSans700";
+    font-size: 16px;
+    padding-left: 16px;
+    color: #000
+}
+
+#menubar_ .listbar .listbar-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 6px
+}
+
+#menubar_ .listbar .listbar-wrapper .listbar-row {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 12px 5px 10px
+}
+
+#menubar_ .listbar .listbar-wrapper .listbar-row:hover {
+    background: #f1f1f1
+}
+
+#menubar_ .listbar .listbar-wrapper .icon {
+    position: absolute;
+    width: 28px;
+    height: 100%
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.okezonetv {
+    background-position: -2px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.okezone-radio {
+    background-position: -50.5px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.tren {
+    background-position: -98px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.viral {
+    background-position: -146px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.terkini {
+    background-position: -2px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.news {
+    background-position: -243px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.finance {
+    background-position: -49px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.lifestyle {
+    background-position: -291px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.celebrity {
+    background-position: -97px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.bola {
+    background-position: -340px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.sport {
+    background-position: -145.5px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.travel {
+    background-position: -388px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.muslim {
+    background-position: -193.5px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.edukasi {
+    background-position: -434px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.haji {
+    background-position: -241.5px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.health {
+    background-position: -483px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.techno {
+    background-position: -289.5px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.otomotif {
+    background-position: -532px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.highend {
+    background-position: -337.5px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.infografis {
+    background-position: -580px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.foto {
+    background-position: -386px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.video {
+    background-position: -627px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.indeks {
+    background-position: -434px -127px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.flashsale {
+    background-position: -195px -85px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.sindonews {
+    background-position: -2px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.inews {
+    background-position: -267px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.idx {
+    background-position: -55px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.trijaya {
+    background-position: -320px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.aladin {
+    background-position: -108px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.vision {
+    background-position: -161px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.rctiplus {
+    background-position: -426px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.aladin-mall {
+    background-position: -478px -169px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.instagram {
+    background-position: -2px -213px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.facebook {
+    background-position: -146px -213px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.twitter {
+    background-position: -195px -213px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.youtube {
+    background-position: -49px -213px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.tiktok {
+    background-position: -98px -213px
+}
+
+#menubar_ .listbar .listbar-wrapper .icon.about {
+    background-position: -242px -213px
+}
+
+#menubar_ .listbar .listbar-wrapper .kanal {
+    font-family: "PlusJakartaSans400";
+    font-size: 16px;
+    margin-left: 40px;
+    color: #212121
+}
+
+@media(max-width: 340px) {
+    #menubar_ .listbar .listbar-wrapper .kanal {
+        font-size: 14px
+    }
+}
+
+#box-search {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 11px 16px
+}
+
+#box-search .formsearch {
+    display: flex;
+    align-items: center
+}
+
+#box-search .frm-grp {
+    width: calc(100% - 32px)
+}
+
+#box-search #textfield {
+    background-color: #f9f9f9;
+    border: 0;
+    border-radius: 8px;
+    padding: 0 8px;
+    width: 100%;
+    height: 32px;
+    font-size: 16px
+}
+
+#box-search #textfield::placeholder {
+    font-size: 16px;
+    font-family: "PlusJakartaSans500";
+    line-height: normal;
+    letter-spacing: -0.333px;
+    color: #949393
+}
+
+#box-search #textfield:focus,
+#box-search #textfield:hover {
+    font-size: 16px;
+    outline: unset
+}
+
+#box-search #search-top {
+    position: absolute;
+    right: 58px;
+    width: 24px;
+    height: 24px;
+    background-position: -42px -3px;
+    border: 0;
+    background-color: #f9f9f9;
+    text-indent: -99999px
+}
+
+@media screen and (min-width: 768px) {
+    #box-search #search-top {
+        right: 74px
+    }
+}
+
+#box-search .search-close {
+    width: 20px;
+    height: 20px;
+    background-position: -122px -6px;
+    margin-left: 16px
+}
+
+@media screen and (min-width: 768px) {
+    #box-search {
+        padding: 11px 32px
+    }
+}
+
+@keyframes menuFixed {
+    0% {
+        top: -100%;
+        height: 0
+    }
+
+    100% {
+        top: 0;
+        height: max-content
+    }
+}
+
+#app {
+    position: relative;
+    z-index: 1;
+    margin-top: 500px;
+    background-color: #fff
+}
+
+main {
+    padding-top: 11px
+}
+
+.title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #212121;
+    font-family: "PlusJakartaSans700";
+    line-height: 140%
+}
+
+.list-news {
+    display: flex;
+    background: #fff;
+    align-items: start;
+    margin-bottom: 8px
+}
+
+.list-news:last-of-type {
+    margin-bottom: 0
+}
+
+.list-news .box-img {
+    width: 106px;
+    height: 106px
+}
+
+.list-news .box-img img {
+    border-radius: 8px
+}
+
+.list-news .box-text {
+    width: calc(100% - 118px);
+    margin-left: 12px
+}
+
+.list-news .box-text a {
+    display: block
+}
+
+.list-news .box-text .kanal {
+    color: #949393;
+    font-size: 12px;
+    font-family: "PlusJakartaSans700";
+    line-height: normal;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center
+}
+
+.list-news .box-text .kanal .icon-video {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-position: -326px -227px
+}
+
+.list-news .box-text .kanal .icon-foto {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-position: -291px -227px
+}
+
+.list-news .box-text .kanal .icon-infografis {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-position: -361px -227px
+}
+
+.list-news .box-text .timego {
+    font-size: 12px;
+    font-family: "PlusJakartaSans400";
+    line-height: normal;
+    color: #949393
+}
+
+.list-news .box-text .title {
+    font-size: 14px;
+    font-family: "PlusJakartaSans700";
+    line-height: 160%;
+    letter-spacing: .2px;
+    margin-bottom: 4px
+}
+
+@media screen and (min-width: 600px) {
+    .list-news .box-text .title {
+        font-size: 12px
+    }
+}
+
+.list-news .box-text .upper {
+    color: #ec2424;
+    font-family: "PlusJakartaSans700";
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 4px
+}
+
+.list-news.big-img {
+    display: block;
+    box-shadow: 0px 1px 4px 0px rgba(195, 195, 195, .25);
+    padding: 4px 4px 24px 4px;
+    margin-bottom: 12px
+}
+
+.list-news.big-img .box-img {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    height: calc(67vw - 26px)
+}
+
+.list-news.big-img .box-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.list-news.big-img .box-text .kanal {
+    border-radius: 4px;
+    background: #5b5b5b;
+    box-shadow: 1px 1px 4px 0px rgba(131, 165, 231, .25);
+    backdrop-filter: blur(5px);
+    padding: 4px 8px;
+    margin-right: 8px;
+    color: #fff;
+    margin-bottom: 0
+}
+
+.list-news.big-img .box-text .timego {
+    font-family: "PlusJakartaSans500"
+}
+
+.list-news.big-img .box-text .title {
+    margin: 16px 8px 0;
+    width: calc(100% - 16px);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0
+}
+
+#box-news .list-news {
+    margin: 0 16px 16px
+}
+
+#box-news .list-news.big-img {
+    margin-bottom: 20px;
+    border-radius: 8px
+}
+
+#box-news .widget-mobile .list-news:last-of-type {
+    margin-bottom: 0
+}
+
+.widget-mobile {
+    padding: 16px 0 20px;
+    margin: 20px 0 16px;
+    border-top: 8px solid #f9f9f9;
+    border-bottom: 8px solid #f9f9f9
+}
+
+.widget-mobile>.title {
+    margin: 0 16px 16px;
+    clear: both
+}
+
+.widget-mobile .list-news {
+    padding: 4px;
+    border-radius: 8px
+}
+
+.widget-mobile#terpopuler .list-news {
+    position: relative
+}
+
+.widget-mobile#terpopuler .list-news .box-img {
+    position: relative
+}
+
+.widget-mobile#terpopuler .list-news:nth-child(2) .box-img::after {
+    background-position: 9px -314px
+}
+
+.widget-mobile#terpopuler .list-news:nth-child(4) .box-img::after {
+    background-position: -37px -314px
+}
+
+.widget-mobile#terpopuler .list-news:nth-child(6) .box-img::after {
+    background-position: -85px -314px
+}
+
+.widget-mobile#terpopuler .list-news:nth-child(8) .box-img::after {
+    background-position: -133px -314px
+}
+
+.widget-mobile#terpopuler .list-news:nth-child(10) .box-img::after {
+    background-position: -184px -314px
+}
+
+.widget-mobile#terpopuler .list-news:nth-child(12) .box-img::after {
+    background-position: 9px -314px
+}
+
+.widget-mobile#terpopuler .list-news .box-img::after {
+    content: "";
+    width: 47px;
+    height: 71px;
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+@media screen and (min-width: 600px) {
+    .widget-mobile {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .widget-mobile>.title {
+        width: 100%
+    }
+}
+
+.this-footer {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: max-content;
+    margin-top: 35px;
+    padding: 0 10px 59px;
+    border-top: 6px solid #213e7a
+}
+
+.this-footer .company-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block
+}
+
+.this-footer .company-box .company-profile {
+    width: 100%;
+    text-align: center;
+    margin: 32px auto 12px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "PlusJakartaSans700";
+    line-height: 160%;
+    color: #212121
+}
+
+.this-footer .company-box .company-category {
+    position: relative;
+    margin: auto
+}
+
+.this-footer .company-box .company-category>div {
+    text-align: center
+}
+
+.this-footer .company-box .company-category>div>div {
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    justify-content: center
+}
+
+.this-footer .company-box .company-category>div>div a {
+    color: #4e4e4e;
+    font-size: 14px;
+    line-height: 160%;
+    white-space: nowrap;
+    padding: 0 10px;
+    position: relative
+}
+
+.this-footer .company-box .company-category>div>div a:after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: #e9e9e9;
+    right: 0px
+}
+
+.this-footer .company-box .company-category>div>div a:hover {
+    color: #1b387b
+}
+
+.this-footer .company-box .company-category>div>div a:last-child:after {
+    display: none
+}
+
+@media(max-width: 340px) {
+    .this-footer .company-box .company-category>div>div a {
+        font-size: 12.5px
+    }
+}
+
+.this-footer .company-box .company-logo {
+    display: block;
+    width: 206px;
+    height: 48px;
+    margin: 43px auto 0;
+    background-position: -358px -549px
+}
+
+.this-footer .company-box .company-download {
+    position: relative;
+    margin: 32px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.this-footer .company-box .company-download a {
+    width: 117px;
+    height: 36px
+}
+
+.this-footer .company-box .company-download .apple {
+    background-position: -405px -499px
+}
+
+.this-footer .company-box .company-download .android {
+    background-position: -289px -499px
+}
+
+.this-footer .company-box .company-partner {
+    position: relative;
+    margin-bottom: 24px;
+    display: block;
+    overflow: hidden
+}
+
+.this-footer .company-box .company-partner .name {
+    font-family: "Roboto500";
+    font-size: 14px;
+    color: #212121;
+    margin-bottom: 10px
+}
+
+.this-footer .company-box .company-partner .part {
+    width: 100%;
+    text-align: center
+}
+
+.this-footer .company-box .company-partner .part.mncportal {
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px
+}
+
+.this-footer .company-box .company-partner .part.mncportal .name {
+    font-family: "Roboto700";
+    color: #707070;
+    margin: 0 10px 0 0;
+    line-height: 28px
+}
+
+.this-footer .company-box .company-partner .part.mncportal .logo {
+    margin: 0
+}
+
+@media screen and (max-width: 340px) {
+    .this-footer .company-box .company-partner .part.mncportal {
+        margin-right: 8px
+    }
+}
+
+.this-footer .company-box .company-partner .mncportal .logo {
+    width: 120px;
+    height: 32px;
+    background-position: 0px -556px
+}
+
+.this-footer .company-box .company-partner .socialmedia {
+    display: flex;
+    justify-content: center
+}
+
+.this-footer .company-box .company-partner .socialmedia>div {
+    width: 36px;
+    height: 36px;
+    margin: 0 6px
+}
+
+.this-footer .company-box .company-partner .socialmedia>div a {
+    display: block;
+    width: 36px;
+    height: 36px
+}
+
+.this-footer .company-box .company-partner .socialmedia>div.instagram {
+    background-position: -131.5px -555px
+}
+
+.this-footer .company-box .company-partner .socialmedia>div.facebook {
+    background-position: -175.5px -555px
+}
+
+.this-footer .company-box .company-partner .socialmedia>div.youtube {
+    background-position: -263.5px -555px
+}
+
+.this-footer .company-box .company-partner .socialmedia>div.twitter {
+    background-position: -219.5px -555px
+}
+
+.this-footer .company-box .company-partner .socialmedia>div.tiktok {
+    background-position: -307.5px -555px
+}
+
+@media screen and (max-width: 340px) {
+    .this-footer .company-box .company-partner .socialmedia>div {
+        margin: 0 4px
+    }
+}
+
+.this-footer .company-box .company-copyright {
+    font-size: 10px;
+    text-align: center;
+    color: #565656;
+    position: relative
+}
+
+.this-footer .company-box .company-copyright a {
+    color: #565656;
+    margin-left: 2px
+}
+
+.this-footer .company-box .company-copyright div {
+    display: flex;
+    justify-content: center
+}
+
+.this-footer .company-box .company-copyright span {
+    color: #fff
+}
+
+.to-top {
+    display: none;
+    position: fixed;
+    right: 10px;
+    z-index: 10;
+    bottom: 60px;
+    transition: all .2s ease-in-out
+}
+
+.to-top .faa-angle-up {
+    background-position: -49px -263px;
+    width: 40px;
+    height: 45px;
+    display: block
+}
+
+#sso {
+    position: relative
+}
+
+#sso .sso-login #login-sso {
+    padding: 7px 16px 0
+}
+
+#sso .sso-login #login-sso.open-submenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: max-content;
+    padding: 7px 16px 0
+}
+
+#sso .sso-login #login-sso.open-submenu .left {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    padding: 0
+}
+
+#sso .sso-login #login-sso.open-submenu .left img {
+    border-radius: 100%
+}
+
+#sso .sso-login #login-sso.open-submenu .icon-sso {
+    background-position: -2px -3px
+}
+
+#sso .sso-login #login-sso #image_user-login {
+    display: flex;
+    align-items: center;
+    color: #d30000;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "PlusJakartaSans500";
+    text-transform: unset;
+    padding: 0;
+    margin-top: 9px
+}
+
+#sso .sso-login #login-sso #image_user-login .img-ava {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    background-position: -2px -4px
+}
+
+#sso .sso-login #login-sso #image_user-login a {
+    padding: 0;
+    color: #1d4595;
+    text-transform: unset;
+    line-height: 40px;
+    font-family: "PlusJakartaSans700";
+    font-size: 16px;
+    line-height: normal
+}
+
+#sso .sso-login #login-sso .mid .name-user1 {
+    font-size: 14px;
+    line-height: normal;
+    color: #949393;
+    display: block;
+    margin-bottom: 4px
+}
+
+#sso .sso-login #login-sso .mid .name-user2 {
+    font-family: "PlusJakartaSans700";
+    font-size: 16px;
+    line-height: normal;
+    color: #212121;
+    display: block
+}
+
+#sso .submenu {
+    display: none;
+    margin: 20px 16px 0;
+    border-top: 1px solid #eaf1ff;
+    border-bottom: 1px solid #eaf1ff;
+    padding: 20px 0
+}
+
+#sso .submenu .box-text {
+    font-size: 16px;
+    line-height: 140%;
+    font-family: "PlusJakartaSans700";
+    margin-bottom: 8px
+}
+
+#sso .submenu .box-keterangan {
+    display: block;
+    text-wrap: wrap;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 28px
+}
+
+#sso .submenu .box-keterangan a {
+    color: #1d4595;
+    font-family: "PlusJakartaSans700"
+}
+
+#sso .submenu .warp-user-button {
+    margin-bottom: 32px
+}
+
+#sso .submenu .warp-user-button.disconnect {
+    margin-bottom: 0
+}
+
+#sso .submenu .warp-user-button a {
+    font-family: "PlusJakartaSans700";
+    color: #004a8e;
+    font-size: 16px;
+    line-height: 140%;
+    display: block
+}
+
+#sso #clicksso {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    top: 16px
+}
+
+#sso #clicksso.faa-angle-down {
+    background-position: -428.5px -4px
+}
+
+#sso #clicksso.faa-angle-up {
+    background-position: -389.5px -4px
+}
+
+#msg-sso {
+    position: relative;
+    position: fixed;
+    bottom: 0;
+    z-index: 999999999;
+    padding: 16px;
+    background: #fff;
+    border: 2px solid #509af8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25), 0 25px 40px -10px rgba(0, 0, 0, .4);
+    border-radius: 20px 20px 0 0;
+    width: -webkit-fill-available;
+    display: none
+}
+
+#msg-sso.keyup {
+    bottom: 50px;
+    display: block
+}
+
+#msg-sso .msg-exit {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 16px;
+    top: 16px;
+    clear: both;
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/sso/mobile/img/close-blue.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+#msg-sso .button-lengkapi {
+    padding: 12px 16px;
+    width: 100%;
+    background: #509af8;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    height: max-content;
+    margin-top: 16px;
+    display: block
+}
+
+#msg-sso .msg-text {
+    margin-top: 24px;
+    position: relative;
+    padding-left: 33px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #0c2a75;
+    font-family: "PlusJakartaSans400"
+}
+
+#msg-sso .msg-text:before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background: url(https://cdn.okezone.com/underwood/revamp/2023/sso/mobile/img/info.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.page-detail #msg-sso {
+    bottom: 57px
+}
+
+.page-detail #msg-sso.keyup {
+    bottom: 107px
+}

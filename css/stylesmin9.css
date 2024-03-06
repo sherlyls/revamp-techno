@@ -1,21 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap);
 
-.card[data-v-5a3f67d8],
-.card[data-v-bdc52751] {
-    box-shadow: 0 0 4px rgba(66, 66, 66, .2);
-    user-select: none
-}
-
-#widget-populer .list-news .box-img::after,
-.ads-footer .close,
-header .logo-techno,
-header .other .login .img-login {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
-    background-size: 655px
-}
-
 @font-face {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-style: normal;
     font-weight: 700;
     src: local("PlusJakartaSans Bold"), local("PlusJakartaSans-Bold"), url(../font/PlusJakartaSans-Bold.woff2) format("woff2");
@@ -39,7 +25,7 @@ header .other .login .img-login {
 }
 
 @font-face {
-    font-family: Roboto400;
+    font-family: "Roboto400";
     font-style: normal;
     font-weight: 400;
     src: url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.eot);
@@ -48,7 +34,7 @@ header .other .login .img-login {
 }
 
 @font-face {
-    font-family: Roboto700;
+    font-family: "Roboto700";
     font-style: normal;
     font-weight: 700;
     src: url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.eot);
@@ -57,9 +43,9 @@ header .other .login .img-login {
 }
 
 @font-face {
-    font-family: robotomedium;
+    font-family: "robotomedium";
     src: url(https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff2) format("woff2"), url(https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff) format("woff");
-    font-weight: 400;
+    font-weight: normal;
     font-style: normal;
     font-display: swap
 }
@@ -75,11 +61,9 @@ body {
 }
 
 input:focus {
-    outline: 0
+    outline: none
 }
 
-#widget-pilihan .group-pilihan .img-pilihan img,
-#widget-populer .list-news .box-img img,
 .img img {
     width: 100%;
     height: 100%;
@@ -95,7 +79,7 @@ input:focus {
     margin-bottom: 16px;
     font-size: 16px;
     font-style: normal;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     line-height: 140%
 }
 
@@ -109,9 +93,7 @@ input:focus {
 }
 
 #widget-populer .list-news .box-img {
-    position: relative;
-    width: 95px;
-    height: 64px
+    position: relative
 }
 
 #widget-populer .list-news:nth-child(2) .box-img::after {
@@ -134,7 +116,14 @@ input:focus {
     background-position: -192px -874px
 }
 
+#widget-populer .list-news .box-img {
+    width: 95px;
+    height: 64px
+}
+
 #widget-populer .list-news .box-img::after {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
+    background-size: 655px;
     content: "";
     width: 35px;
     height: 69px;
@@ -143,25 +132,26 @@ input:focus {
     bottom: 0
 }
 
+#widget-populer .list-news .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
 #widget-populer .list-news .box-text {
     width: calc(100% - 118px);
     margin-left: 12px
 }
 
-#widget-populer .list-news .box-text a,
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-dua.show,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-dua.show,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section a,
-.wrapper-container .left-section .headline .small-section .group-section .desc-section a,
-header .other .burger-menu .bg-burger.open {
+#widget-populer .list-news .box-text a {
     display: block
 }
 
 #widget-populer .list-news .box-text .title,
-#widget-populer .list-news .box-text .title:link,
-#widget-populer .list-news .box-text .title:visited {
+#widget-populer .list-news .box-text .title:visited,
+#widget-populer .list-news .box-text .title:link {
     font-size: 14px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     line-height: 22.4px;
     letter-spacing: .2px;
     margin-bottom: 4px;
@@ -174,24 +164,15 @@ header .other .burger-menu .bg-burger.open {
     -webkit-box-orient: vertical
 }
 
-#widget-pilihan .group-pilihan .text-pilihan:hover,
-#widget-pilihan .group-pilihan .text-pilihan:link:hover,
-#widget-pilihan .group-pilihan .text-pilihan:visited:hover,
 #widget-populer .list-news .box-text .title:hover,
-#widget-populer .list-news .box-text .title:link:hover,
 #widget-populer .list-news .box-text .title:visited:hover,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:hover,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:link:hover,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:visited:hover,
-.wrapper-container .left-section .headline .big-section .desc-section .desc-text:hover,
-.wrapper-container .left-section .headline .big-section .desc-section a:hover,
-.wrapper-container .left-section .headline .small-section .group-section .desc-section .desc-text:hover {
+#widget-populer .list-news .box-text .title:link:hover {
     color: #457ae5
 }
 
 #widget-pilihan .title {
     margin: 20px 0 16px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 20px;
     line-height: 28px;
     color: #000
@@ -207,20 +188,34 @@ header .other .burger-menu .bg-burger.open {
     margin-right: 11.84px
 }
 
+#widget-pilihan .group-pilihan .img-pilihan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
 #widget-pilihan .group-pilihan .text-pilihan,
-#widget-pilihan .group-pilihan .text-pilihan:link,
-#widget-pilihan .group-pilihan .text-pilihan:visited {
+#widget-pilihan .group-pilihan .text-pilihan:visited,
+#widget-pilihan .group-pilihan .text-pilihan:link {
     width: 69.3%;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 14px;
     line-height: 22.4px;
     color: #212121;
     text-decoration: none
 }
 
-@media only screen and (min-width:600px) and (max-width:999px) {
+#widget-pilihan .group-pilihan .text-pilihan:hover,
+#widget-pilihan .group-pilihan .text-pilihan:visited:hover,
+#widget-pilihan .group-pilihan .text-pilihan:link:hover {
+    color: #457ae5
+}
 
-    .ads2,
+@media only screen and (min-width:600px) and (max-width:999px) {
+    .ads2 {
+        width: 589px
+    }
+
     .w-ads2 {
         width: 589px
     }
@@ -240,13 +235,8 @@ header .other .burger-menu .bg-burger.open {
 
 @media only screen and (min-width:600px) and (max-width:1199px) {
 
-    .ads2,
-    .w-ads2 {
-        width: 633px
-    }
-
-    .ads-left,
-    .ads-right {
+    .ads-right,
+    .ads-left {
         display: none
     }
 
@@ -255,11 +245,16 @@ header .other .burger-menu .bg-burger.open {
     }
 
     footer .footer {
-        padding: 57px 0 38px
+        padding: 57px 0 38px 0
     }
 
     .ads2 {
+        width: 633px;
         overflow: hidden
+    }
+
+    .w-ads2 {
+        width: 633px
     }
 }
 
@@ -296,14 +291,10 @@ header .other .burger-menu .bg-burger.open {
         right: 3px
     }
 
-    .okztv .content-okztv .container-recommendation,
-    .okztv .content-okztv .container-recommendation iframe,
-    .okztv .content-okztv .container-recommendation iframe html body #foryou,
     .wrapper-container .left-section .headline .big-section {
         display: block
     }
 
-    .okztv .content-okztv .big-content .group-content,
     .wrapper-container .left-section .headline .big-section .desc-section {
         width: 100%
     }
@@ -325,33 +316,28 @@ header .other .burger-menu .bg-burger.open {
         width: 538px
     }
 
-    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text,
     .wrapper-container .left-section .desc-section .title-text {
         display: flex;
         align-items: center
     }
 
-    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon,
     .wrapper-container .left-section .desc-section .title-text .icon {
         width: 28px;
         height: 28px;
-        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
         background-repeat: no-repeat;
         margin-right: 6px;
         background-size: 655px
     }
 
-    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon.gambar,
     .wrapper-container .left-section .desc-section .title-text .icon.gambar {
         background-position: -261px -223px
     }
 
-    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon.video,
     .wrapper-container .left-section .desc-section .title-text .icon.video {
         background-position: -303px -223px
     }
 
-    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon.index,
     .wrapper-container .left-section .desc-section .title-text .icon.index {
         background-position: -348px -223px
     }
@@ -363,6 +349,32 @@ header .other .burger-menu .bg-burger.open {
 
     .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section {
         width: calc(100% - 200px - 20px)
+    }
+
+    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text {
+        display: flex;
+        align-items: center
+    }
+
+    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon {
+        width: 28px;
+        height: 28px;
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
+        background-repeat: no-repeat;
+        margin-right: 6px;
+        background-size: 655px
+    }
+
+    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon.gambar {
+        background-position: -261px -223px
+    }
+
+    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon.video {
+        background-position: -303px -223px
+    }
+
+    .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text .icon.index {
+        background-position: -348px -223px
     }
 
     .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text {
@@ -383,7 +395,7 @@ header .other .burger-menu .bg-burger.open {
     }
 
     .okztv .head-okztv .logo-okztv {
-        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
         width: 121px;
         height: 32px;
         background-position: -168px -451px;
@@ -392,9 +404,9 @@ header .other .burger-menu .bg-burger.open {
     }
 
     .okztv .head-okztv .text-okztv,
-    .okztv .head-okztv .text-okztv:link,
-    .okztv .head-okztv .text-okztv:visited {
-        font-family: PlusJakartaSansBold;
+    .okztv .head-okztv .text-okztv:visited,
+    .okztv .head-okztv .text-okztv:link {
+        font-family: "PlusJakartaSansBold";
         font-size: 14px;
         line-height: 21px;
         color: #1c1a27;
@@ -409,6 +421,10 @@ header .other .burger-menu .bg-burger.open {
         display: block
     }
 
+    .okztv .content-okztv .big-content .group-content {
+        width: 100%
+    }
+
     .okztv .content-okztv .big-content .group-content .img-content {
         width: 100%;
         height: 128px;
@@ -418,18 +434,17 @@ header .other .burger-menu .bg-burger.open {
         margin-right: 20px
     }
 
-    .okztv .content-okztv .big-content .group-content .img-content img,
-    .okztv .content-okztv .small-content .group-content .img-content img {
+    .okztv .content-okztv .big-content .group-content .img-content img {
         width: 100%;
         height: 100%;
         object-fit: cover
     }
 
     .okztv .content-okztv .big-content .group-content .title-content,
-    .okztv .content-okztv .big-content .group-content .title-content:link,
-    .okztv .content-okztv .big-content .group-content .title-content:visited {
+    .okztv .content-okztv .big-content .group-content .title-content:visited,
+    .okztv .content-okztv .big-content .group-content .title-content:link {
         color: #fff;
-        font-family: PlusJakartaSansBold;
+        font-family: "PlusJakartaSansBold";
         font-size: 16px;
         line-height: 25.6px;
         text-decoration: none;
@@ -454,10 +469,16 @@ header .other .burger-menu .bg-burger.open {
         display: block
     }
 
+    .okztv .content-okztv .small-content .group-content .img-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
     .okztv .content-okztv .small-content .group-content .title-content,
-    .okztv .content-okztv .small-content .group-content .title-content:link,
-    .okztv .content-okztv .small-content .group-content .title-content:visited {
-        font-family: PlusJakartaSansBold;
+    .okztv .content-okztv .small-content .group-content .title-content:visited,
+    .okztv .content-okztv .small-content .group-content .title-content:link {
+        font-family: "PlusJakartaSansBold";
         font-size: 14px;
         line-height: 160%;
         color: #fff;
@@ -471,6 +492,18 @@ header .other .burger-menu .bg-burger.open {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         height: 65.81px
+    }
+
+    .okztv .content-okztv .container-recommendation {
+        display: block
+    }
+
+    .okztv .content-okztv .container-recommendation iframe {
+        display: block
+    }
+
+    .okztv .content-okztv .container-recommendation iframe html body #foryou {
+        display: block
     }
 
     .okztv .content-okztv .container-recommendation iframe html body #foryou .box-title .icon {
@@ -512,14 +545,13 @@ header .other .burger-menu .bg-burger.open {
 }
 
 @media only screen and (min-width:600px) and (min-width:999px) {
-
-    .ads2,
-    .w-ads2 {
-        width: 768px
+    .ads2 {
+        width: 768px;
+        overflow: hidden
     }
 
-    .ads2 {
-        overflow: hidden
+    .w-ads2 {
+        width: 768px
     }
 
     header .menu {
@@ -532,10 +564,9 @@ header .other .burger-menu .bg-burger.open {
     }
 
     .other .search div input {
-        width: 690px
+        width: 683px
     }
 
-    .okztv .content-okztv,
     .wrapper-container .left-section .headline .big-section {
         display: flex
     }
@@ -575,8 +606,8 @@ header .other .burger-menu .bg-burger.open {
     }
 
     .wrapper-container .left-section .brt-terkini .group-brt-terkini .img-section {
-        width: 301px;
-        height: 201px
+        height: 201px;
+        width: 301px
     }
 
     .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section {
@@ -589,7 +620,11 @@ header .other .burger-menu .bg-burger.open {
     }
 
     footer .footer .box-flex-footer .box-footer {
-        margin: 0 12px 24px
+        margin: 0 44px 24px
+    }
+
+    .wrapper-container .left-section .brt-terkini .group-brt-terkini .img-section {
+        height: 201px
     }
 
     .okztv {
@@ -605,7 +640,7 @@ header .other .burger-menu .bg-burger.open {
     }
 
     .okztv .head-okztv .logo-okztv {
-        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
         width: 121px;
         height: 32px;
         background-position: -168px -451px;
@@ -614,9 +649,9 @@ header .other .burger-menu .bg-burger.open {
     }
 
     .okztv .head-okztv .text-okztv,
-    .okztv .head-okztv .text-okztv:link,
-    .okztv .head-okztv .text-okztv:visited {
-        font-family: PlusJakartaSansBold;
+    .okztv .head-okztv .text-okztv:visited,
+    .okztv .head-okztv .text-okztv:link {
+        font-family: "PlusJakartaSansBold";
         font-size: 14px;
         line-height: 21px;
         color: #1c1a27;
@@ -624,6 +659,10 @@ header .other .burger-menu .bg-burger.open {
         text-decoration: none;
         padding: 8px 27px;
         border-radius: 8px
+    }
+
+    .okztv .content-okztv {
+        display: flex
     }
 
     .okztv .content-okztv .big-content {
@@ -644,18 +683,17 @@ header .other .burger-menu .bg-burger.open {
         margin-right: 0
     }
 
-    .okztv .content-okztv .big-content .group-content .img-content img,
-    .okztv .content-okztv .small-content .group-content .img-content img {
+    .okztv .content-okztv .big-content .group-content .img-content img {
         width: 100%;
         height: 100%;
         object-fit: cover
     }
 
     .okztv .content-okztv .big-content .group-content .title-content,
-    .okztv .content-okztv .big-content .group-content .title-content:link,
-    .okztv .content-okztv .big-content .group-content .title-content:visited {
+    .okztv .content-okztv .big-content .group-content .title-content:visited,
+    .okztv .content-okztv .big-content .group-content .title-content:link {
         color: #fff;
-        font-family: PlusJakartaSansBold;
+        font-family: "PlusJakartaSansBold";
         font-size: 16px;
         line-height: 25.6px;
         text-decoration: none;
@@ -681,10 +719,16 @@ header .other .burger-menu .bg-burger.open {
         cursor: pointer
     }
 
+    .okztv .content-okztv .small-content .group-content .img-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+
     .okztv .content-okztv .small-content .group-content .title-content,
-    .okztv .content-okztv .small-content .group-content .title-content:link,
-    .okztv .content-okztv .small-content .group-content .title-content:visited {
-        font-family: PlusJakartaSansBold;
+    .okztv .content-okztv .small-content .group-content .title-content:visited,
+    .okztv .content-okztv .small-content .group-content .title-content:link {
+        font-family: "PlusJakartaSansBold";
         font-size: 14px;
         line-height: 160%;
         color: #fff;
@@ -732,12 +776,18 @@ header .other .burger-menu .bg-burger.open {
         width: 1015px
     }
 
-    .ads2,
+    .ads2 {
+        width: 970px
+    }
+
     .w-ads2 {
         width: 970px
     }
 
-    .ads3,
+    .ads3 {
+        width: 590px
+    }
+
     .w-ads3 {
         width: 590px
     }
@@ -751,7 +801,7 @@ header .other .burger-menu .bg-burger.open {
     }
 
     header .other .search #box-search-desktop input {
-        width: 766px
+        width: 756px
     }
 }
 
@@ -766,6 +816,10 @@ header .other .burger-menu .bg-burger.open {
 }
 
 @media only screen and (min-width:600px) and (min-width:999px) and (min-width:1350px) {
+    .wrapper-container {
+        width: 1095px
+    }
+
     .ads3 {
         width: 728px
     }
@@ -775,7 +829,7 @@ header .other .burger-menu .bg-burger.open {
     }
 
     header .menu {
-        padding: 0 84.5px
+        padding: 0 110.5px
     }
 
     header .other .burger-menu .content-burger {
@@ -800,12 +854,16 @@ header .other .burger-menu .bg-burger.open {
 }
 
 @media only screen and (min-width:600px) and (min-width:999px) and (min-width:1400px) {
+    .wrapper-container {
+        width: 1040px
+    }
+
     .ads-right {
-        right: calc((100% - 1040px)/ 2 - 120px)
+        right: calc((100% - 1040px)/2 - 120px)
     }
 
     .ads-left {
-        left: calc((100% - 1040px)/ 2 - 120px)
+        left: calc((100% - 1040px)/2 - 120px)
     }
 
     header .menu {
@@ -853,37 +911,34 @@ header .other .burger-menu .bg-burger.open {
     margin-bottom: 74px
 }
 
-.container-recommendation .content-recommendation a,
-.mctitle a:hover,
-.wrapper-container .left-section .headline .small-section .group-section .desc-section a:link,
-.wrapper-container .left-section .headline .small-section .group-section .desc-section a:visited {
+.mctitle a:hover {
     text-decoration: none
 }
 
-.ads-footer,
-.ads-left,
-.ads-right,
 .ads1,
 .ads2,
 .ads3,
 .ads4,
 .ads5,
 .ads6,
-.ads7 {
+.ads7,
+.ads-footer,
+.ads-left,
+.ads-right {
     background-color: #f8f8f8;
     overflow: hidden
 }
 
-.ads-footer .title-ads,
-.ads-left .title-ads,
-.ads-right .title-ads,
 .ads1 .title-ads,
 .ads2 .title-ads,
 .ads3 .title-ads,
 .ads4 .title-ads,
 .ads5 .title-ads,
 .ads6 .title-ads,
-.ads7 .title-ads {
+.ads7 .title-ads,
+.ads-footer .title-ads,
+.ads-left .title-ads,
+.ads-right .title-ads {
     text-align: center;
     color: #aaa;
     font-size: 14px;
@@ -893,53 +948,71 @@ header .other .burger-menu .bg-burger.open {
 
 .ads1 {
     width: 728px;
-    margin: 0 auto
+    margin: 0 auto 0
 }
 
-.ads4,
-.ads5,
-.ads6,
-.right-section,
-.w-ads4,
-.w-ads5,
-.w-ads6,
-.w-ads7,
-.w300 {
-    width: 300px
-}
-
-.ads1 .content-ads,
-.ads3 .content-ads {
+.ads1 .content-ads {
     height: 90px
+}
+
+.w-ads1 {
+    width: 728px
 }
 
 .ads2 {
     margin: 30px auto 0
 }
 
-.ads3,
-.ads4 {
-    margin: 0 auto
-}
-
-.ads2 .content-ads,
-footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-footer .sosmed-footer .box-flex {
+.ads2 .content-ads {
     display: flex;
     justify-content: center
 }
 
-.ads4 .content-ads,
-.ads6 .content-ads {
+.ads3 {
+    margin: 0 auto
+}
+
+.ads3 .content-ads {
+    height: 90px
+}
+
+.ads4 {
+    width: 300px;
+    margin: 0 auto
+}
+
+.ads4 .content-ads {
     height: 250px
 }
 
-.ads5,
-.ads6 {
+.w-ads4 {
+    width: 300px
+}
+
+.ads5 {
+    width: 300px;
     margin: 20px auto 0
 }
 
 .ads5 .content-ads {
     height: 600px
+}
+
+.w-ads5 {
+    width: 300px
+}
+
+.ads6 {
+    width: 300px;
+    margin: 20px auto 0
+}
+
+.ads6 .content-ads {
+    height: 250px
+}
+
+.w-ads6 {
+    width: 300px
 }
 
 .ads7 {
@@ -949,6 +1022,10 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 
 .ads7 .content-ads {
     height: 270px
+}
+
+.w-ads7 {
+    width: 300px
 }
 
 .ads-footer {
@@ -971,32 +1048,40 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     position: absolute;
     width: 28px;
     height: 28px;
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     background-repeat: no-repeat;
     margin-right: 16px;
+    background-size: 655px;
     background-position: 0 -410px;
     right: -16px;
     top: 0;
     cursor: pointer
 }
 
-.ads-left,
+.ads-left {
+    width: 119px;
+    position: fixed;
+    top: 341px
+}
+
+.ads-left.top {
+    top: 75px
+}
+
+.ads-left .content-ads {
+    height: 598px
+}
+
 .ads-right {
     width: 119px;
     position: fixed;
-    top: 192px
+    top: 341px
 }
 
-.ad-box,
-.w480 {
-    width: 480px
-}
-
-.ads-left.top,
 .ads-right.top {
     top: 75px
 }
 
-.ads-left .content-ads,
 .ads-right .content-ads {
     height: 598px
 }
@@ -1017,8 +1102,17 @@ img {
     overflow: hidden;
     height: 100vh;
     background: #204695;
-    background: linear-gradient(225deg, #204695 0, #e84125 60%, #f5882e 100%);
+    background: linear-gradient(225deg, #204695 0%, #e84125 60%, #f5882e 100%);
     box-sizing: border-box
+}
+
+.banner[data-v-62f20fc5] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55vh;
+    max-width: 220px
 }
 
 .banner-box[data-v-62f20fc5] {
@@ -1081,8 +1175,45 @@ img {
     object-fit: contain
 }
 
+.content-arrow[data-v-62f20fc5] {
+    position: static;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 1
+}
+
 .arrow-left[data-v-62f20fc5] {
     margin-left: min(3.2vh, 8px)
+}
+
+.arrow-box[data-v-62f20fc5] {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, .2392156863) 0 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none
+}
+
+.arrow[data-v-62f20fc5] {
+    height: min(8vh, 28px);
+    width: min(8vh, 28px)
+}
+
+.arrow-box[data-v-62f20fc5] {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, .2392156863) 0 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none
 }
 
 .product[data-v-62f20fc5] {
@@ -1117,7 +1248,9 @@ img {
     background: #fff;
     border-radius: min(4vh, 8px);
     overflow: hidden;
-    text-decoration: none
+    user-select: none;
+    text-decoration: none;
+    box-shadow: 0 0 4px rgba(66, 66, 66, .2)
 }
 
 .card-img[data-v-bdc52751] {
@@ -1128,7 +1261,111 @@ img {
 }
 
 .shine {
-    background: linear-gradient(to right, #f6f7f8 0, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%) no-repeat #f6f7f8;
+    background: #f6f7f8 linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%) no-repeat;
+    display: inline-block;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeholderShimmer;
+    animation-timing-function: linear
+}
+
+.card[data-v-bdc52751] {
+    width: 50vh;
+    max-width: 200px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 0;
+    background: #fff;
+    border-radius: min(4vh, 8px);
+    overflow: hidden;
+    user-select: none;
+    text-decoration: none;
+    box-shadow: 0 0 4px rgba(66, 66, 66, .2)
+}
+
+.img-fit[data-v-bdc52751] {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%
+}
+
+.card-content[data-v-bdc52751] {
+    padding: 3vh 2vh;
+    display: grid;
+    grid-template-rows: 1fr auto min(6.5vh, 20px);
+    grid-gap: min(1.5vh, 4px);
+    padding-top: min(3vh, 12px);
+    padding-bottom: min(3vh, 12px);
+    padding-left: min(2vh, 10px);
+    padding-right: min(2vh, 10px)
+}
+
+.txt-title[data-v-bdc52751] {
+    font-family: Montserrat-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(5.5vh, 16px);
+    color: #424242;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: min(2vh, 4px)
+}
+
+.txt-price[data-v-bdc52751] {
+    font-family: Satoshi-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: min(6.3vh, 18px);
+    color: #121212
+}
+
+.info[data-v-bdc52751] {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: min(3vh, 12px);
+    align-items: center
+}
+
+.discount[data-v-bdc52751] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(13vh, 38px);
+    height: min(6.5vh, 20px);
+    background: #fff5f0;
+    border-radius: min(1.5vh, 4px)
+}
+
+.txt-discount-lbl[data-v-bdc52751] {
+    font-family: Satoshi-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: min(4.5vh, 14px);
+    color: #eb6951
+}
+
+.card-img[data-v-bdc52751] {
+    height: 50vh;
+    width: 50vh;
+    max-width: 200px;
+    max-height: 200px
+}
+
+.card-img[data-v-bdc52751] {
+    height: 50vh;
+    width: 50vh;
+    max-width: 200px;
+    max-height: 200px
+}
+
+.shine {
+    background: #f6f7f8 linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%) no-repeat;
     display: inline-block;
     position: relative;
     animation-duration: 1s;
@@ -1220,8 +1457,57 @@ img {
     z-index: 1
 }
 
+.arrow-box[data-v-62f20fc5] {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, .2392156863) 0 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none
+}
+
+.arrow-right[data-v-62f20fc5] {
+    margin-left: max(-11vh, -38px)
+}
+
+.arrow[data-v-62f20fc5] {
+    height: min(8vh, 28px);
+    width: min(8vh, 28px)
+}
+
+.arrow-box[data-v-62f20fc5] {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, .2392156863) 0 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none
+}
+
+.card[data-v-5a3f67d8] {
+    width: 50vh;
+    height: 100%;
+    max-width: 200px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 0;
+    overflow: hidden;
+    user-select: none;
+    text-decoration: none;
+    box-shadow: 0 0 4px rgba(66, 66, 66, .2);
+    border-radius: min(4vh, 8px)
+}
+
 .card-img[data-v-5a3f67d8] {
-    background: url(https://widget-am.misteraladin.com/assets/background-lihat-semua.b5dd11a5.png) 0 0/cover no-repeat;
+    background: url(https://widget-am.misteraladin.com/assets/background-lihat-semua.b5dd11a5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: calc(100vh - min(10vh, 20%) - min(10vh, 20%));
     background-position-y: center
 }
@@ -1234,7 +1520,9 @@ img {
     grid-template-rows: auto 1fr;
     grid-gap: 0;
     overflow: hidden;
+    user-select: none;
     text-decoration: none;
+    box-shadow: 0 0 4px rgba(66, 66, 66, .2);
     border-radius: min(4vh, 8px)
 }
 
@@ -1260,15 +1548,14 @@ img {
 }
 
 @media (min-height:400px) {
-
-    .content-scroll[data-v-62f20fc5],
-    .product[data-v-62f20fc5] {
-        overflow-x: auto;
-        overflow-y: scroll
+    .arrow-box[data-v-62f20fc5] {
+        display: none
     }
 
     .card-img[data-v-5a3f67d8] {
-        background: url(https://widget-am.misteraladin.com/assets/background-lihat-semua.b5dd11a5.png) 0 0/cover no-repeat;
+        background: url(https://widget-am.misteraladin.com/assets/background-lihat-semua.b5dd11a5.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         min-height: 100%;
         height: 319.5px;
         background-position-y: center
@@ -1278,6 +1565,15 @@ img {
         width: 44.5vw;
         height: max-content;
         margin: auto
+    }
+
+    .arrow-box[data-v-62f20fc5] {
+        display: none
+    }
+
+    .txt-discount-lbl[data-v-bdc52751],
+    .txt-discount[data-v-bdc52751] {
+        font-size: min(4.2vw, 14px)
     }
 
     .txt-discount-lbl[data-v-bdc52751],
@@ -1316,11 +1612,58 @@ img {
         margin: auto
     }
 
+    .txt-discount-lbl[data-v-bdc52751],
+    .txt-discount[data-v-bdc52751] {
+        font-size: min(4.2vw, 14px)
+    }
+
+    .txt-discount-lbl[data-v-bdc52751],
+    .txt-discount[data-v-bdc52751] {
+        font-size: min(4.2vw, 14px)
+    }
+
+    .discount[data-v-bdc52751] {
+        width: min(12.7vw, 38px);
+        height: min(6.2vw, 20px);
+        border-radius: min(1.5vw, 4px)
+    }
+
+    .info[data-v-bdc52751] {
+        grid-gap: min(3vw, 12px)
+    }
+
+    .txt-price[data-v-bdc52751] {
+        font-size: min(6vw, 18px)
+    }
+
+    .txt-title[data-v-bdc52751] {
+        font-size: min(5.2vw, 16px);
+        margin-bottom: min(2vw, 4px)
+    }
+
+    .card-img[data-v-bdc52751] {
+        height: 44.5vw;
+        width: 44.5vw
+    }
+
+    .card[data-v-bdc52751] {
+        width: 44.5vw;
+        height: max-content;
+        border-radius: min(4vw, 8px);
+        margin: auto
+    }
+
+    .banner[data-v-62f20fc5] {
+        display: none !important
+    }
+
     .product[data-v-62f20fc5] {
         gap: 3vw;
         padding: 1vw 4vw 5vw;
         display: grid;
         grid-auto-flow: row;
+        overflow-x: auto;
+        overflow-y: scroll;
         grid-template-columns: repeat(2, 1fr)
     }
 
@@ -1337,9 +1680,14 @@ img {
         display: block !important
     }
 
+    .content-scroll[data-v-62f20fc5] {
+        overflow-x: auto;
+        overflow-y: scroll
+    }
+
     .content[data-v-62f20fc5] {
         background: #204695;
-        background: linear-gradient(195deg, #204695 0, #e84125 54%, #f5882e 82%);
+        background: linear-gradient(195deg, #204695 0%, #e84125 54%, #f5882e 82%);
         gap: 3vw;
         padding: 4vw 0 0;
         width: 100vw
@@ -1363,12 +1711,8 @@ img {
 .ad-box {
     background-color: #eee;
     margin: 0 auto 30px;
-    padding: 16px 0
-}
-
-.ad-me,
-.mh480 {
-    background-color: #000
+    padding: 16px 0;
+    width: 480px
 }
 
 .ad-container {
@@ -1382,10 +1726,11 @@ img {
     position: -webkit-sticky;
     top: 74px;
     left: 0;
-    transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    -o-transition: .5s
+    transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    background-color: #000
 }
 
 .ad-label {
@@ -1410,8 +1755,17 @@ img {
     margin-bottom: 8px
 }
 
+.w300 {
+    width: 300px
+}
+
+.w480 {
+    width: 480px
+}
+
 .mh480 {
-    min-height: 480px
+    min-height: 480px;
+    background-color: #000
 }
 
 .w-ads1 {
@@ -1438,6 +1792,7 @@ header {
     padding-top: 20px;
     height: 74px;
     position: relative;
+    background-color: #fff;
     margin-bottom: 25px;
     width: 100%;
     background: #fff;
@@ -1451,13 +1806,13 @@ header.sticky {
 }
 
 header .logo-techno {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 154px;
-    height: 34px;
+    height: 29px;
     display: block;
-    background-position: center;
-    background-size: contain;
+    background-position: 0 -458px;
     background-repeat: no-repeat;
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/mobile/img/logo-techno.png);
+    background-size: 655px
 }
 
 header .menu {
@@ -1482,11 +1837,10 @@ header .menu a.active {
     border-radius: 32px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .subgroup,
-footer .footer .box-flex-footer .box-footer .box-list,
-header .other,
+header .other {
+    display: flex
+}
+
 header .other #sso {
     display: flex
 }
@@ -1505,10 +1859,9 @@ header .other #sso #login-sso #image_user-login .img-ava {
     margin-left: 24px
 }
 
-header .other #sso #login-sso #image_user-login .text-login,
-header a {
+header .other #sso #login-sso #image_user-login .text-login {
     color: #5b5b5b;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 14px
 }
 
@@ -1519,12 +1872,14 @@ header .other .login {
 }
 
 header .other .login .img-login {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 24px;
     height: 24px;
     display: block;
     background-position: -2px -3px;
     background-repeat: no-repeat;
-    margin-right: 8px
+    margin-right: 8px;
+    background-size: 655px
 }
 
 header .other .search {
@@ -1532,30 +1887,24 @@ header .other .search {
     position: relative
 }
 
-header .other .burger-menu .content-burger .content-group .list-group .icon,
 header .other .search .icon-x {
     width: 28px;
     height: 28px;
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     background-repeat: no-repeat;
     margin-right: 16px;
     background-size: 655px
 }
 
-header .other .search #box-search-desktop .formsearch .search-close,
-header .other .search #search-top,
-header .other .search .icon {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+header .other .search .icon,
+header .other .search #search-top {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 24px;
     height: 24px;
+    background-position: -43px -3px;
     background-repeat: no-repeat;
     background-size: 655px;
     cursor: pointer
-}
-
-header .other .search #search-top,
-header .other .search .icon {
-    background-position: -43px -3px
 }
 
 header .other .search #box-search-desktop {
@@ -1575,7 +1924,6 @@ header .other .search #box-search-desktop.open {
     transform: rotate3d(0, 0, 1, 0deg)
 }
 
-.wrapper-container .fiture .share,
 header .other .search #box-search-desktop .formsearch {
     display: flex;
     align-items: center
@@ -1591,7 +1939,7 @@ header .other .search #box-search-desktop .formsearch input {
     border-radius: 8px
 }
 
-header .other .search #box-search-desktop .formsearch input[type=search] {
+header .other .search #box-search-desktop .formsearch input[type="search"] {
     color: #5b5b5b;
     font-family: PlusJakartaSans-Regular;
     padding-left: 10px
@@ -1607,10 +1955,16 @@ header .other .search #box-search-desktop .formsearch #search-top {
 }
 
 header .other .search #box-search-desktop .formsearch .search-close {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
+    width: 24px;
+    height: 24px;
     background-position: -120px -3px;
+    background-repeat: no-repeat;
     margin-left: 16px;
+    background-size: 655px;
     background-color: #fff;
-    z-index: 99
+    z-index: 99;
+    cursor: pointer
 }
 
 header .other .burger-menu {
@@ -1631,12 +1985,12 @@ header .other .burger-menu .icon-burger .burger-line {
     background-color: #212121;
     display: inline-block;
     position: absolute;
-    transition: .3s ease-in
+    transition: all .3s ease-in 0s
 }
 
 header .other .burger-menu .icon-burger .burger-line:nth-child(2) {
     margin-top: 7px;
-    transition: .15s ease-in
+    transition: all .15s ease-in 0s
 }
 
 header .other .burger-menu .icon-burger .burger-line:nth-child(3) {
@@ -1651,17 +2005,17 @@ header .other .burger-menu .icon-burger.active .burger-line {
     width: 22px;
     left: 0;
     top: 11px;
-    transition: .3s ease-out
+    transition: all .3s ease-out 0s
 }
 
-header .other .burger-menu .icon-burger.active .burger-line:first-child {
+header .other .burger-menu .icon-burger.active .burger-line:nth-child(1) {
     transform: rotate(135deg)
 }
 
 header .other .burger-menu .icon-burger.active .burger-line:nth-child(2) {
     margin-top: 0;
     opacity: 0;
-    transition: ease-out
+    transition: all 0s ease-out 0s
 }
 
 header .other .burger-menu .icon-burger.active .burger-line:nth-child(3) {
@@ -1678,6 +2032,10 @@ header .other .burger-menu .bg-burger {
     left: 0;
     display: none;
     z-index: 999
+}
+
+header .other .burger-menu .bg-burger.open {
+    display: block
 }
 
 header .other .burger-menu .bg-burger.top {
@@ -1708,7 +2066,7 @@ header .other .burger-menu .content-burger.open {
 }
 
 header .other .burger-menu .content-burger .title-content {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 16px;
     color: #212122;
     padding-top: 24px;
@@ -1725,6 +2083,15 @@ header .other .burger-menu .content-burger .content-group .list-group {
     align-items: center;
     width: 48%;
     padding-bottom: 16px
+}
+
+header .other .burger-menu .content-burger .content-group .list-group .icon {
+    width: 28px;
+    height: 28px;
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
+    background-repeat: no-repeat;
+    margin-right: 16px;
+    background-size: 655px
 }
 
 header .other .burger-menu .content-burger .content-group .list-group .icon.okezonetv {
@@ -1825,8 +2192,14 @@ header .other .burger-menu .content-burger .content-group .list-group .text {
     color: #212121
 }
 
-header a:link,
-header a:visited {
+header a {
+    color: #5b5b5b;
+    font-family: "PlusJakartaSansBold";
+    font-size: 14px
+}
+
+header a:visited,
+header a:link {
     text-decoration: none;
     color: #5b5b5b
 }
@@ -1858,7 +2231,7 @@ header a:visited {
 }
 
 #info-alert-sso .msg-show .msg-text::before {
-    background: 0 0 !important
+    background: none !important
 }
 
 .wrapper-container {
@@ -1873,7 +2246,7 @@ header a:visited {
 }
 
 .wrapper-container .left-section .headline .title-container {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 20px;
     line-height: 32px;
     color: #212121;
@@ -1889,7 +2262,6 @@ header a:visited {
     padding-right: 20px
 }
 
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .img-section img,
 .wrapper-container .left-section .headline .big-section .img-section img {
     width: 100%;
     height: 100%;
@@ -1897,21 +2269,23 @@ header a:visited {
     border-radius: 8px
 }
 
-.wrapper-container .breadcrumb a:last-child,
-.wrapper-container .breadcrumb a:link:last-child,
-.wrapper-container .breadcrumb a:visited:last-child,
-.wrapper-container .fiture .pick-font .a-sticky.active-sticky-detail,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section,
-.wrapper-container .left-section .headline .big-section .desc-section,
-.wrapper-container .left-section .headline .small-section .group-section .desc-section {
-    font-family: PlusJakartaSansBold
+.wrapper-container .left-section .headline .big-section .desc-section {
+    font-family: "PlusJakartaSansBold"
 }
 
-.wrapper-container .left-section .headline .big-section .desc-section a,
+.wrapper-container .left-section .headline .big-section .desc-section a {
+    text-decoration: none;
+    display: flex
+}
+
 .wrapper-container .left-section .headline .big-section .desc-section a:link,
 .wrapper-container .left-section .headline .big-section .desc-section a:visited {
     text-decoration: none;
     display: flex
+}
+
+.wrapper-container .left-section .headline .big-section .desc-section a:hover {
+    color: #457ae5
 }
 
 .wrapper-container .left-section .headline .big-section .desc-section .title-text {
@@ -1928,8 +2302,11 @@ header a:visited {
     line-height: 38.4px
 }
 
-.wrapper-container .left-section .headline .big-section .desc-section .time-text,
-.wrapper-container .left-section .headline .small-section .group-section .desc-section .time-text {
+.wrapper-container .left-section .headline .big-section .desc-section .desc-text:hover {
+    color: #457ae5
+}
+
+.wrapper-container .left-section .headline .big-section .desc-section .time-text {
     color: #949393;
     font-size: 14px;
     line-height: 22.4px
@@ -1955,13 +2332,29 @@ header a:visited {
     height: 100%
 }
 
+.wrapper-container .left-section .headline .small-section .group-section .desc-section {
+    font-family: "PlusJakartaSansBold"
+}
+
+.wrapper-container .left-section .headline .small-section .group-section .desc-section a {
+    display: block
+}
+
+.wrapper-container .left-section .headline .small-section .group-section .desc-section a:visited {
+    text-decoration: none
+}
+
+.wrapper-container .left-section .headline .small-section .group-section .desc-section a:link {
+    text-decoration: none
+}
+
 .wrapper-container .left-section .headline .small-section .group-section .desc-section .title-text {
     text-transform: uppercase;
     color: #949393;
     font-size: 14px;
     line-height: 22.4px;
     margin-top: 12px;
-    font-family: PlusJakartaSansBold
+    font-family: "PlusJakartaSansBold"
 }
 
 .wrapper-container .left-section .headline .small-section .group-section .desc-section .desc-text {
@@ -1971,7 +2364,6 @@ header a:visited {
     display: inline-block !important
 }
 
-#bacajuga .text-baca-juga::first-letter,
 .wrapper-container .left-section .headline .small-section .group-section .desc-section .desc-text::first-letter {
     text-transform: uppercase
 }
@@ -1980,8 +2372,18 @@ header a:visited {
     color: #212121
 }
 
+.wrapper-container .left-section .headline .small-section .group-section .desc-section .desc-text:hover {
+    color: #457ae5
+}
+
+.wrapper-container .left-section .headline .small-section .group-section .desc-section .time-text {
+    color: #949393;
+    font-size: 14px;
+    line-height: 22.4px
+}
+
 .wrapper-container .left-section .brt-terkini .title-brt-terkini {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     margin: 20px 0;
     font-size: 20px;
     line-height: 32px
@@ -1990,6 +2392,10 @@ header a:visited {
 .wrapper-container .left-section .brt-terkini .group-brt-terkini {
     clear: both;
     margin-bottom: 20px
+}
+
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .subgroup {
+    display: flex
 }
 
 .wrapper-container .left-section .brt-terkini .group-brt-terkini.glance {
@@ -2035,25 +2441,46 @@ header a:visited {
     margin-right: 20px
 }
 
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section {
+    font-family: "PlusJakartaSansBold"
+}
+
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section a {
+    display: block
+}
+
 .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text:link,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text:visited {
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text:visited,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text:link {
     color: #949393;
     text-transform: uppercase;
     text-decoration: none
 }
 
 .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:link,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:visited {
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:visited,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:link {
     margin: 20px 0;
     text-decoration: none;
     color: #212121
 }
 
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:hover,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:visited:hover,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:link:hover {
+    color: #457ae5
+}
+
 .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .time-text,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .time-text:link,
-.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .time-text:visited {
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .time-text:visited,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .time-text:link {
     color: #949393;
     font-size: 16px;
     line-height: 25.6px;
@@ -2061,9 +2488,9 @@ header a:visited {
 }
 
 .wrapper-container .more-news,
-.wrapper-container .more-news:link,
-.wrapper-container .more-news:visited {
-    font-family: PlusJakartaSansBold;
+.wrapper-container .more-news:visited,
+.wrapper-container .more-news:link {
+    font-family: "PlusJakartaSansBold";
     font-size: 20px;
     line-height: 32px;
     color: #fff;
@@ -2071,15 +2498,20 @@ header a:visited {
     text-decoration: none;
     padding: 16px;
     border-radius: 8px;
-    margin: 32px auto 0;
+    margin: 0 auto;
     width: 264px;
     display: block;
+    margin-top: 32px;
     text-align: center
 }
 
+.right-section {
+    width: 300px
+}
+
 .red-sign,
-.red-sign:link,
-.red-sign:visited {
+.red-sign:visited,
+.red-sign:link {
     font-size: 14px;
     line-height: 22.4px;
     color: #ec2424;
@@ -2088,9 +2520,9 @@ header a:visited {
 }
 
 #index .title,
-#index .title .kanal.news,
-#index .title a {
-    font-family: PlusJakartaSansBold !important
+#index .title a,
+#index .title .kanal.news {
+    font-family: "PlusJakartaSansBold" !important
 }
 
 .jscroll-loading img {
@@ -2110,8 +2542,8 @@ header a:visited {
 }
 
 .wrapper-container .breadcrumb a,
-.wrapper-container .breadcrumb a:link,
-.wrapper-container .breadcrumb a:visited {
+.wrapper-container .breadcrumb a:visited,
+.wrapper-container .breadcrumb a:link {
     text-decoration: none;
     color: #5b5b5b;
     margin-right: 40px;
@@ -2120,23 +2552,27 @@ header a:visited {
 }
 
 .wrapper-container .breadcrumb a:first-child::before,
-.wrapper-container .breadcrumb a:link:first-child::before,
 .wrapper-container .breadcrumb a:visited:first-child::before,
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share .hidden,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share .hidden {
+.wrapper-container .breadcrumb a:link:first-child::before {
     display: none
 }
 
+.wrapper-container .breadcrumb a:last-child,
+.wrapper-container .breadcrumb a:visited:last-child,
+.wrapper-container .breadcrumb a:link:last-child {
+    font-family: "PlusJakartaSansBold"
+}
+
 .wrapper-container .breadcrumb a:last-child::before,
-.wrapper-container .breadcrumb a:link:last-child::before,
-.wrapper-container .breadcrumb a:visited:last-child::before {
+.wrapper-container .breadcrumb a:visited:last-child::before,
+.wrapper-container .breadcrumb a:link:last-child::before {
     background-position: -38px -413px
 }
 
 .wrapper-container .breadcrumb a::before,
-.wrapper-container .breadcrumb a:link::before,
-.wrapper-container .breadcrumb a:visited::before {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+.wrapper-container .breadcrumb a:visited::before,
+.wrapper-container .breadcrumb a:link::before {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     background-size: 655px;
     background-repeat: no-repeat;
     content: "";
@@ -2150,7 +2586,7 @@ header a:visited {
 }
 
 .wrapper-container .article .title-article {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     color: #212121;
     line-height: 51.2px;
     margin-bottom: 12px
@@ -2158,7 +2594,7 @@ header a:visited {
 
 .wrapper-container .article .title-article h1 {
     font-size: 32px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     color: #212121;
     line-height: 50px;
     margin-bottom: 12px
@@ -2183,12 +2619,12 @@ header a:visited {
 }
 
 .wrapper-container .article .journalist .name-account,
-.wrapper-container .article .journalist .name-account:link,
 .wrapper-container .article .journalist .name-account:visited,
+.wrapper-container .article .journalist .name-account:link,
 .wrapper-container .article .journalist a,
-.wrapper-container .article .journalist a:link,
-.wrapper-container .article .journalist a:visited {
-    font-family: PlusJakartaSansBold;
+.wrapper-container .article .journalist a:visited,
+.wrapper-container .article .journalist a:link {
+    font-family: "PlusJakartaSansBold";
     font-size: 16px;
     line-height: 22.4px;
     color: #212121;
@@ -2225,25 +2661,15 @@ header a:visited {
     line-height: 25.6px
 }
 
-#bacajuga,
-.vicon,
 .wrapper-container .article div figure {
     margin-bottom: 16px
 }
 
 .wrapper-container #baca-juga .text,
-.wrapper-container .brt-terkait .text,
-.wrapper-container #baca-juga .text a,
-.wrapper-container .brt-terkait .text a,
-.wrapper-container #baca-juga .text a:visited,
-.wrapper-container .brt-terkait .text a:visited,
-.wrapper-container #baca-juga .text a:link,
-.wrapper-container .brt-terkait .text a:link {
-    font-family: PlusJakartaSansBold;
+.wrapper-container .brt-terkait .text {
+    font-family: "PlusJakartaSansBold";
     font-size: 16px;
-    line-height: 25.6px;
-    text-decoration: none;
-    color: #000;
+    line-height: 25.6px
 }
 
 .wrapper-container #baca-juga .text.baca,
@@ -2276,24 +2702,14 @@ header a:visited {
 }
 
 .wrapper-container #baca-juga .group-baca .title,
-.wrapper-container #baca-juga .group-baca .title:link,
 .wrapper-container #baca-juga .group-baca .title:visited,
+.wrapper-container #baca-juga .group-baca .title:link,
 .wrapper-container .brt-terkait .group-baca .title,
-.wrapper-container .brt-terkait .group-baca .title:link,
-.wrapper-container .brt-terkait .group-baca .title:visited {
+.wrapper-container .brt-terkait .group-baca .title:visited,
+.wrapper-container .brt-terkait .group-baca .title:link {
     color: #212121;
     text-decoration: none;
     width: calc(100% - 70px)
-}
-
-.wrapper-container .fiture .share .group-comment .img,
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share,
-footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-footer .sosmed-footer .box-flex .icon-sosmed {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
-    width: 33px;
-    background-size: 655px;
-    background-repeat: no-repeat
 }
 
 .wrapper-container .fiture {
@@ -2318,6 +2734,10 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     cursor: pointer
 }
 
+.wrapper-container .fiture .pick-font .a-sticky.active-sticky-detail {
+    font-family: "PlusJakartaSansBold"
+}
+
 .wrapper-container .fiture .pick-font .a-sticky.font-1 {
     font-size: 14px;
     line-height: 22.4px
@@ -2333,8 +2753,13 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     line-height: 32px
 }
 
+.wrapper-container .fiture .share {
+    display: flex;
+    align-items: center
+}
+
 .wrapper-container .fiture .share .group-comment {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     display: flex;
     align-items: center;
     margin-right: 20px
@@ -2345,7 +2770,11 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .fiture .share .group-comment .img {
-    height: 33px
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-size: 655px
 }
 
 .wrapper-container .fiture .share .group-comment .img.comment {
@@ -2362,58 +2791,72 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     font-size: 16px;
     line-height: 25.6px;
     margin-right: 12px;
-    font-family: PlusJakartaSansBold
+    font-family: "PlusJakartaSansBold"
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm {
+    display: flex
+}
+
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
+    width: 33px;
     height: 33px;
+    background-repeat: no-repeat;
+    background-size: 655px;
     margin-right: 8px;
     cursor: pointer
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share .copylink-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share a,
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share a,
 .wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share .copylink-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share a {
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share a,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share .copylink-share {
     text-indent: -99999px;
     display: block
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share a,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share a {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share a,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share a {
     height: 36px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.facebook-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.facebook-share {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share .hidden,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share .hidden {
+    display: none
+}
+
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.facebook-share,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.facebook-share {
     background-position: -42px -89px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.twitter-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.twitter-share {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.twitter-share,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.twitter-share {
     background-position: -82px -89px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.whatsapp-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.whatsapp-share {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.whatsapp-share,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.whatsapp-share {
     background-position: -122px -89px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.email-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.email-share {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.email-share,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.email-share {
     background-position: -162px -89px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share {
     background-position: -202px -89px;
     margin-right: -8px;
     position: relative
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-satu,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-satu {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-satu,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-satu {
     font-family: PlusJakartaSans-Regular;
     color: #212121;
     font-size: 9px;
@@ -2422,14 +2865,14 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     left: -10px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-satu.show,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-satu.show {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-satu.show,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-satu.show {
     display: block;
     text-align: center
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-dua,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-dua {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-dua,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-dua {
     font-family: PlusJakartaSans-Regular;
     color: #212121;
     font-size: 9px;
@@ -2438,8 +2881,13 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     left: 40px
 }
 
-.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .notif,
-.wrapper-container .fiture .share .group-medsos .sosmed .topshare .notif {
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-dua.show,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-dua.show {
+    display: block
+}
+
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .notif,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .notif {
     font-family: PlusJakartaSans-Regular;
     color: #212121;
     font-size: 10px;
@@ -2449,7 +2897,7 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .brt-terkait .title {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 20px;
     line-height: 32px;
     color: #1d4595;
@@ -2485,8 +2933,8 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .telusuri,
-.wrapper-container .telusuri:link,
-.wrapper-container .telusuri:visited {
+.wrapper-container .telusuri:visited,
+.wrapper-container .telusuri:link {
     display: flex;
     justify-content: space-between;
     margin: 28px 0;
@@ -2498,9 +2946,9 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .telusuri .icon1,
-.wrapper-container .telusuri:link .icon1,
-.wrapper-container .telusuri:visited .icon1 {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+.wrapper-container .telusuri:visited .icon1,
+.wrapper-container .telusuri:link .icon1 {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 42px;
     height: 42px;
     background-position: -11px -268px;
@@ -2509,18 +2957,18 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .telusuri .text,
-.wrapper-container .telusuri:link .text,
-.wrapper-container .telusuri:visited .text {
-    font-family: PlusJakartaSansBold;
+.wrapper-container .telusuri:visited .text,
+.wrapper-container .telusuri:link .text {
+    font-family: "PlusJakartaSansBold";
     font-size: 20px;
     line-height: 25.2px;
     color: #1d4595
 }
 
 .wrapper-container .telusuri .icon2,
-.wrapper-container .telusuri:link .icon2,
-.wrapper-container .telusuri:visited .icon2 {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+.wrapper-container .telusuri:visited .icon2,
+.wrapper-container .telusuri:link .icon2 {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 20px;
     height: 20px;
     background-position: -282px -6px;
@@ -2529,10 +2977,11 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .follow-okz {
-    margin: 0 auto 16px;
+    margin: 0 auto;
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 12px;
+    margin-bottom: 16px;
     width: 305px;
     display: flex;
     align-items: center;
@@ -2540,18 +2989,17 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .follow-okz .text a,
-.wrapper-container .follow-okz .text a:link,
-.wrapper-container .follow-okz .text a:visited {
+.wrapper-container .follow-okz .text a:visited,
+.wrapper-container .follow-okz .text a:link {
     font-family: PlusJakartaSans-Regular;
     font-size: 16px;
     line-height: 25.6px;
     margin-right: 10px;
-    text-decoration: none;
-    color: #212121;
+    text-decoration: none
 }
 
 .wrapper-container .follow-okz .icon {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 24px;
     height: 24px;
     background-position: -79px -413px;
@@ -2571,8 +3019,8 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container .info span a,
-.wrapper-container .info span a:link,
-.wrapper-container .info span a:visited {
+.wrapper-container .info span a:visited,
+.wrapper-container .info span a:link {
     text-decoration: none;
     font-family: PlusJakartaSans-Regular;
     font-size: 16px;
@@ -2591,7 +3039,7 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 .wrapper-container #paging .title {
     font-size: 16px;
     line-height: 20.16px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     margin: auto 0
 }
 
@@ -2604,14 +3052,14 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container #paging .box-nomor .nomor,
-.wrapper-container #paging .box-nomor .nomor:link,
-.wrapper-container #paging .box-nomor .nomor:visited {
+.wrapper-container #paging .box-nomor .nomor:visited,
+.wrapper-container #paging .box-nomor .nomor:link {
     display: block;
     border-radius: 100%;
     text-align: center;
     font-size: 16px;
     line-height: 20.16px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     margin-right: 2px;
     color: #000;
     text-decoration: none;
@@ -2619,8 +3067,8 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container #paging .box-nomor .nomor.active,
-.wrapper-container #paging .box-nomor .nomor:link.active,
-.wrapper-container #paging .box-nomor .nomor:visited.active {
+.wrapper-container #paging .box-nomor .nomor:visited.active,
+.wrapper-container #paging .box-nomor .nomor:link.active {
     background-color: #1d4595;
     color: #fff
 }
@@ -2633,7 +3081,7 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     padding: 8px 0;
     color: #fff;
     font-size: 16px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     line-height: 22.4px;
     text-decoration: none;
     width: 159px;
@@ -2648,7 +3096,7 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     font-size: 16px;
     line-height: 29px;
     margin: 16px 0;
-    font-family: PlusJakartaSansBold
+    font-family: "PlusJakartaSansBold"
 }
 
 .wrapper-container #tag .box-tag {
@@ -2658,27 +3106,27 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .wrapper-container #tag .box-tag .text,
-.wrapper-container #tag .box-tag .text:link,
-.wrapper-container #tag .box-tag .text:visited {
+.wrapper-container #tag .box-tag .text:visited,
+.wrapper-container #tag .box-tag .text:link {
     display: block;
     color: #1d4595;
     text-align: center;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 14px;
     line-height: normal;
     padding: 12px 16px;
     border-radius: 16px;
     border: 1px solid #1d4595;
-    transition: .3s;
+    transition: all .3s;
     text-decoration: none
 }
 
 .wrapper-container #tag .box-tag .text.active,
 .wrapper-container #tag .box-tag .text:hover,
-.wrapper-container #tag .box-tag .text:link.active,
-.wrapper-container #tag .box-tag .text:link:hover,
 .wrapper-container #tag .box-tag .text:visited.active,
-.wrapper-container #tag .box-tag .text:visited:hover {
+.wrapper-container #tag .box-tag .text:visited:hover,
+.wrapper-container #tag .box-tag .text:link.active,
+.wrapper-container #tag .box-tag .text:link:hover {
     background-color: #1d4595;
     color: #fff
 }
@@ -2694,6 +3142,10 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     margin-top: 20px
 }
 
+.container-recommendation .content-recommendation a {
+    text-decoration: none
+}
+
 .container-recommendation .group-text {
     display: flex;
     padding: 16px 0;
@@ -2706,7 +3158,7 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     border-radius: 100%;
     font-size: 14px;
     line-height: 16.94px;
-    font-family: Inter, sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     padding: 2px 8px;
     margin-bottom: auto;
@@ -2714,7 +3166,7 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 .container-recommendation .text-for {
-    font-family: Roboto700;
+    font-family: "Roboto700";
     color: #fff;
     font-size: 24px;
     line-height: 28.13px
@@ -2747,13 +3199,13 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 .container-recommendation .text-rec-ai {
     width: 70%;
     margin-top: 5px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     padding-right: 12px;
     font-size: 14px
 }
 
 #show-hover .text-hover {
-    font-family: robotomedium;
+    font-family: "robotomedium";
     font-size: 14px;
     line-height: 18.2px
 }
@@ -2773,10 +3225,18 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     left: -9px
 }
 
+.vicon {
+    margin-bottom: 16px
+}
+
+#bacajuga {
+    margin-bottom: 16px
+}
+
 #bacajuga .text-baca-juga {
     color: #1d4595;
     margin-bottom: 16px;
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 16px;
     line-height: 25.6px;
     text-transform: lowercase !important;
@@ -2795,6 +3255,10 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     height: 100%
 }
 
+#bacajuga .text-baca-juga::first-letter {
+    text-transform: uppercase
+}
+
 #bacajuga .description-baca-juga {
     cursor: pointer;
     display: flex
@@ -2809,12 +3273,12 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
 }
 
 #bacajuga .description-baca-juga .a-baca-juga,
-#bacajuga .description-baca-juga .a-baca-juga:link,
-#bacajuga .description-baca-juga .a-baca-juga:visited {
+#bacajuga .description-baca-juga .a-baca-juga:visited,
+#bacajuga .description-baca-juga .a-baca-juga:link {
     color: #212121;
     text-decoration: none;
     width: calc(100% - 70px);
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 16px;
     line-height: 25.6px
 }
@@ -2835,7 +3299,7 @@ footer::before {
 
 footer .footer {
     clear: both;
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/footer.png);
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xfooter.png.pagespeed.ic.5nOmB3ATRF.png);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat
@@ -2849,11 +3313,15 @@ footer .footer .box-flex-footer {
 }
 
 footer .footer .box-flex-footer .box-footer .title-header {
-    font-family: PlusJakartaSansBold;
+    font-family: "PlusJakartaSansBold";
     font-size: 14px;
     color: #000;
     margin-bottom: 16px;
     line-height: 22.4px
+}
+
+footer .footer .box-flex-footer .box-footer .box-list {
+    display: flex
 }
 
 footer .footer .box-flex-footer .box-footer .box-list .list-footer {
@@ -2861,8 +3329,8 @@ footer .footer .box-flex-footer .box-footer .box-list .list-footer {
 }
 
 footer .footer .box-flex-footer .box-footer .box-list .list-footer .text-footer,
-footer .footer .box-flex-footer .box-footer .box-list .list-footer .text-footer:link,
-footer .footer .box-flex-footer .box-footer .box-list .list-footer .text-footer:visited {
+footer .footer .box-flex-footer .box-footer .box-list .list-footer .text-footer:visited,
+footer .footer .box-flex-footer .box-footer .box-list .list-footer .text-footer:link {
     font-family: PlusJakartaSans-Regular;
     font-size: 16px;
     color: #212121;
@@ -2873,7 +3341,7 @@ footer .footer .box-flex-footer .box-footer .box-list .list-footer .text-footer:
 }
 
 footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .logo-okezone-footer {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 218px;
     height: 50px;
     background-size: 655px;
@@ -2893,7 +3361,7 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .download-app {
 footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .download-app .play-store {
     width: 105px;
     height: 40px;
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     background-size: 655px;
     background-repeat: no-repeat;
     background-position: -299px -449px;
@@ -2903,14 +3371,14 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .download-app .pl
 footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .download-app .app-store {
     width: 105px;
     height: 40px;
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     background-size: 655px;
     background-repeat: no-repeat;
     background-position: -415px -449px
 }
 
 footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-footer .logo-mncportal {
-    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite.png);
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
     width: 116px;
     height: 41px;
     background-size: 655px;
@@ -2919,8 +3387,17 @@ footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-fo
     margin: 0 auto 28px
 }
 
+footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-footer .sosmed-footer .box-flex {
+    display: flex;
+    justify-content: center
+}
+
 footer .footer .box-flex-footer .box-footer.logo-sosmed-footer .portal-sosmed-footer .sosmed-footer .box-flex .icon-sosmed {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.NZPFQD7fnR.png);
+    width: 33px;
     height: 33px;
+    background-size: 655px;
+    background-repeat: no-repeat;
     margin: 0 auto 28px;
     display: inline-block
 }
@@ -2951,9 +3428,4 @@ footer .footer .copyright {
     line-height: 17.64px;
     color: #565656;
     text-align: center
-}
-
-#index .newscontent .list-berita .title a {
-    color: #212121;
-    text-decoration: none;
 }

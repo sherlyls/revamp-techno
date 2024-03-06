@@ -87,3 +87,5 @@ $('.brt-terkini').jscroll({
   nextSelector: 'a#loadMore:last',
 });
 
+
+

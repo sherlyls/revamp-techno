@@ -31,12 +31,12 @@
           font-family: "PlusJakartaSansBold";
           a {
             text-decoration: none;
-            display: block;
+            display: flex;
 
             &:link,
             &:visited {
               text-decoration: none;
-              display: block;
+              display: flex;
             }
             &:hover {
               color: #457ae5;
