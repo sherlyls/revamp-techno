@@ -1,3 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap);
+
+@font-face {
+  font-family: PlusJakartaSansBold;
+  font-style: normal;
+  font-weight: 700;
+  src: local("PlusJakartaSans Bold"), local("PlusJakartaSans-Bold"), url(../font/PlusJakartaSans-Bold.woff2) format("woff2");
+  font-display: swap
+}
+
+@font-face {
+  font-family: PlusJakartaSans-Regular;
+  src: url(../font/PlusJakartaSans-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../font/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: Roboto400;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.eot);
+  src: local("Roboto"), local("Roboto-Regular"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.woff2) format("woff2"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.woff) format("woff"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.ttf) format("truetype"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.svg#Roboto) format("svg");
+  font-display: swap
+}
+
+@font-face {
+  font-family: Roboto700;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.eot);
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.eot?#iefix) format("embedded-opentype"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.woff2) format("woff2"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.woff) format("woff"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.ttf) format("truetype"), url(https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.svg#Roboto) format("svg");
+  font-display: swap
+}
+
+@font-face {
+  font-family: robotomedium;
+  src: url(https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff2) format("woff2"), url(https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+.card[data-v-5a3f67d8],
+.card[data-v-bdc52751] {
+    box-shadow: 0 0 4px rgba(66, 66, 66, .2);
+    user-select: none
+}
+
+#widget-populer .list-news .box-img::after,
+.ads-footer .close,
+header .logo-techno,
+header .other .login .img-login {
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
+    background-size: 655px
+}
+
+#widget-pilihan .group-pilihan .img-pilihan img,
+#widget-populer .list-news .box-img img,
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px
+}
+
+#widget-populer .list-news .box-text a,
+.wrapper-container .fiture .share .group-medsos .sosmed .bottomshare .upsosm .button-share.copylink-share .fbm-copied-message-dua.show,
+.wrapper-container .fiture .share .group-medsos .sosmed .topshare .upsosm .button-share.copylink-share .fbm-copied-message-dua.show,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section a,
+.wrapper-container .left-section .headline .small-section .group-section .desc-section a,
+header .other .burger-menu .bg-burger.open {
+    display: block
+}
+
+#widget-pilihan .group-pilihan .text-pilihan:hover,
+#widget-pilihan .group-pilihan .text-pilihan:link:hover,
+#widget-pilihan .group-pilihan .text-pilihan:visited:hover,
+#widget-populer .list-news .box-text .title:hover,
+#widget-populer .list-news .box-text .title:link:hover,
+#widget-populer .list-news .box-text .title:visited:hover,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:hover,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:link:hover,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .desc-text:visited:hover,
+.wrapper-container .left-section .headline .big-section .desc-section .desc-text:hover,
+.wrapper-container .left-section .headline .big-section .desc-section a:hover,
+.wrapper-container .left-section .headline .small-section .group-section .desc-section .desc-text:hover {
+    color: #457ae5
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,81 +107,6 @@ body {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "PlusJakartaSansBold";
-  font-style: normal;
-  font-weight: 700;
-  src: local("PlusJakartaSans Bold"), local("PlusJakartaSans-Bold"),
-    url("../font/PlusJakartaSans-Bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: PlusJakartaSans-Regular;
-  src: url(../font/PlusJakartaSans-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Roboto-Regular;
-  src: url(../font/Roboto-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
-
-@font-face {
-  font-family: "Roboto400";
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.eot");
-  src: local("Roboto"), local("Roboto-Regular"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.woff2")
-      format("woff2"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.woff")
-      format("woff"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.ttf")
-      format("truetype"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-regular.svg#Roboto")
-      format("svg");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto700";
-  font-style: normal;
-  font-weight: 700;
-  src: url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.eot");
-  src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.woff2")
-      format("woff2"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.woff")
-      format("woff"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.ttf")
-      format("truetype"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-v18-latin/roboto-v18-latin-700.svg#Roboto")
-      format("svg");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "robotomedium";
-  src: url("https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff2")
-      format("woff2"),
-    url("https://cdn.okezone.com/underwood/fonts/roboto-medium-webfont.woff")
-      format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 input:focus {
   outline: none;
@@ -103,7 +127,7 @@ input:focus {
     margin-bottom: 16px;
     font-size: 16px;
     font-style: normal;
-    font-family: "PlusJakartaSansBold";
+    font-family: PlusJakartaSansBold;
     line-height: 140%;
   }
   .list-news {
@@ -113,9 +137,6 @@ input:focus {
     align-items: start;
     padding-bottom: 16px;
     margin-bottom: 0 !important;
-    .box-img {
-      position: relative;
-    }
     &:nth-child(2) {
       .box-img {
         &::after {
@@ -123,28 +144,28 @@ input:focus {
         }
       }
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       .box-img {
         &::after {
           background-position: -43px -873px;
         }
       }
     }
-    &:nth-child(4) {
+    &:nth-child(6) {
       .box-img {
         &::after {
           background-position: -89px -875px;
         }
       }
     }
-    &:nth-child(5) {
+    &:nth-child(8) {
       .box-img {
         &::after {
           background-position: -140px -875px;
         }
       }
     }
-    &:nth-child(6) {
+    &:nth-child(10) {
       .box-img {
         &::after {
           background-position: -192px -874px;
@@ -152,17 +173,16 @@ input:focus {
       }
     }
     .box-img {
+      position: relative;
       width: 95px;
       height: 64px;
       &::after {
-        background-image: url(../img/sprite.png);
-        background-size: 655px;
         content: "";
         width: 35px;
         height: 69px;
         position: absolute;
-        left: 0px;
-        bottom: 0px;
+        left: 0;
+        bottom: 0
       }
       img {
         width: 100%;
@@ -183,9 +203,9 @@ input:focus {
           color: #457ae5;
         }
         font-size: 14px;
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         line-height: 22.4px;
-        letter-spacing: 0.2px;
+        letter-spacing: .2px;
         margin-bottom: 4px;
         text-decoration: none;
         color: #212121;
@@ -193,7 +213,7 @@ input:focus {
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: vertical
       }
     }
   }
@@ -202,10 +222,10 @@ input:focus {
 #widget-pilihan {
   .title {
     margin: 20px 0 16px;
-    font-family: "PlusJakartaSansBold";
+    font-family: PlusJakartaSansBold;
     font-size: 20px;
     line-height: 28px;
-    color: #000000;
+    color: #000
   }
   .group-pilihan {
     display: flex;
@@ -213,6 +233,7 @@ input:focus {
     .img-pilihan {
       width: 31.6%;
       margin-right: 11.84px;
+      height: 64px
       img {
         width: 100%;
         height: 100%;
@@ -223,11 +244,16 @@ input:focus {
     .text-pilihan:visited,
     .text-pilihan:link {
       width: 69.3%;
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
       font-size: 14px;
       line-height: 22.4px;
       color: #212121;
       text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
       &:hover {
         color: #457ae5;
       }
@@ -421,24 +447,24 @@ input:focus {
       justify-content: space-between;
       padding-bottom: 20px;
       .logo-okztv {
-        background-image: url(../img/sprite.png);
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
         width: 121px;
         height: 32px;
         background-position: -168px -451px;
         background-repeat: no-repeat;
-        background-size: 655px;
+        background-size: 655px
       }
       .text-okztv,
       .text-okztv:visited,
       .text-okztv:link {
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         font-size: 14px;
         line-height: 21px;
         color: #1c1a27;
         background-color: #fff;
         text-decoration: none;
         padding: 8px 27px;
-        border-radius: 8px;
+        border-radius: 8px
       }
     }
     .content-okztv {
@@ -463,12 +489,12 @@ input:focus {
           .title-content,
           .title-content:visited,
           .title-content:link {
-            color: white;
-            font-family: "PlusJakartaSansBold";
+            color: #fff;
+            font-family: PlusJakartaSansBold;
             font-size: 16px;
             line-height: 25.6px;
             text-decoration: none;
-            cursor: pointer;
+            cursor: pointer
           }
         }
       }
@@ -495,10 +521,10 @@ input:focus {
           .title-content,
           .title-content:visited,
           .title-content:link {
-            font-family: "PlusJakartaSansBold";
+            font-family: PlusJakartaSansBold;
             font-size: 14px;
             line-height: 160%;
-            color: white;
+            color: #fff;
             cursor: pointer;
             text-decoration: none;
             display: block;
@@ -508,7 +534,7 @@ input:focus {
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
-            height: 65.81px;
+            height: 65.81px
           }
         }
       }
@@ -549,25 +575,7 @@ input:focus {
     }
   }
 
-  @media only screen and (min-width: 820px) {
-    header {
-      .menu {
-        padding: 0 24px;
-        a {
-          margin-right: 11px;
-        }
-      }
-    }
-    footer {
-      .footer {
-        .box-flex-footer {
-          .box-footer {
-            margin: 0 5px 24px;
-          }
-        }
-      }
-    }
-  }
+
 
   @media only screen and (min-width: 999px) {
     .ads2 {
@@ -599,7 +607,7 @@ input:focus {
       .left-section {
         .headline {
           .big-section {
-            display: flex;
+            display: block;
             .desc-section {
               width: 50%;
             }
@@ -1023,6 +1031,220 @@ input:focus {
   margin-bottom: 74px;
 }
 
-.mctitle a:hover {
+.mctitle a,
+.mctitle a:hover,
+.mctitle a:visited,
+.mctitle a:link {
+    color: #333;
+    text-decoration: none
+}
+#index .sortby .forms select {
+  color: #000
+}
+
+.mgbox .mgheader {
+  margin-bottom: 74px
+}
+
+#index .newscontent .list-berita .title a {
+  color: #212121;
+  text-decoration: none
+}
+#index .newscontent .list-berita .kanal {
+  font-family: 'PlusJakartaSansBold';
+  color: #0a5692
+}
+
+
+.container[data-v-62f20fc5] {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 0;
+  overflow: hidden;
+  height: 100vh;
+  background: #204695;
+  background: linear-gradient(225deg, #204695 0, #e84125 60%, #f5882e 100%);
+  box-sizing: border-box
+}
+
+
+
+
+
+.arrow-left[data-v-62f20fc5] {
+  margin-left: min(3.2vh, 8px)
+}
+
+.product[data-v-62f20fc5] {
+  display: grid;
+  gap: min(3vh, 16px);
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  padding-top: min(4vh, 20px);
+  padding-bottom: min(4vh, 20px);
+  padding-right: min(4vh, 20px);
+  box-sizing: border-box
+}
+
+.banner[data-v-62f20fc5] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 55vh;
+  max-width: 220px
+}
+
+.card[data-v-bdc52751] {
+  width: 50vh;
+  max-width: 200px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-gap: 0;
+  background: #fff;
+  border-radius: min(4vh, 8px);
+  overflow: hidden;
+  text-decoration: none
+}
+
+.card-img[data-v-bdc52751] {
+  height: 50vh;
+  width: 50vh;
+  max-width: 200px;
+  max-height: 200px
+}
+
+.shine {
+  background: linear-gradient(to right, #f6f7f8 0, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%) no-repeat #f6f7f8;
+  display: inline-block;
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear
+}
+
+.img-fit[data-v-bdc52751] {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%
+}
+
+.card-content[data-v-bdc52751] {
+  padding: 3vh 2vh;
+  display: grid;
+  grid-template-rows: 1fr auto min(6.5vh, 20px);
+  grid-gap: min(1.5vh, 4px);
+  padding-top: min(3vh, 12px);
+  padding-bottom: min(3vh, 12px);
+  padding-left: min(2vh, 10px);
+  padding-right: min(2vh, 10px)
+}
+
+.txt-title[data-v-bdc52751] {
+  font-family: Montserrat-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: min(5.5vh, 16px);
+  color: #424242;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: min(2vh, 4px)
+}
+
+.txt-price[data-v-bdc52751] {
+  font-family: Satoshi-Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(6.3vh, 18px);
+  color: #121212
+}
+
+.info[data-v-bdc52751] {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: min(3vh, 12px);
+  align-items: center
+}
+
+.discount[data-v-bdc52751] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(13vh, 38px);
+  height: min(6.5vh, 20px);
+  background: #fff5f0;
+  border-radius: min(1.5vh, 4px)
+}
+
+.txt-discount-lbl[data-v-bdc52751] {
+  font-family: Satoshi-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: min(4.5vh, 14px);
+  color: #eb6951
+}
+
+.txt-discount[data-v-bdc52751] {
+  font-family: Satoshi-Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: min(4.5vh, 14px);
+  text-decoration: line-through;
+  color: #8f8f8f
+}
+
+.content-arrow[data-v-62f20fc5] {
+  position: static;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 1
+}
+
+.card-img[data-v-5a3f67d8] {
+  background: url(https://widget-am.misteraladin.com/assets/background-lihat-semua.b5dd11a5.png) 0 0/cover no-repeat;
+  height: calc(100vh - min(10vh, 20%) - min(10vh, 20%));
+  background-position-y: center
+}
+
+.card[data-v-5a3f67d8] {
+  width: 50vh;
+  height: 100%;
+  max-width: 200px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-gap: 0;
+  overflow: hidden;
   text-decoration: none;
+  border-radius: min(4vh, 8px)
+}
+
+.arrow-right[data-v-62f20fc5] {
+  margin-left: max(-11vh, -38px)
+}
+
+.arrow-box[data-v-62f20fc5] {
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, .2392156863) 0 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none
+}
+
+.arrow[data-v-62f20fc5] {
+  height: min(8vh, 28px);
+  width: min(8vh, 28px)
 }

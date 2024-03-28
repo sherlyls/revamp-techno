@@ -1,44 +1,51 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-  height: 74px;
-  position: relative;
-  background-color: white;
-  margin-bottom: 25px;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0px 4px 8px 0px rgba(200, 200, 200, 0.25);
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    height: 74px;
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(200, 200, 200, .25);
   &.sticky {
     position: fixed;
     top: 0;
     z-index: 99;
   }
   .logo-techno {
-    background-image: url(../img/sprite.png);
     width: 154px;
-    height: 29px;
-    display: block;
-    background-position: 0px -458px;
+    height: 34px;
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 655px;
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/mobile/img/logo-techno.png)
   }
   .menu {
     display: flex;
     align-items: center;
+    color: #fff;
     a {
       line-height: 17.64px;
       text-transform: uppercase;
-
+      margin-right: 1px;
+      font-size: 11px;
       &:hover {
         background-color: #eaf1ff;
         border-radius: 32px;
       }
       &.active {
-        background-color: #5b5b5b;
+        background: radial-gradient(87.18% 811.6% at 97.44% 50%, #7083af 0%, #243d76 100%);
         color: #fff;
         border-radius: 32px;
+        &:visited {
+          color: #fff;
+        }
+      }
+      &:visited,
+      &:link {
+        text-decoration: none;
+        color: #5b5b5b;
       }
     }
     color: #fff;
@@ -59,7 +66,7 @@ header {
           }
           .text-login {
             color: #5b5b5b;
-            font-family: "PlusJakartaSansBold";
+            font-family: PlusJakartaSansBold;
             font-size: 14px;
           }
         }
@@ -71,7 +78,7 @@ header {
       align-items: center;
       padding-right: 16px;
       .img-login {
-        background-image: url(../img/sprite.png);
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
         width: 24px;
         height: 24px;
         display: block;
@@ -92,11 +99,20 @@ header {
         background-repeat: no-repeat;
         margin-right: 16px;
         background-size: 655px;
+        div {
+          input {
+            div {
+              input {
+                width: 538px
+              }
+            }
+          }
+        }
       }
 
       .icon,
       #search-top {
-        background-image: url(../img/sprite.png);
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
         width: 24px;
         height: 24px;
         background-position: -43px -3px;
@@ -145,16 +161,16 @@ header {
             text-indent: -99999px;
           }
           .search-close {
-            background-image: url(../img/sprite.png);
+            background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
             width: 24px;
             height: 24px;
-            background-position: -120px -3px;
             background-repeat: no-repeat;
-            margin-left: 16px;
             background-size: 655px;
-            background-color: white;
-            z-index: 99;
             cursor: pointer;
+            background-position: -120px -3px;
+            margin-left: 16px;
+            background-color: #fff;
+            z-index: 99;
           }
         }
       }
@@ -174,14 +190,11 @@ header {
           background-color: #212121;
           display: inline-block;
           position: absolute;
-          transition: all 0.3s ease-in 0s;
+          transition: .3s ease-in;
 
           &:nth-child(2) {
             margin-top: 7px;
-            transition: all 0.15s ease-in 0s;
-            // transition: top 0.3s ease-in 0s, left 0.3s ease-in 0s,
-            //   width 0.3s ease-in 0s, height 0.3s ease-in 0s,
-            //   background-color 0.1s ease-in 0s;
+            transition: .15s ease-in
           }
           &:nth-child(3) {
             margin-top: 14px;
@@ -190,22 +203,18 @@ header {
 
         &.active {
           top: 0;
-
           .burger-line {
             width: 22px;
             left: 0;
             top: 11px;
-            transition: all 0.3s ease-out 0s;
+            transition: .3s ease-out;
             &:nth-child(1) {
               transform: rotate(135deg);
             }
             &:nth-child(2) {
               margin-top: 0;
               opacity: 0;
-              transition: all 0s ease-out 0s;
-              // transition: top 0.3s ease-out 0s, left 0.3s ease-out 0s,
-              //   width 0.3s ease-out 0s, height 0.3s ease-out 0s,
-              //   background-color 0s ease-out 0.3s;
+              transition: ease-out
             }
             &:nth-child(3) {
               margin-top: 0;
@@ -251,23 +260,20 @@ header {
           visibility: visible;
         }
         .title-content {
-          font-family: "PlusJakartaSansBold";
+          font-family: PlusJakartaSansBold;
           font-size: 16px;
           color: #212122;
           padding-top: 24px;
-          padding-bottom: 19px;
+          padding-bottom: 19px
         }
-
         .content-group {
           display: flex;
           flex-wrap: wrap;
-
           .list-group {
             display: flex;
             align-items: center;
             width: 48%;
             padding-bottom: 16px;
-
             .icon {
               width: 28px;
               height: 28px;
@@ -275,7 +281,6 @@ header {
               background-repeat: no-repeat;
               margin-right: 16px;
               background-size: 655px;
-
               &.okezonetv {
                 background-position: -1px -137px;
               }
@@ -346,7 +351,6 @@ header {
                 background-position: -432px -45px;
               }
             }
-
             .text {
               font-family: PlusJakartaSans-Regular;
               font-size: 16px;
@@ -360,9 +364,8 @@ header {
 
   a {
     color: #5b5b5b;
-    font-family: "PlusJakartaSansBold";
+    font-family: PlusJakartaSansBold;
     font-size: 14px;
-
     &:visited,
     &:link {
       text-decoration: none;
@@ -384,6 +387,8 @@ header {
     .msg-exit {
       cursor: pointer;
       right: 7px !important;
+      background-image: url(https://static.idxchannel.com/desktop/img/buttonblue-x.svg);
+      background-repeat: no-repeat
     }
     .msg-text {
       padding: 0 !important;
@@ -393,4 +398,8 @@ header {
       }
     }
   }
+}
+
+#msg-sso .msg-text a {
+  text-decoration: none
 }

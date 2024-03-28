@@ -16,13 +16,13 @@
         }
       }
       &:last-child {
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         &::before {
           background-position: -38px -413px;
         }
       }
       &::before {
-        background-image: url(../img/sprite.png);
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
         background-size: 655px;
         background-repeat: no-repeat;
         content: "";
@@ -32,19 +32,28 @@
         height: 24px;
         background-position: -158px -2px;
         top: -2px;
-        left: -34px;
+        left: -34px
       }
     }
   }
   .article {
+    a {
+      .logo-sponsor {
+        clear: both;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-left: 0
+      }
+    }
     .title-article {
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
       color: #212121;
       line-height: 51.2px;
       margin-bottom: 12px;
       h1 {
         font-size: 32px;
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         color: #212121;
         line-height: 50px;
         margin-bottom: 12px;
@@ -70,7 +79,7 @@
       a,
       a:visited,
       a:link {
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         font-size: 16px;
         line-height: 22.4px;
         color: #212121;
@@ -101,6 +110,12 @@
       font-family: PlusJakartaSans-Regular;
       font-size: 16px;
       line-height: 25.6px;
+      a,
+      a:visited,
+      a:link {
+        color: #1d4595;
+        text-decoration: none
+      }
     }
     div {
       figure {
@@ -111,12 +126,22 @@
   #baca-juga,
   .brt-terkait {
     .text {
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
       font-size: 16px;
       line-height: 25.6px;
+      color: #000;
       &.baca {
         color: #1d4595;
         margin-bottom: 16px;
+      }
+      a,
+      a:visited,
+      a:link {
+        font-family: PlusJakartaSansBold;
+        font-size: 16px;
+        line-height: 25.6px;
+        text-decoration: none;
+        color: #000
       }
     }
     .group-baca {
@@ -148,6 +173,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    width: 100%;
     &.no-font {
       justify-content: center;
     }
@@ -160,7 +186,7 @@
       .a-sticky {
         cursor: pointer;
         &.active-sticky-detail {
-          font-family: "PlusJakartaSansBold";
+          font-family: PlusJakartaSansBold;
         }
         &.font-1 {
           font-size: 14px;
@@ -180,7 +206,7 @@
       display: flex;
       align-items: center;
       .group-comment {
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         display: flex;
         align-items: center;
         margin-right: 20px;
@@ -188,7 +214,7 @@
           margin-right: 4px;
         }
         .img {
-          background-image: url(../img/sprite.png);
+          background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
           width: 33px;
           height: 33px;
           background-repeat: no-repeat;
@@ -207,7 +233,7 @@
           font-size: 16px;
           line-height: 25.6px;
           margin-right: 12px;
-          font-family: "PlusJakartaSansBold";
+          font-family: PlusJakartaSansBold;
         }
         .sosmed {
           .topshare,
@@ -215,7 +241,7 @@
             .upsosm {
               display: flex;
               .button-share {
-                background-image: url(../img/sprite.png);
+                background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
                 width: 33px;
                 height: 33px;
                 background-repeat: no-repeat;
@@ -291,7 +317,7 @@
   }
   .brt-terkait {
     .title {
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
       font-size: 20px;
       line-height: 32px;
       color: #1d4595;
@@ -300,7 +326,7 @@
       padding-left: 35px;
       &::before {
         position: absolute;
-        content: url(../img/icon-terkait.png);
+        content: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xicon-terkait.png.pagespeed.ic.R102aRvFyo.png);
         width: 28px;
         left: 0;
         right: 0;
@@ -338,7 +364,7 @@
     border-radius: 10px;
     padding: 12px;
     .icon1 {
-      background-image: url(../img/sprite.png);
+      background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
       width: 42px;
       height: 42px;
       background-position: -11px -268px;
@@ -346,13 +372,13 @@
       background-size: 655px;
     }
     .text {
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
       font-size: 20px;
       line-height: 25.2px;
       color: #1d4595;
     }
     .icon2 {
-      background-image: url(../img/sprite.png);
+      background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
       width: 20px;
       height: 20px;
       background-position: -282px -6px;
@@ -377,12 +403,12 @@
         line-height: 25.6px;
         margin-right: 10px;
         text-decoration: none;
-
+        color: #212121
       }
 
     }
     .icon {
-      background-image: url(../img/sprite.png);
+      background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
       width: 24px;
       height: 24px;
       background-position: -79px -413px;
@@ -394,7 +420,7 @@
     text-align: center;
     font-family: PlusJakartaSans-Regular;
     font-size: 16px;
-    line-height: 150%; /* 24px */
+    line-height: 150%; 
     letter-spacing: -0.64px;
     background-color: #EAF1FF;
     padding: 12px;
@@ -435,7 +461,7 @@
         text-align: center;
         font-size: 16px;
         line-height: 20.16px;
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         margin-right: 2px;
         color: #000;
         text-decoration: none;
@@ -454,7 +480,7 @@
       padding: 8px 0px;
       color: #fff;
       font-size: 16px;
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
       line-height: 22.4px;
       text-decoration: none;
       width: 159px;
@@ -467,7 +493,7 @@
       font-size: 16px;
       line-height: 29px;
       margin: 16px 0;
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
     }
     .box-tag {
       display: flex;
@@ -479,7 +505,7 @@
         display: block;
         color: #1d4595;
         text-align: center;
-        font-family: "PlusJakartaSansBold";
+        font-family: PlusJakartaSansBold;
         font-size: 14px;
         line-height: normal;
         padding: 12px 16px;
@@ -498,14 +524,14 @@
 }
 
 .container-recommendation {
-  background-image: url("https://cdnapps.okezone.com/underwood/revamp/2023/remake/mobile/img/bg-for-you.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: max-content;
-  padding-bottom: 20px;
-  margin-top: 20px;
+  background-image: url(https://cdnapps.okezone.com/underwood/revamp/2023/remake/mobile/img/bg-for-you.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: max-content;
+    padding-bottom: 20px;
+    margin-top: 20px
 }
 
 .container-recommendation .content-recommendation a {
@@ -524,7 +550,7 @@
   border-radius: 100%;
   font-size: 14px;
   line-height: 16.94px;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 700;
   padding: 2px 8px;
   margin-bottom: auto;
@@ -532,10 +558,10 @@
 }
 
 .container-recommendation .text-for {
-  font-family: "Roboto700";
-  color: white;
+  font-family: Roboto700;
+  color: #fff;
   font-size: 24px;
-  line-height: 28.13px;
+  line-height: 28.13px
 }
 
 .container-recommendation .group-rec-ai {
@@ -565,13 +591,13 @@
 .container-recommendation .text-rec-ai {
   width: 70%;
   margin-top: 5px;
-  font-family: "PlusJakartaSansBold";
+  font-family: PlusJakartaSansBold;
   padding-right: 12px;
-  font-size: 14px;
+  font-size: 14px
 }
 
 #show-hover .text-hover {
-  font-family: "robotomedium";
+  font-family: robotomedium;
   font-size: 14px;
   line-height: 18.2px;
 }
@@ -600,7 +626,7 @@
   .text-baca-juga {
     color: #1d4595;
     margin-bottom: 16px;
-    font-family: "PlusJakartaSansBold";
+    font-family: PlusJakartaSansBold;
     font-size: 16px;
     line-height: 25.6px;
     text-transform: lowercase !important;
@@ -636,7 +662,7 @@
       color: #212121;
       text-decoration: none;
       width: calc(100% - 70px);
-      font-family: "PlusJakartaSansBold";
+      font-family: PlusJakartaSansBold;
       font-size: 16px;
       line-height: 25.6px;
     }

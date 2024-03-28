@@ -18,6 +18,17 @@
     font-family: Roboto-Regular;
   }
 }
+.ads4,
+.ads5,
+.ads6,
+.right-section,
+.w-ads4,
+.w-ads5,
+.w-ads6,
+.w-ads7,
+.w300 {
+    width: 300px
+}
 .ads1 {
   width: 728px;
   margin: 0px auto 0;
@@ -31,17 +42,16 @@
 .ads2 {
   margin: 30px auto 0;
   .content-ads {
- 
     display: flex;
     justify-content: center;
   }
 }
 
-
 .ads3 {
   margin: 0 auto;
   .content-ads {
     height: 90px;
+    height: 00;
   }
 }
 .ads4 {
@@ -102,10 +112,10 @@
     position: absolute;
     width: 28px;
     height: 28px;
-    background-image: url(../img/sprite.png);
+ 
     background-repeat: no-repeat;
     margin-right: 16px;
-    background-size: 655px;
+
     background-position: 0px -410px;
     right: -16px;
     top: 0;
@@ -115,7 +125,8 @@
 .ads-left {
   width: 119px;
   position: fixed;
-  top: 341px;
+  top: 192px;
+  left: 0;
   &.top {
     top: 75px;
   }
@@ -126,7 +137,8 @@
 .ads-right {
   width: 119px;
   position: fixed;
-  top: 341px;
+  top: 192px;
+  right: 0;
   &.top {
     top: 75px;
   }
@@ -135,23 +147,9 @@
   }
 }
 
-//Aladin ya Allah
 iframe {
   margin: 16px 0;
 }
-
-// a:-webkit-any-link {
-//   color: -webkit-link;
-//   cursor: pointer;
-//   text-decoration: underline;
-// }
-
-// ::-webkit-scrollbar {
-//   display: none;
-//   width: 0;
-//   height: 0;
-//   background: transparent;
-// }
 
 img {
   overflow-clip-margin: content-box;
@@ -813,11 +811,11 @@ img {
   position: -webkit-sticky;
   top: 74px;
   left: 0;
-  transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  background-color: black;
+  transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  background-color: #000;
 }
 .ad-label {
   font-size: 12px;
@@ -850,11 +848,9 @@ img {
   width: 728px;
 
 }
-
 .mh400 {
   min-height: 400px
 }
-
 .ad-box.second {
   width: 300px;
   margin-top: 30px;
