@@ -119,12 +119,28 @@
 .wrapper-container {
     &.otomotif {
         .left-section {
+            .breadcrumb {
+                a {
+                    color: #87549B;
+                }
+            }
             .headline {
                 .small-section,
                 .big-section {
+                    .desc-section {
+                        .title-text,
+                        .title-text:visited,
+                        .title-text:link
+                         {
+                            color: #62207C;            
+                        }
+                    }
                     .group-section {
                         .desc-section {
-                            .title-text {
+                            .title-text,
+                            .title-text:visited,
+                            .title-text:link
+                             {
                                 color: #62207C;            
                             }
                         }
@@ -145,12 +161,21 @@
                 }
             }
             .article {
+                .gias {
+                    color: #F03333;
+                    font-family: PlusJakartaSansBold;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
                 .title-article {
                     font-size: 28px;
                 }
             }
         }
     }
+}
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text, .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text:visited, .wrapper-container .left-section .brt-terkini .group-brt-terkini .desc-section .title-text:link {
+    color: #62207c;
 }
 
 .wrapper-container .left-section .headline .big-section .img-section {
