@@ -86,6 +86,19 @@ $('.brt-terkini').jscroll({
   loadingHtml: '<div class="loader"><img alt="" src="https://cdn.okezone.com/news/news_2015a/img/ajax-loader.gif" /></div>',
   nextSelector: 'a#loadMore:last',
 });
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
 
 
 
+// $(document).ready(function() {
+
+//   $('.big-section').mouseover(function() {
+//       $(this).find('.img-section').css({"transform":"scale(1.2)", "width":"100%"});
+//   });
+
+//   $('.big-section').mouseout(function() {
+//       $(this).find('.img-section').css({"width":"100%", "transition":"transform 0.4s ease", "transform-origin":"50% 50%"});
+//   });
+// });

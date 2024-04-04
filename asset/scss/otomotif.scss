@@ -1,0 +1,344 @@
+.otomotif {
+    header  {
+        .menu {
+            a {
+            color: #928F8F;
+            &.active {
+                border-radius: 32px;
+                background: var(--Otomotif-Radial, radial-gradient(811.72% 94.42% at 97.44% 50%, #87549B 0%, #62207C 100%));
+                color: #fff;
+                }
+            }
+        }
+        .other {
+            .login {
+                .img-login {
+                    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/otomotif_imgspread.png);
+                    background-size: 277px;
+                    background-position: -2px -3px;
+                }   
+                .text-login {
+                    color: #1B387B;
+                    font-family: PlusJakartaSans-Regular;
+                    line-height: 150%;
+                    font-size: 16px;
+                } 
+            }
+            .search {
+                .icon {
+                    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/otomotif_imgspread.png);
+                    background-size: 277px;
+                    background-position: -50px -2px;
+                }
+            }
+            .burger-menu {
+                .icon-burger {
+                    &.active {
+                        .burger-line {
+                            &:first-child {
+                                width: 20px;
+                            }
+                            &:nth-child(2) {
+                                width: 20px;
+                            }
+                            &:nth-child(3) {
+                                width: 20px;
+                            }
+                            
+                        }
+                    }
+                    .burger-line {
+                        background-color: #1B387B;
+                        height: 3px;
+                        border-radius: 2px;
+                        &:first-child {
+                            width: 16px;
+                        }
+                        &:nth-child(2) {
+                            width: 12px;
+                        }
+                        &:nth-child(3) {
+                            width: 8px;
+                        }
+                    }
+                }
+                .content-burger {
+                    .content-group {
+                        .list-group {
+                            &:last-child {
+                                width: 100%;
+                            }
+                            .icon {
+                                background-image: url("https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite-otomotif.png");
+                                &.sindonews {
+                                    background-position: -3px -179px;
+                                }
+                                &.inews {
+                                    background-position: -266px -179px;
+                               }
+                                &.idxchannel {
+                                    background-position: -56px -179px;
+                                }
+                                &.mnctrijaya {
+                                    background-position: -317px -179px;
+                                }
+                                &.aladin {
+                                    background-position: -108px -179px;
+                                }
+                                &.rcti {
+                                    background-position: -423px -179px;
+                                }
+                                &.vision {
+                                    background-position: -161px -179px;
+                                }
+                                &.instagram {
+                                    background-position: -3px -222px;
+                                }
+                                &.facebook {
+                                    background-position: -129px -222px
+                                }
+                                &.twitter {
+                                    background-position: -174px -222px
+                                }
+                                &.youtube {
+                                    background-position: -42px -222px;
+                                }
+                                &.tiktok {
+                                    background-position: -88px -222px
+                                }
+                                &.profile {
+                                    background-position: -218px -222px
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+       }    
+    }
+}
+
+
+.wrapper-container {
+    &.otomotif {
+        .left-section {
+            .headline {
+                .small-section,
+                .big-section {
+                    .group-section {
+                        .desc-section {
+                            .title-text {
+                                color: #62207C;            
+                            }
+                        }
+                    }
+                }
+            }
+            .brt-terkini {
+                .group-brt-terkini {
+                    .desc-section {
+                        .desc-text,
+                        .desc-text:visited,
+                        .desc-text:link {
+                            line-height: 150%;
+                            font-size: 20px;
+                            margin: 16px 0;
+                        }
+                    }
+                }
+            }
+            .article {
+                .title-article {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+.wrapper-container .left-section .headline .big-section .img-section {
+    overflow: hidden;
+    padding-right: 0;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.wrapper-container .left-section .headline .small-section .group-section .img-section,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .img-section {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+
+.wrapper-container .left-section .headline .big-section .img-section img,
+.wrapper-container .left-section .headline .small-section .group-section .img-section img,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini .img-section img {
+    // width: 100%;
+    // transition: transform 0.4s ease;
+    // transform-origin: 50% 50%;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+
+
+.wrapper-container .left-section .headline .big-section:hover:not(:has(.desc-section .title-text:hover)) .img-section img,
+.wrapper-container .left-section .headline .small-section .group-section:hover:not(:has(.desc-section .title-text:hover, .desc-section .red-sign:hover)) .img-section img,
+.wrapper-container .left-section .brt-terkini .group-brt-terkini:hover:not(:has(.desc-section .title-text:hover, .desc-section .time-text:hover, .desc-section .red-sign:hover)) .img-section img{
+    transform: scale(1.2);
+    width: 100%;
+ }
+
+ .wrapper-container.otomotif .left-section .headline .small-section .group-section .desc-section .title-text, .wrapper-container.otomotif .left-section .headline .big-section .group-section .desc-section .title-text {
+    width: 100%;
+ }
+
+ .wrapper-container .left-section .headline .small-section .group-section .desc-section .title-text {
+    margin-top: 0;
+    padding-top: 12px;
+ }
+
+ .paging-otomotif {
+    display: flex;
+    justify-content: center;
+    grid-area: 8px;
+    .img-prev {
+        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
+        background-repeat: no-repeat;
+        background-size: 655px;
+        background-position: -261px -223px;
+        width: 32px;
+        height: 32px;
+    }
+    .paging-no,
+    .paging-no:visited,
+    .paging-no:link {
+        font-family: PlusJakartaSansBold;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #212121;
+        padding: 5.5px 13px;
+        text-align: center;
+        display: block;
+        &.active {
+            background-color: #1B387B;
+            border-radius: 100%;
+            color: #fff;
+        }
+    }
+    display: flex;
+ }
+
+.paging-no,
+.paging-no:visited,
+.paging-no:link {
+    font-family: PlusJakartaSansBold;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #212121;
+    padding: 5.5px 13px;
+    text-align: center;
+    display: block;
+    
+}
+
+input#datepicker {
+    border: none;
+    outline: none;
+    height: 24px;
+    font-family: PlusJakartaSansBold;
+    font-size: 14px;
+    color: #1B387B;
+    height: 40px;
+    width: 157px;
+    padding-left: 16px;
+    border: solid 1px #D5E2FF;
+    border-radius: 8px;
+    background-color: #F2F6FF;
+    cursor: pointer;
+    &:focus {
+        border: none;
+        outline: none;
+        font-family: PlusJakartaSansBold;
+        font-size: 14px;
+        color: #1B387B;
+        padding-left: 17px;
+        height: 40px;
+        width: 157px;
+    }
+
+
+}
+#datediv {
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+}
+
+#datediv::after {
+    position: absolute;
+    content: '';
+    background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/Calendar.png);
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    left: 129px;
+    top: 9px;
+    cursor: pointer;
+}
+
+input#datepicker::placeholder { 
+    color: #1B387B;
+}
+
+.cont-calendar {
+    background-color: #F2F6FF;
+    display: flex;
+    justify-content: space-between;
+    font-family: PlusJakartaSansBold;
+    font-size: 19px;
+    color: #1B387B;
+    align-items: center;
+    height: 80px;
+    button {
+        background-color: #F2F6FF;
+        border: 1px solid #D5E2FF;
+        outline: none;
+        cursor: pointer;
+        font-family: PlusJakartaSansBold;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1B387B;
+        padding: 8px 16px;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+}
+
+.wrapper-container .telusuri .icon1, .wrapper-container .telusuri:visited .icon1, .wrapper-container .telusuri:link .icon1 {
+    background-image: url("https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite-otomotif.png");
+    background-position: -121px -268px;
+}
+
+@media only screen and (min-width: 600px) and (min-width: 999px) {
+    .otomotif header .menu {
+        padding: 0 176px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
