@@ -65,9 +65,6 @@
                 .content-burger {
                     .content-group {
                         .list-group {
-                            &:last-child {
-                                width: 100%;
-                            }
                             .icon {
                                 background-image: url("https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite-otomotif.png");
                                 &.sindonews {
@@ -205,12 +202,20 @@
  .paging-otomotif {
     display: flex;
     justify-content: center;
-    grid-area: 8px;
+    gap: 8px;
     .img-prev {
-        background-image: url(https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/xsprite.png.pagespeed.ic.hFAtfkcQeF.png);
+        background-image: url("https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite-otomotif.png");
         background-repeat: no-repeat;
         background-size: 655px;
-        background-position: -261px -223px;
+        background-position: -462px -274px;
+        width: 32px;
+        height: 32px;
+    }
+    .img-next {
+        background-image: url("https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite-otomotif.png");
+        background-repeat: no-repeat;
+        background-size: 655px;
+        background-position: -509px -274px;
         width: 32px;
         height: 32px;
     }
@@ -222,13 +227,22 @@
         line-height: 21px;
         text-decoration: none;
         color: #212121;
-        padding: 5.5px 13px;
         text-align: center;
         display: block;
+        border: 1px solid #F8F8F8;
+        border-radius: 100%;
+        width: 32px;
+        height: 32px;
+        padding-top: 4px;
         &.active {
             background-color: #1B387B;
             border-radius: 100%;
             color: #fff;
+            width: 32px;
+            height: 32px;
+        }
+        &:nth-child(5) {
+            border: none;
         }
     }
     display: flex;
@@ -242,7 +256,6 @@
     line-height: 21px;
     text-decoration: none;
     color: #212121;
-    padding: 5.5px 13px;
     text-align: center;
     display: block;
     
@@ -324,6 +337,14 @@ input#datepicker::placeholder {
 .wrapper-container .telusuri .icon1, .wrapper-container .telusuri:visited .icon1, .wrapper-container .telusuri:link .icon1 {
     background-image: url("https://cdn.okezone.com/underwood/revamp/2023/techno/desktop/img/sprite-otomotif.png");
     background-position: -121px -268px;
+}
+
+.wrapper-container .left-section .brt-terkini .group-brt-terkini.glance .desc-section {
+    top: 90px;
+}
+
+header .other .burger-menu .content-burger .content-group .list-group.aboutus {
+    width: 100%;
 }
 
 @media only screen and (min-width: 600px) and (min-width: 999px) {
